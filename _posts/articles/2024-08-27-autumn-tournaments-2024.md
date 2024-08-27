@@ -46,7 +46,7 @@ Here’s what the rest of 2024 has in store for us. Some events’ locations are
 
 ****
 
-**ARCADIA** (7th December, TBD). At 2.5 dots, this is our hardest closed tournament of the year, and a great first insight into this year’s BSQC hopefuls. Last year’s tournament was a perfect sweep from Imperial A, with three of the four players present on the BSQC team that took Cambridge to a nailbiter of a final. Speaking of which, you can check out that match on our YouTube channel - with some exceptional closed captioning, if I do say so myself: https://www.youtube.com/watch?v=irw03nXjAis
+**ARCADIA** (7th December, TBD). At 2.5 dots, this is our hardest closed tournament of the year, and a great first insight into this year’s BSQC hopefuls. Last year’s tournament was a perfect sweep from Imperial A, with three of the four players present on the BSQC team that took Cambridge to a nailbiter of a final. Speaking of which, you can [check out that match](https://www.youtube.com/watch?v=irw03nXjAis) on our YouTube channel - with some exceptional closed captioning, if I do say so myself.
 
 ****
 
