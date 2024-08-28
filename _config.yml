@@ -5,7 +5,7 @@ description: "The central resource for student buzzer quzzing in the UK"
 logo: logo.png # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale: en_GB
-url:
+url: https://quizbowl.co.uk/
 feed:
   path: atom.xml
 
