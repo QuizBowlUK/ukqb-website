@@ -214,7 +214,5 @@ When not trying to convince people that economics questions can be good, Teddy c
             <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Aaron Storr</p><p style="font-size: 16px">Aaron is an Ordinary Member of the UKQB Committee. He has previously studied Politics at the University of Sheffield, and was formerly the Publicity Officer for Sheffield QuizSoc. On the extremely rare occasions where he is not quizzing, you might find him rambling about some of his other hyperfixations such as Rubik's Cubes, Grand Strategy games, and contemporary Chinese politics.</p>
         </td>
     </tr>
-
-  
   </tbody>
 </table>
