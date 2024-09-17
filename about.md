@@ -76,7 +76,7 @@ When not in a Zoom call trying to remember the order of the Chinese dynasties, A
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/thomas.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/thomas.jpg" alt="">
         </td>
         <td>
             <p style="font-size: 18px"><span style="font-weight: bold">Communications Officer: </span>Thomas Hart</p><p style="font-size: 16px">Thomas is UKQB’s Communications Officer, providing a crucial link between us and the audience we seek to serve. He played student quizbowl for 4 years while studying maths at Warwick. When not quizzing, writing quiz questions, or doing his actual job, he can be found cycling, repeatedly listening to the same 15 or so Stereophonics songs, and bingewatching MasterChef Australia.</p>
@@ -101,18 +101,18 @@ When she’s not quizzing or struggling through her degree you’ll probably fin
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/vitalijs.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/blank.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Digital Officer: </span>Vitalijs Brejevs</p><p style="font-size: 16px">Vitalijs Brejevs is the Digital Officer and one of the founders of UKQB. He got involved with quizbowl during his master's degree at Pembroke College, Cambridge, and continued playing for Glasgow University throughout his PhD. He is currently in the UK only in spirit, undertaking a postdoc at the University of Vienna.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Digital Content Officer: </span>Jamie Burchett</p><p style="font-size: 16px">Jamie helped to revive quizbowl at Southampton. He studies (theoretical) film, but has a background in practical filmmaking and video editing, and is familiar with recording footage and editing on both Adobe Premiere Pro and Davinci Resolve.</p>
         </td>
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/blank.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/ian.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Thomas De Bock</p><p style="font-size: 16px">Thomas De Bock is an Ordinary Member of the UKQB committee who served as Outreach Officer for three years. He headed Oxford Brookes Quiz Society from 2015 to 2018 and can still be found in most places where quiz is happening. When quiz is not happening, he is most likely geocaching, playing music, doing genealogy or even more likely working as an engineer in Formula E.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Ian Bayley</p><p style="font-size: 16px">Ian is a UKQB Ordinary Committee Member with current responsibility for the website. He played QuizBowl as a student 20-25 years ago where he represented Imperial College London and Balliol College Oxford on University Challenge. He has been continuously involved with quiz competitions ever since. He teaches programming and cybersecurity modules at Oxford Brookes.</p>
         </td>
     </tr>
     <tr>
