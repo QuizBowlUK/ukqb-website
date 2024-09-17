@@ -84,10 +84,11 @@ When not in a Zoom call trying to remember the order of the Chinese dynasties, A
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/jacobmc.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/bethany.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Social Media Manager: </span>Jacob McLaughlin</p><p style="font-size: 16px">Jacob is the Social Media Manager for UKQB. He has recently finished his degree in Economics and Mathematics at the University of Bristol. Outside of quiz, he plays an unreasonable amount of time playing Football Manager and watching bad reality TV.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Social Media Manager: </span>Bethany Howard</p><p style="font-size: 16px">Bethany is UKQB’s social media manager, and she hopes that her many years of being terminally online will lend themselves well to the role. She is currently in her third year studying biomedical engineering at Imperial College London, where she’s the chair of the quiz society. <br/>
+When she’s not quizzing or struggling through her degree you’ll probably find her listening to and writing about pop music, watching motorsports or doing a jigsaw puzzle.</p>
         </td>
     </tr>
     <tr>
