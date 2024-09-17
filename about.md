@@ -68,10 +68,10 @@ When not in a Zoom call trying to remember the order of the Chinese dynasties, A
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/ali.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/danny.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Outreach Officer: </span>Ali Izzatdust</p><p style="font-size: 16px">Ali is the Outreach Officer for UKQB. He played quizbowl for three years throughout his undergraduate degree at Oxford, and is currently completing a master's in Intellectual History at UCL and Queen Mary University of London. When not quizzing or reading political thought, Ali enjoys playing basketball and looking at Renaissance art.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Outreach Officer: </span>Danny Lardner</p><p style="font-size: 16px">Danny Lardner started playing quiz(bowl) in 2020 while studying a Geography degree at Sheffield. During that time, he helped to resurrect the Quiz Society at Sheffield and made sure as many people as possible were playing quizbowl. Outside of the above, he spends the rest of his time buying books, playing football, falling off of bouldering walls, or being paid to pack the jam doughnuts at Tesco.</p>
         </td>
     </tr>
     <tr>
