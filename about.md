@@ -179,7 +179,7 @@ When not trying to convince people that economics questions can be good, Teddy c
             <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/agnijo.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Agnijo Bannerjee</p><p style="font-size: 16px">Agnijo is a UKQB Ordinary Committee Member who has been playing student quizbowl since 2022 for Cambridge. They are in their first year of being on the UKQB Committee and hope to contribute towards maintaining a welcoming environment throughout the quiz circuit and towards the smooth running of the circuit. They are currently in their third year of a PhD in maths.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Agnijo Banerjee</p><p style="font-size: 16px">Agnijo is a UKQB Ordinary Committee Member who has been playing student quizbowl since 2022 for Cambridge. They are in their first year of being on the UKQB Committee and hope to contribute towards maintaining a welcoming environment throughout the quiz circuit and towards the smooth running of the circuit. They are currently in their third year of a PhD in maths.</p>
         </td>
     </tr>
     <tr>
