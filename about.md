@@ -93,10 +93,10 @@ When she’s not quizzing or struggling through her degree you’ll probably fin
     </tr>
     <tr>
         <td>
-            <img height="200" src="{{ site.url }}{{ site.baseurl }}/images/committee-23/fatima.jpg" alt="">
+            <img height="200" src="{{ site.url }}{{ site.baseurl }}/images/committee-24/lilian.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Safeguarding Officer: </span>Fatima Sheriff</p><p style="font-size: 16px">Fatima is the Safeguarding Officer at UKQB. Formerly of Imperial Quiz Society, including a stint as President, she is enthusiastic about welcoming people into the weird and wonderful world of quiz. She wears many hats (or hijabs) outside of quiz, including freelance film criticism, a varied career in science communication, and her regular job amusing old folks and cats with poetry.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Safeguarding Officer: </span>Lilian Crawford</p><p style="font-size: 16px">Lillian is UKQB’s Safeguarding Officer, ensuring that everyone feels comfortable taking part in quiz. She served as President of the Cambridge University Quiz Society while reading History and then Film at Trinity College, Cambridge, and is now completing a PhD on Screen Two at the BBC and Royal Holloway, University of London. Outside of quizzing, Lillian works as a freelance culture writer and programmer, including programming “relaxed” screenings and events for neurodivergent audiences.</p>
         </td>
     </tr>
     <tr>
