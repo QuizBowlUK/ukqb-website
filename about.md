@@ -33,10 +33,10 @@ UK Quizbowl is also very keen to help interested students start playing quizbowl
     </tr>
     <tr>
     	<td>
-    		<img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/daniel.jpg" alt="">
+    		<img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/sam.jpg" alt="">
     	</td>
     	<td>
-    		<p style="font-size: 18px"><span style="font-weight: bold">Treasurer: </span>Daniel Lawson</p><p style="font-size: 16px">Dan is UKQB’s Treasurer, dealing with finances and transactions between UKQB and universities, and with organisations such as ACF and NAQT. He has been playing quizbowl since he was a fresher at Cambridge, and held various positions on the CUQS Committee between 2017 and 2022. He is now a junior doctor in Cambridge.</p>
+    		<p style="font-size: 18px"><span style="font-weight: bold">Treasurer: </span>Sam Moore</p><p style="font-size: 16px">Sam is the Treasurer for UKQB, and has played quizbowl for the last 7 years. He is currently finishing a PhD in Cosmology at Durham University. In his spare time, he can be found reading postmodern literature and pretending to pursue other intellectual hobbies.</p>
     	</td>
     </tr>
     <tr>
