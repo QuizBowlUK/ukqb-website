@@ -61,7 +61,7 @@ UK Quizbowl is also very keen to help interested students start playing quizbowl
         </td>
         <td>
             <p style="font-size: 18px"><span style="font-weight: bold">Blog Manager: </span>Abbie Jackson</p><p style="font-size: 16px">Abbie is UKQB’s blog manager, updating you all on the quizzing calendar and recounting the year’s biggest events as they happen. This is despite her only involvement in a quiz society being a single term at Warwick, and despite routinely having to ask her teammates which events she actually attended that year, which is a level of memory recall truly unprecedented in the world of Competitive Memory Recalling.
-            <br/>
+            <br/><br/>
 When not in a Zoom call trying to remember the order of the Chinese dynasties, Abbie can usually be found in her room listening to some arthouse band from the late 70s, drawing maps of her latest Civilization game, and pretending to be in the shower every time the job centre calls.
 </p>
         </td>
@@ -87,7 +87,7 @@ When not in a Zoom call trying to remember the order of the Chinese dynasties, A
             <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/bethany.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Social Media Manager: </span>Bethany Howard</p><p style="font-size: 16px">Bethany is UKQB’s social media manager, and she hopes that her many years of being terminally online will lend themselves well to the role. She is currently in her third year studying biomedical engineering at Imperial College London, where she’s the chair of the quiz society. <br/>
+            <p style="font-size: 18px"><span style="font-weight: bold">Social Media Manager: </span>Bethany Howard</p><p style="font-size: 16px">Bethany is UKQB’s social media manager, and she hopes that her many years of being terminally online will lend themselves well to the role. She is currently in her third year studying biomedical engineering at Imperial College London, where she’s the chair of the quiz society. <br/><br/>
 When she’s not quizzing or struggling through her degree you’ll probably find her listening to and writing about pop music, watching motorsports or doing a jigsaw puzzle.</p>
         </td>
     </tr>
@@ -136,7 +136,7 @@ When she’s not quizzing or struggling through her degree you’ll probably fin
             <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/alison.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Allison Owens</p><p style="font-size: 16px">Allison is a UKQB Ordinary Committee member who has been playing QuizBowl since 2022.<br/>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Allison Owens</p><p style="font-size: 16px">Allison is a UKQB Ordinary Committee member who has been playing QuizBowl since 2022.<br/><br/>
 They are finishing up a Masters in Linguistics at the University of Sheffield, where they were previously on committee for the Quiz Society. 
 When Allison isn’t quizzing, you may find them talking about minimalist syntax, knitting, crocheting or baking. </p>
         </td>
@@ -146,7 +146,7 @@ When Allison isn’t quizzing, you may find them talking about minimalist syntax
             <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/teddy.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Teddy Fogel</p><p style="font-size: 16px">Teddy is a UKQB Ordinary Committee Member, currently in his second year of both quizbowl and a degree in economics at the University of Birmingham, where he is provisional competitive quizzing secretary. His interests as a committee member include improving resources for players from less established societies and creating more opportunities for online competition and interaction.<br/>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Teddy Fogel</p><p style="font-size: 16px">Teddy is a UKQB Ordinary Committee Member, currently in his second year of both quizbowl and a degree in economics at the University of Birmingham, where he is provisional competitive quizzing secretary. His interests as a committee member include improving resources for players from less established societies and creating more opportunities for online competition and interaction.<br/><br/>
 When not trying to convince people that economics questions can be good, Teddy can be found playing the piano and any number of percussion instruments or watching whatever sport happens to be available at the time.</p>
         </td>
     </tr>
@@ -156,6 +156,14 @@ When not trying to convince people that economics questions can be good, Teddy c
         </td>
         <td>
             <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Abigail Tan</p><p style="font-size: 16px">Abigail is a UKQB Ordinary Committee Member. She played student quizbowl from 2020 to 2023 while studying maths at Cambridge. This will be her third year serving on committee, in which she hopes to continue contributing to the smooth running of the circuit. When not spending her free time editing quiz and attempting to answer history questions in open tournaments, Abigail can often be found listening to podcasts, looking at ancient Persian inscriptions, or reading.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/krol.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Joseph Krol</p><p style="font-size: 16px">Joseph Krol is an Ordinary Member on the UKQB committee, in which role he mainly focuses on tournament organisation. Outside of quiz, his other hobbies include writing, listening to an alarming number of albums, and feeling a vague sense of dread when describing himself in the third person.</p>
         </td>
     </tr>
     <tr>
