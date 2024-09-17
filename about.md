@@ -57,10 +57,13 @@ UK Quizbowl is also very keen to help interested students start playing quizbowl
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/oscar.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/abbie.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Blog Manager: </span>Oscar O'Flanagan</p><p style="font-size: 16px">Oscar manages the UKQB blog, having recently finished a physics degree at Imperial College. During his time there he wrote several not-too-biased articles for the student paper documenting the exploits of Imperial's quiz teams, but hopes to be more neutral in this position. Outside of physics and quizzing, he might occasionally play classical guitar, read about the Russian Revolution and play old Total War games.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Blog Manager: </span>Abbie Jackson</p><p style="font-size: 16px">Abbie is UKQB’s blog manager, updating you all on the quizzing calendar and recounting the year’s biggest events as they happen. This is despite her only involvement in a quiz society being a single term at Warwick, and despite routinely having to ask her teammates which events she actually attended that year, which is a level of memory recall truly unprecedented in the world of Competitive Memory Recalling.
+            <br/>
+When not in a Zoom call trying to remember the order of the Chinese dynasties, Abbie can usually be found in her room listening to some arthouse band from the late 70s, drawing maps of her latest Civilization game, and pretending to be in the shower every time the job centre calls.
+</p>
         </td>
     </tr>
     <tr>
