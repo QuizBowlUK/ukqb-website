@@ -49,10 +49,10 @@ UK Quizbowl is also very keen to help interested students start playing quizbowl
     </tr>
     <tr>
     	<td>
-    		<img height="200" src="{{ site.url }}{{ site.baseurl }}/images/committee-23/andrew.jpg" alt="">
+    		<img height="200" src="{{ site.url }}{{ site.baseurl }}/images/committee-24/rhys.jpg" alt="">
     	</td>
     	<td>
-    		<p style="font-size: 18px"><span style="font-weight: bold">Tournament Supervisor: </span>Andrew Fisher</p><p style="font-size: 16px">UKQB Tournaments Supervisor Andrew Fisher has been quizzing since 2019 and has been playing student quizbowl since late 2021. After spending several years working in industry, he is now pursuing a PhD in algebraic topology at the University of Sheffield, and he served as UKQB Communications Officer in 2022-23. Other than thinking about homotopical and homological algebra, you can usually find him bouldering in the Peak District, learning about random things, and getting easy maths questions wrong in quizzes.</p>
+    		<p style="font-size: 18px"><span style="font-weight: bold">Tournament Supervisor: </span>Rhys Lewis</p><p style="font-size: 16px">Rhys is about to start a year’s masters in maths at the University of Sheffield after having spent three years doing a lot of quizbowl with Cambridge during undergraduate, including being the society president for a year. As well as maths and quizzing, Rhys enjoys playing music, as a keen cellist and conductor, and enjoys the highs, and more so lows, of following Liverpool Football Club and the England Cricket Team.</p>
     	</td>
     </tr>
     <tr>
