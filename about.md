@@ -76,7 +76,7 @@ When not in a Zoom call trying to remember the order of the Chinese dynasties, A
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/thomas.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/thomas.jpg" alt="">
         </td>
         <td>
             <p style="font-size: 18px"><span style="font-weight: bold">Communications Officer: </span>Thomas Hart</p><p style="font-size: 16px">Thomas is UKQB’s Communications Officer, providing a crucial link between us and the audience we seek to serve. He played student quizbowl for 4 years while studying maths at Warwick. When not quizzing, writing quiz questions, or doing his actual job, he can be found cycling, repeatedly listening to the same 15 or so Stereophonics songs, and bingewatching MasterChef Australia.</p>
@@ -188,6 +188,22 @@ When not trying to convince people that economics questions can be good, Teddy c
         </td>
         <td>
             <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Ian Bayley</p><p style="font-size: 16px">Ian is a UKQB Ordinary Committee Member with current responsibility for the website. He played QuizBowl as a student 20-25 years ago where he represented Imperial College London and Balliol College Oxford on University Challenge. He has been continuously involved with quiz competitions ever since. He teaches programming and cybersecurity modules at Oxford Brookes.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/samfoo.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Sam Foo</p><p style="font-size: 16px">Sam is a UKQB Committee Ordinary Member and a 3rd-year Philosophy student at the University of Cambridge, where they are also Squad Captain of Cambridge Quiz Soc. Sam’s engagement with quiz bowl stretches back to 2019 in Singapore where they played high school quiz bowl. In the infinitesimally small snatches of time when their mind is not fixated on something quiz-relevant, they can usually be found trying the neighbours’ patience with their attempts to sing.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/aaron.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Aaron Storr</p><p style="font-size: 16px">Aaron is an Ordinary Member of the UKQB Committee. He has previously studied Politics at the University of Sheffield, and was formerly the Publicity Officer for Sheffield QuizSoc. On the extremely rare occasions where he is not quizzing, you might find him rambling about some of his other hyperfixations such as Rubik's Cubes, Grand Strategy games, and contemporary Chinese politics.</p>
         </td>
     </tr>
 
