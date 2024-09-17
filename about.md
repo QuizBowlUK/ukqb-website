@@ -41,10 +41,10 @@ UK Quizbowl is also very keen to help interested students start playing quizbowl
     </tr>
     <tr>
     	<td>
-    		<img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/jacob.jpg" alt="">
+    		<img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/kai.jpg" alt="">
     	</td>
     	<td>
-    		<p style="font-size: 18px"><span style="font-weight: bold">Secretary: </span>Jacob Robertson</p><p style="font-size: 16px">Jacob Robertson is the Secretary for UKQB having played quizbowl since his first year as an undergraduate at Oxford. He’s now about to enter the third year of a DPhil in Theoretical Physics which means they’ve spent far too long playing quiz. When not editing the science for quiz tournaments or being confused about quantum mechanics, Jacob likes to go climbing, read poetry and watching too much YouTube.</p>
+    		<p style="font-size: 18px"><span style="font-weight: bold">Secretary: </span>Kai Madgwick</p><p style="font-size: 16px">Kai is UKQB’s Secretary, as well as a PhD student in Artificial Intelligence at Manchester University. They have played quizbowl for 3 years at Durham during their integrated masters in Physics and Astronomy, and were president of its quiz society for 2 years during that period. When not thinking about quiz, coding, or astrophysics, they can usually be found drumming, listening to history podcasts or trying to make their way through their ever-increasing backlog of albums to listen to.</p>
     	</td>
     </tr>
     <tr>
