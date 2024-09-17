@@ -16,7 +16,7 @@ We help run a series of quizbowl tournaments throughout the year, which range fr
 
 UK Quizbowl is also very keen to help interested students start playing quizbowl for the first time. You will find several resources on this website, including links to past questions and advice on how to study by current top players, and we also have a student discord and a UK-wide discord server. If you are interested in setting up a quiz society at your university but do not know where to start or just want to know more about upcoming tournaments, please feel free to email us at <contact@quizbowl.co.uk> or get in touch via the [Facebook page](https://www.facebook.com/quizbowluk).
 
-> <cite>Oscar O'Flanagan, *President of UK Quizbowl in 2024–25 season*</cite>
+> <cite>Michael Kohn, *President of UK Quizbowl in 2023–24 season*</cite>
 
 <br>
 
@@ -26,9 +26,9 @@ UK Quizbowl is also very keen to help interested students start playing quizbowl
   <tbody>
     <tr>
       <td width="30%">
-      		<img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/oscar.jpg" alt=""></td>
+      		<img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/michael.jpg" alt=""></td>
       <td align="left">
-      		<p style="font-size: 18px"><span style="font-weight: bold">President: </span>Oscar O'Flanagan</p><p style="font-size: 16px">Oscar first played quizbowl as an undergraduate at Imperial College London, while also helping to run both the History society and Quiz society. After a year out from studying, during which he managed the UK Quizbowl blog and did a bit of writing for various tournaments, he is now starting a PhD at Imperial in climate physics. Oscar's aims as president include getting more universities involved in quizbowl and encouraging more students to get into quiz writing. His non-quiz interests include classical guitar, the Russian Revolution, and playing old titles in the Total War series.</p>
+      		<p style="font-size: 18px"><span style="font-weight: bold">President: </span>Michael Kohn</p><p style="font-size: 16px">President Michael Kohn started playing quizbowl in 2018 as an undergraduate at Imperial. He has served on the UKQB committee for four years, most recently as Tournament Supervisor. This year he aims to oversee more exciting UKQB projects with more British writing, more interaction between UKQB and student societies, and aiding more people in progressing from Novice level quiz to regular tournaments. When not studying three and four dimensional topology as part of a PhD in Pure Mathematics at Durham, Michael can usually be found conducting or playing music, racquet sports, reading, or listening to famous albums.</p>
       </td>
     </tr>
     <tr>
