@@ -109,75 +109,88 @@ When she’s not quizzing or struggling through her degree you’ll probably fin
     </tr>
     <tr>
         <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/ben.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Ben Russell Jones</p><p style="font-size: 16px">BRJ credits playing quizbowl to saving his undergraduate career at the University of Edinburgh, and wants to give back through helping with modding and writing for tournaments. Outside of quizzing, he can be found protecting his customers as a nightman at a hotel, reading modernist literature, and crying when Swansea City lose (again).</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/caitlin.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Caitlin Libeaut</p><p style="font-size: 16px">Caitlin is a UKQB Ordinary Committee Member and has just finished her first year of Quizbowl whilst studying psychology at the University of Warwick. She now somehow is President of Warwick QuizSoc and hopes to keep it running smoothly. When not trying to get at least one question right in practice, Caitlin can usually be found in some body of water or watching the same two shows on repeat. </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/ali.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Ali Izzatdust</p><p style="font-size: 16px">Ali is an UKQB Ordinary Committee Member. He played quizbowl throughout his undergraduate degree at Oxford, followed by a master’s at UCL and Queen Mary University of London. Ali is now pursuing his PhD in Intellectual History at QMUL. When not quizzing or reading political thought, Ali enjoys playing basketball and looking at Renaissance art.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/alison.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Allison Owens</p><p style="font-size: 16px">Allison is a UKQB Ordinary Committee member who has been playing QuizBowl since 2022.<br/>
+They are finishing up a Masters in Linguistics at the University of Sheffield, where they were previously on committee for the Quiz Society. 
+When Allison isn’t quizzing, you may find them talking about minimalist syntax, knitting, crocheting or baking. </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/teddy.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Teddy Fogel</p><p style="font-size: 16px">Teddy is a UKQB Ordinary Committee Member, currently in his second year of both quizbowl and a degree in economics at the University of Birmingham, where he is provisional competitive quizzing secretary. His interests as a committee member include improving resources for players from less established societies and creating more opportunities for online competition and interaction.<br/>
+When not trying to convince people that economics questions can be good, Teddy can be found playing the piano and any number of percussion instruments or watching whatever sport happens to be available at the time.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/abigail.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Abigail Tan</p><p style="font-size: 16px">Abigail is a UKQB Ordinary Committee Member. She played student quizbowl from 2020 to 2023 while studying maths at Cambridge. This will be her third year serving on committee, in which she hopes to continue contributing to the smooth running of the circuit. When not spending her free time editing quiz and attempting to answer history questions in open tournaments, Abigail can often be found listening to podcasts, looking at ancient Persian inscriptions, or reading.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/michael.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Michael Kohn</p><p style="font-size: 16px">Michael played student quizbowl for Imperial, Cambridge and Durham between 2018 and 2024. He has been on the last five committees in various roles, serving as President last year. In addition to the occasional unwanted advice, as an OCM Michael will help oversee Briticising ACF Fall and BSQC. When not drawing knot diagrams as part of a PhD in Mathematics at Durham, Michael can usually be found conducting or playing music, tennis, reading, or listening to famous albums.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/agnijo.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Agnijo Bannerjee</p><p style="font-size: 16px">Agnijo is a UKQB Ordinary Committee Member who has been playing student quizbowl since 2022 for Cambridge. They are in their first year of being on the UKQB Committee and hope to contribute towards maintaining a welcoming environment throughout the quiz circuit and towards the smooth running of the circuit. They are currently in their third year of a PhD in maths.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/omer.jpg" alt="">
+        </td>
+        <td>
+            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Omer Keskin</p><p style="font-size: 16px">Omer is a UKQB Ordinary Committee Member in his 4th year of a Computer Science degree at Oxford University. He has been playing student quizbowl since 2021 and has been the nominal IT officer of Oxford University Quiz Society since 2022. As a committee member he will probably help the committee do stuff. When not working on his degree or quizzing, Omer can be found reading novels or playing Grand Strategy Games.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/ian.jpg" alt="">
         </td>
         <td>
             <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Ian Bayley</p><p style="font-size: 16px">Ian is a UKQB Ordinary Committee Member with current responsibility for the website. He played QuizBowl as a student 20-25 years ago where he represented Imperial College London and Balliol College Oxford on University Challenge. He has been continuously involved with quiz competitions ever since. He teaches programming and cybersecurity modules at Oxford Brookes.</p>
         </td>
     </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/justin.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Justin Lee</p><p style="font-size: 16px">Justin Lee is a UKQB Ordinary Committee Member. He is now doing his third year in a master's degree in chemistry, and is recovering from his tenure as Chair of the Imperial College London Quiz Society. Justin’s non-quiz hobbies include listening to his selection of history podcasts, writing fanfiction about the <i>Redwall</i> series, and lying in bed. When he’s not making the same fried rice over and over again he can be seen doing all three at once.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/thomas.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Thomas Hart</p><p style="font-size: 16px">Thomas Hart is one of UKQB’s Ordinary Committee Members, focusing on tournament organisation. He is in the final year of an integrated Masters degree in Mathematics at the University of Warwick, and has played quizbowl throughout his time there. When not getting questions about his degree and his religion wrong (which he does with distressing frequency), he can be found cycling, listening to classical music, slowly making his way through his increasingly large pile of unread books and bingewatching <i>MasterChef Australia</i>.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/abigail.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Abigail Tan</p><p style="font-size: 16px">Abigail is a UKQB Ordinary Committee Member. She has been playing quizbowl for three years while studying for a maths degree at Cambridge. Having worked on a number of tournaments and quizbowl packets over the past few years, Abigail will be head-editing the 2024 iteration of the Cambridge-Oxford Open Tournament (COOT), while in a UKQB capacity she is interested in working on resources to help players make the jump from novice to higher-level quizbowl. Outside of quiz Abigail can often be found reading about ancient history.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/rhys.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Rhys Lewis</p><p style="font-size: 16px">Rhys is a UKQB ordinary committee member. He is entering his third year studying maths at Cambridge University, where he is the current president of the Cambridge University Quiz Society. When not quizzing or doing his degree (doing should probably be in quotation marks there), he can be found waving his arms about in front of an orchestra or waving his arms about in attempt to hit a cricket ball.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/kevin.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Kevin Flanagan</p><p style="font-size: 16px">Kevin is a UKQB ordinary committee member. He is in the 4th year of his PhD in artificial intelligence at the University of Bristol, where he is also the Treasurer of the quiz society. Outside of quiz, he can often be found playing badminton or spending too much time on YouTube.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/danny.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Danny Lardner</p><p style="font-size: 16px">Danny Lardner is a UKQB Ordinary Committee Member. He started playing quiz(bowl) in 2020 while studying a Geography degree at Sheffield. During that time, he helped to resurrect the Quiz Society at Sheffield and made sure as many people as possible were playing quizbowl. Outside of the above, he spends the rest of his time buying books, playing football, falling off of bouldering walls, or being paid to pack the jam doughnuts at Tesco.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/evan.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Evan Lynch</p><p style="font-size: 16px">Evan Lynch is an Ordinary Committee Member and founding member of UKQB. He began his quizzing career whilst studying Natural Sciences at Christ's College, Cambridge, and is completing a PhD in Chemistry at the University of Southampton and Diamond Light Source. He plays for the Nomads in the Quiz League of London, for the Mangoes in the Online Quiz League, and competes in various individual formats. He has served as the head editor of multiple UK tournaments, including Cambridge Open, MKULTRA, British Novice and the British Student Quiz Championships.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/krol.jpg" alt="">
-        </td>
-        <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Ordinary Member: </span>Joseph Krol</p><p style="font-size: 16px">Joseph Krol is an Ordinary Member on the UKQB committee, in which role he mainly focuses on tournament organisation. Outside of quiz, his other hobbies include writing, listening to an alarming number of albums, and feeling a vague sense of dread when describing himself in the third person.</p>
-        </td>
-    </tr>
+
+  
   </tbody>
 </table>
