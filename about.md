@@ -76,10 +76,10 @@ When not in a Zoom call trying to remember the order of the Chinese dynasties, A
     </tr>
     <tr>
         <td>
-            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-23/ben.jpg" alt="">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/committee-24/thomas.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Communications Officer: </span>Ben Russell Jones</p><p style="font-size: 16px">Ben Russell Jones is a fourth year philosophy student at Edinburgh. He was part of the Edinburgh team that came runners up at BSQC 2022. This year, he will try to liaise with as many students as possible in order to get them playing quizbowl: the game we love.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Communications Officer: </span>Thomas Hart</p><p style="font-size: 16px">Thomas is UKQB’s Communications Officer, providing a crucial link between us and the audience we seek to serve. He played student quizbowl for 4 years while studying maths at Warwick. When not quizzing, writing quiz questions, or doing his actual job, he can be found cycling, repeatedly listening to the same 15 or so Stereophonics songs, and bingewatching MasterChef Australia.</p>
         </td>
     </tr>
     <tr>
