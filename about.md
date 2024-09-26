@@ -96,7 +96,7 @@ When she’s not quizzing or struggling through her degree you’ll probably fin
             <img height="200" src="{{ site.url }}{{ site.baseurl }}/images/committee-24/lilian.jpg" alt="">
         </td>
         <td>
-            <p style="font-size: 18px"><span style="font-weight: bold">Safeguarding Officer: </span>Lilian Crawford</p><p style="font-size: 16px">Lillian is UKQB’s Safeguarding Officer, ensuring that everyone feels comfortable taking part in quiz. She served as President of the Cambridge University Quiz Society while reading History and then Film at Trinity College, Cambridge, and is now completing a PhD on Screen Two at the BBC and Royal Holloway, University of London. Outside of quizzing, Lillian works as a freelance culture writer and programmer, including programming “relaxed” screenings and events for neurodivergent audiences.</p>
+            <p style="font-size: 18px"><span style="font-weight: bold">Safeguarding Officer: </span>Lillian Crawford</p><p style="font-size: 16px">Lillian is UKQB’s Safeguarding Officer, ensuring that everyone feels comfortable taking part in quiz. She served as President of the Cambridge University Quiz Society while reading History and then Film at Trinity College, Cambridge, and is now completing a PhD on Screen Two at the BBC and Royal Holloway, University of London. Outside of quizzing, Lillian works as a freelance culture writer and programmer, including programming “relaxed” screenings and events for neurodivergent audiences.</p>
         </td>
     </tr>
     <tr>
