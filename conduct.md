@@ -35,8 +35,8 @@ As part of our commitment to safeguarding and fair play, UKQB events are run in 
 UKQB takes cheating at online tournaments very seriously, and we see it as completely equivalent to cheating at an in person tournament. To this end, we have put the following rules in place:
 
 1. All competitors must have a webcam and microphone to play in our events.
-2. The webcam must be orientated such that either the competitor’s face or on their hands are visible.
-3. Competitors should have one hand visible at all times unless there is a good reason they are unable to. Competitors should let the tournament director (TD) or the tournament safeguarding officer know why they are unable to fulfil this requirement. 
+2. The webcam must be orientated such that both the competitor’s face and their hands are visible.
+3. Competitors should have at least one hand visible when hearing a tossup being read, and two hands visible if hearing bonuses. If they are unable to fulfil this requirement, competitors should let the tournament director (TD) or the tournament safeguarding officer know why. 
 4. Competitors should not be typing during live tossups or bonuses. 
 5. Competitors agree prior to the event taking place that UKQB reserves the right to record matches for any reason, which could be as part of, but not limited to, the prevention of cheating.
 
