@@ -6,8 +6,7 @@ categories: articles
 share: true
 ads: false
 image:
-  teaser: 2019-autumn-400x250.jpg
-  feature: 2019-autumn-1600x1000.jpg
+  teaser: 2020-fall-ikea-400x250.jpg
 ---
 
 As I look out my window on a bleak October afternoon, I’m reminded of the musings of a certain poet on this habitually melancholic time of year: “Autumn leaves [fall] down like pieces into place/And I can picture it, after all these days.” She knew all too well of the season’s inherent contradiction. The sorrowful frost rolls in on the furrows of deep grey clouds, bringing merciless death to flowers and small creatures ill-prepared for their only winters; yet what beautiful, flaming, vibrant murder.
@@ -44,6 +43,8 @@ The walk still wasn’t nearly as good as the quizzes. I play a lot of pop cultu
 
 I was amused by what counts under the remit of “pop culture” - there surely aren’t many definitions of pop culture that would include both Pier Paolo Pasolini and ‘the Josh Hutcherson Whistle meme’ - but it made for a tournament where anything and everything could come up. My somewhat last minute conglomerate of a team, Bit Commitment Enforcement Agency, which also featured Kai Madgwick, Aisling Skeet and Mikey Brown, soon found our general specialist areas - by which I mean, I’d mournfully rest my head on Aisling’s shoulder whenever a set of bonuses on 1980s new wave went begging to the other team, and she would return the gesture when we lost out on modern musical theatre. Power marks tended to be pretty generous, so the real bragging rights came from first-lining. And brag I will: the two I was most proud of were recognising lyrics to a lesser-known cut from Les Mis, and identifying Kendrick Lamar’s DAMN. on the back of there not being many albums with a track that “features U2”. With that said, the best first line I saw had to be Thomas Hart identifying the ace attorney Phoenix Wright purely on the name of his houseplant. Quoth him: “you gotta know Charlie”.
 
+![The two finalist teams, minus Joseph “I’m also here” Krol, but featuring me, clutching a shark.]({{ site.url }}{{ site.baseurl }}/images/2024-two-finalist-shark.png){: .center-image }
+
 The two finalist teams, minus Joseph “I’m also here” Krol, but featuring me, clutching a shark.
 
 Coming to the last game of the round robin, both my team and El Otoño del Pop Cultura sat on 6 wins and 2 losses. But alas, it was their team that prevailed in both our final round robin game and a grand final, winning both games on just a single TU’s worth of points. How different things may have been if, when buzzing on a routine “two answers required” TU on actor buddies Simon Pegg & Nick Frost, Kai Madgwick hadn’t buzzed in and negged with an unfortunate malapropism, “Nick Clegg”. So congratulations to Thomas Hart, Joseph Krol, Delia Cropper and Brendan Bethlehem for a tournament that was ultimately much more about the journey than the destination. In the second final, Tomfoolery Perchance (who were fielding a three person team after we had cunningly poached Kai a couple of days prior to the tournament) prevailed over Quiz Me the Horizon to take third.
@@ -69,6 +70,7 @@ So with Cambridge A a game up on Oxford A, we were set for an advantaged final. 
 Ian McDowell of Cambridge A can reassure himself with a staggering overall PPG of 81.00. Also scoring well over 50 PPG were Benjamin Kramer, Sohan Vohra of Cambridge B and my erstwhile WaShBowl teammate Mikey Brown of Birmingham. Congratulations on being banned from all future novice tournaments!
 
 
+![UKQB’s Caitlin Libeaut presides over Imperial B v Southampton A; fantastic dungarees are in fact required uniform for UKQB committee members.]({{ site.url }}{{ site.baseurl }}/images/2024-dungarees.png){: .center-image }
 
 UKQB’s Caitlin Libeaut presides over Imperial B v Southampton A; fantastic dungarees are in fact required uniform for UKQB committee members.
 
