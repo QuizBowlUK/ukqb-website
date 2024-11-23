@@ -10,13 +10,13 @@ image:
 
 ---
 
-So, you’ve attended a couple of tournaments and found a lovely team that’s just starting to gel. They’ve universally agreed that you’re the literature player, which is all fine by you - you love books! Only one problem - you keep getting beaten to the buzz on Orhan Pamuk novels you’ve never heard of.
+**So, you’ve attended a couple of tournaments and found a lovely team that’s just starting to gel. They’ve universally agreed that you’re the literature player, which is all fine by you - you love books! Only one problem - you keep getting beaten to the buzz on Orhan Pamuk novels you’ve never heard of.**
 
-It’s intimidating to turn up to the big tournaments and find yourself overwhelmed with names, events, theories and artworks that everyone else seems to have in their pocket. The secret is that everyone’s first quizbowl tournaments feel like that - including the people outbuzzing you. Getting that good at quizbowl can seem like an insurmountable mountain (it doesn’t help that people often conflate “being really clever” with “knowing the names of lots of books and historical figures”). But the truth is very prosaic - it really just takes practice and a bit of elbow grease.
+**It’s intimidating to turn up to the big tournaments and find yourself overwhelmed with names, events, theories and artworks that everyone else seems to have in their pocket. The secret is that everyone’s first quizbowl tournaments feel like that - including the people outbuzzing you. Getting that good at quizbowl can seem like an insurmountable mountain (it doesn’t help that people often conflate “being really clever” with “knowing the names of lots of books and historical figures”). But the truth is very prosaic - it really just takes practice and a bit of elbow grease.**
 
-Needless to say, I am not one to advise on how to get better at quizbowl, given I cruise by in tournaments with an occasional buzz on a famous king with a Civilization V mod that I like, or an artwork that, while working at the Tate Modern, I once had to stop someone from leaning on while texting someone. Three Dancers by Pablo Picasso, by the way. That actually happened.
+**Needless to say, I am not one to advise on how to get better at quizbowl, given I cruise by in tournaments with an occasional buzz on a famous king with a Civilization V mod that I like, or an artwork that, while working at the Tate Modern, I once had to stop someone from leaning on while texting someone. Three Dancers by Pablo Picasso, by the way. That actually happened.**
 
-Instead a few of UKQB’s more experienced quizzers have weighed in to give advice on getting better at their specific disciplines. Despite his general quiz performance indicating a specialist subject of “anything you like, really”, Ben Russell Jones (formerly of Edinburgh) has written our first column on how to improve at literature quizzing. Take it away, Ben
+**Instead a few of UKQB’s more experienced quizzers have weighed in to give advice on getting better at their specific disciplines. Despite his general quiz performance indicating a specialist subject of “anything you like, really”, Ben Russell Jones (formerly of Edinburgh) has written our first column on how to improve at literature quizzing. Take it away, Ben**
 
 
 ****
