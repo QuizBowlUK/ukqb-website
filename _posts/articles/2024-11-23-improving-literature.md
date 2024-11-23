@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Improving at Quizbowl: Literature (by Ben Russell Jones)"
+excerpt: "It’s intimidating to turn up to the big tournaments and find yourself overwhelmed with names, events, theories and artworks that everyone else seems to have in their pocket."
 categories: articles
 share: true
 ads: false
