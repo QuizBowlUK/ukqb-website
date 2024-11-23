@@ -4,6 +4,10 @@ title: "Improving at Quizbowl: Literature (by Ben Russell Jones)"
 categories: articles
 share: true
 ads: false
+image:
+  teaser: 2024-books-876x557.png
+  feature: 2024-buzzer-1056x700.png
+
 ---
 
 So, you’ve attended a couple of tournaments and found a lovely team that’s just starting to gel. They’ve universally agreed that you’re the literature player, which is all fine by you - you love books! Only one problem - you keep getting beaten to the buzz on Orhan Pamuk novels you’ve never heard of.
