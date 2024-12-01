@@ -6,8 +6,8 @@ categories: articles
 share: true
 ads: false
 image:
-teaser: francisco-gomes-sphinx-unsplash.jpg
-feature: 2024-buzzer-1056x700.png
+  teaser: francisco-gomes-sphinx-unsplash.jpg
+  feature: 2024-buzzer-1056x700.png
 
 ---
 
