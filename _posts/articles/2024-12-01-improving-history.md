@@ -35,7 +35,7 @@ It can initially be intimidating starting to learn a quizbowl category that you 
 
 Once you want to branch out in quizbowl, you should familiarise yourself with the "canon", meaning the topics that are asked about often. Below are screenshots from a spreadsheet I made in March 2022, around the time I was getting started; this contains a number of European History topics I wanted to learn about, with rough temporal categorisations. This is obviously not exhaustive, but I obtained the list by *writing down things that came up* in practices and tournaments which I had vaguely heard of through quiz, but didn't know much detail about. This is an effective way of gaining a grounding from which to branch out into learning more in-depth knowledge.
 
-({{ site.url }}{{ site.baseurl }}/images/abigail-tan-notes.png){: .center-image } 
+![Chronological list of topics beginning Kievan Russ and Establishment of Hungary]({{ site.url }}{{ site.baseurl }}/images/abigail-tan-notes.png){: .center-image } 
 
 
 YouTube playlists such as the Crash Course series are good for getting a sense of the chronology— I watched the “Crash Course European History” series for a broad post-1450 overview. Inevitably, a chronological series like these can’t cover everything on its own; it makes sense to both do deeper dives into topics you find interesting (by reading books and online articles, or watching videos and listening to podcasts) and play more quizbowl, from which you can fill in the gaps when topics you haven’t already encountered come up.
