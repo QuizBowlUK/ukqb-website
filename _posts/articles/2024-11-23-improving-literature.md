@@ -6,8 +6,8 @@ categories: articles
 share: true
 ads: false
 image:
-  teaser: 2024-books-876x557.png
-  feature: 2024-buzzer-1056x700.png
+  teaser: 2024-buzzer-1056x700.png
+  feature: 2024-books-876x557.png
 
 ---
 
