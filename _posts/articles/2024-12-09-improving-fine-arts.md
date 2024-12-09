@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Improving at Quizbowl: Fine Arts (by Micheal Kohn)"
+title: "Improving at Quizbowl: Fine Arts (by Michael Kohn)"
 excerpt: "the next biggest area of quizbowl after the ‘big three’ of Science, Literature and History"
 categories: articles
 share: true
