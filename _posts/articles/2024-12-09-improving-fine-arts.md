@@ -6,8 +6,8 @@ categories: articles
 share: true
 ads: false
 image:
-  teaser: textile-unsplash-80percent-2008x2296.jpg
-  feature: 2024-buzzer-1056x700.png
+  teaser: 2024-buzzer-1056x700.png
+  feature: textile-unsplash-80percent-2008x2296.jpg
 
 ---
 
