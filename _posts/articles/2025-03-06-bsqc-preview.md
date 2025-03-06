@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Improving at Quizbowl: Fine Arts (by Michael Kohn)"
+title: "2025 BSQC Preview"
 excerpt: "I’m a BSQC junkie. And this bit is clunky."
 categories: articles
 share: true
@@ -11,7 +11,7 @@ image:
 
 ---
 
-**2025 BSQC Preview**
+
 
 I don’t need no Champions’ League. I don’t need no Eurovision. I don’t want no boat race. You can keep your Ashes.
 
