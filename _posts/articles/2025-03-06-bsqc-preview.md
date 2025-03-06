@@ -6,7 +6,7 @@ categories: articles
 share: true
 ads: false
 image:
-  teaser: bsqc-2024.png
+  teaser: bsqc-2024.jpg
   feature: bsqc-2024.jpg
 
 ---
