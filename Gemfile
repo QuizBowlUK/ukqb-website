@@ -6,5 +6,6 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem "jekyll-feed"
 gem 'github-pages'
+gem 'rake'
 
 gem "webrick", "~> 1.7"
