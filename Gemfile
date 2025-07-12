@@ -8,4 +8,9 @@ gem "jekyll-feed"
 gem 'github-pages'
 gem 'rake'
 
+# Jekyll needs these dependencies to run with newer versions of Ruby
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+
 gem "webrick", "~> 1.7"
