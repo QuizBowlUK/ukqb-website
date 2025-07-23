@@ -1,0 +1,17 @@
+---
+type Variant = "primary" | "secondary";
+const { variant = "primary" } = Astro.props as { variant?: Variant };
+const variants: Record<Variant, string> = {
+  primary: "bg-ukqb-red text-white hover:bg-red-700",
+  secondary: "bg-[#ffe4e4] text-black hover:bg-[#fdcece]",
+};
+---
+
+<button
+  class:list={[
+    "cursor-pointer rounded-xl border-none px-6 py-3.5 text-center text-xl transition duration-100 ease-in md:px-8",
+    variants[variant],
+  ]}
+>
+  <slot />
+</button>

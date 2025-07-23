@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import Card from "./Card.astro";
+
+const { class: className } = Astro.props;
+const tournaments = (await getCollection("tournaments")).sort();
+---
+
+<div class={className}>
+  <h3>Upcoming tournaments</h3>
+  <div class="grid grid-cols-2 gap-8">
+    {tournaments.map((tournament) => <Card tournament={tournament} />)}
+  </div>
+</div>

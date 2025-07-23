@@ -1,1 +1,41 @@
-@import "tailwindcss";
+@import "@fontsource/atkinson-hyperlegible/400.css";
+@import "@fontsource/atkinson-hyperlegible/700.css";
+
+/* Disable preflight for Tailwind */
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-ukqb-red: #aa0000;
+  --color-ukqb-red-bg: #fffafa;
+  --font-sans: "Atkinson Hyperlegible", sans-serif;
+}
+
+@layer base {
+  h3 {
+    @apply text-4xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  html,
+  button {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  #header.scrolled {
+    @apply bg-ukqb-red-bg/80 shadow-[0_0.375rem_1.5rem_0_rgb(140_152_164_/_13%)] backdrop-blur-md;
+  }
+
+  .card-shadow {
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+} */

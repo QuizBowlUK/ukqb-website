@@ -1,0 +1,59 @@
+[
+  {
+    "name": "DART IV",
+    "id": "dart-iv",
+    "dots": 1.5,
+    "eligibility": "open",
+    "date": "13 Sep 2025",
+    "location": "Online"
+  },
+  {
+    "name": "ACF Fall",
+    "id": "acf-fall",
+    "dots": 1,
+    "eligibility": "closed",
+    "date": "18 Oct 2025"
+  },
+  {
+    "name": "Penn Bowl",
+    "id": "penn-bowl",
+    "dots": 3,
+    "eligibility": "open",
+    "date": "1 Nov 2025"
+  },
+  {
+    "name": "Scarlet Houseknight",
+    "id": "scarlet-houseknight",
+    "dots": 1.5,
+    "eligibility": "closed",
+    "date": "8 Nov 2025"
+  },
+  {
+    "name": "ACF Winter",
+    "id": "acf-winter",
+    "dots": 2,
+    "eligibility": "open",
+    "date": "29 Nov 2025"
+  },
+  {
+    "name": "British Novice",
+    "id": "british-novice",
+    "dots": 1,
+    "eligibility": "closed",
+    "date": "29 Nov 2025"
+  },
+  {
+    "name": "NAFTA",
+    "id": "nafta",
+    "dots": 3.5,
+    "eligibility": "open",
+    "date": "11 Oct 2025"
+  },
+  {
+    "name": "X, formerly known as TitA",
+    "id": "x",
+    "dots": 2,
+    "eligibility": "closed",
+    "date": "13 Dec 2025"
+  }
+]

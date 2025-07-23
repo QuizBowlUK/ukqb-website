@@ -1,0 +1,23 @@
+<!-- TODO: investigate padding + margin around the nav and ul, make sure p-2 is actually correct -->
+<nav
+  id="header"
+  class="bg-ukqb-red-bg sticky top-0 z-40 p-2 transition-all duration-300"
+>
+  <ul class="flex list-none items-center justify-center gap-x-12 pl-0">
+    <li>Blog</li>
+    <li>Resources</li>
+    <li>Videos</li>
+    <li>About us</li>
+  </ul>
+</nav>
+
+<script is:inline>
+  window.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+    if (window.scrollY >= 60) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
