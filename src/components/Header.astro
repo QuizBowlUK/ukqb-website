@@ -2,13 +2,14 @@
 import { Image } from "astro:assets";
 import logo from "../assets/logo-cropped.png";
 ---
+
 <!-- TODO: investigate padding + margin around the nav and ul, make sure p-2 is actually correct -->
 <header
   id="header"
-  class="bg-ukqb-red-bg sticky top-0 z-40 px-10 py-4 transition-all duration-300 flex"
+  class="bg-ukqb-red-bg sticky top-0 z-40 flex px-10 py-4 transition-all duration-300"
 >
-  <a href="/" class="flex-1 flex items-center">
-    <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto"/>
+  <a href="/" class="flex flex-1 items-center">
+    <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto" />
   </a>
   <nav>
     <ul class="flex list-none items-center justify-center gap-x-12 pl-0">
@@ -18,9 +19,7 @@ import logo from "../assets/logo-cropped.png";
       <li>About us</li>
     </ul>
   </nav>
-  <div class="flex-1">
-
-  </div>
+  <div class="flex-1"></div>
 </header>
 
 <script is:inline>
