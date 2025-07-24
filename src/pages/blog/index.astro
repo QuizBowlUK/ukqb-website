@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+---
+
+<Layout>
+  <h1>Blog</h1>
+  <div class="mb-20 grid grid-cols-3 gap-4">
+    {posts.map((post) => <Card post={post} />)}
+  </div>
+</Layout>

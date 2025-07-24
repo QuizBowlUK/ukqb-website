@@ -1,5 +1,21 @@
 import { defineCollection, z } from "astro:content";
-import { file } from "astro/loaders";
+import { file, glob } from "astro/loaders";
+
+const blog = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "src/data/blog" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.date(),
+    image: z.object({
+      teaser: z.object({
+        path: z.string(),
+        alt: z.string(),
+      }),
+      feature: z.string(),
+    }),
+  }),
+});
 
 const tournaments = defineCollection({
   loader: file("src/tournaments.json"),
@@ -14,4 +30,4 @@ const tournaments = defineCollection({
   }),
 });
 
-export const collections = { tournaments };
+export const collections = { blog, tournaments };
