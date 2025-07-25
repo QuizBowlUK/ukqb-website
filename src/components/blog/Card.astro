@@ -22,25 +22,30 @@ if (!images[teaserPath]) {
 }
 ---
 
-<div class="h-100 overflow-hidden rounded-lg bg-white shadow-md">
-  <div class="aspect-[16/9]">
-    <Image
-      src={images[teaserPath]()}
-      alt={image.teaser.alt}
-      class="h-full w-full object-cover object-center"
-    />
-  </div>
-  <div class="p-4">
-    <div class="-mb-3 text-sm text-gray-500">
-      {
-        date.toLocaleDateString("en-GB", {
-          day: "numeric",
-          month: "long",
-          year: "numeric",
-        })
-      }
+<a
+  href={`/blog/${post.id}`}
+  class="block text-inherit no-underline transition-shadow duration-200 hover:shadow-lg"
+>
+  <div class="h-100 overflow-hidden rounded-lg bg-white shadow-md">
+    <div class="aspect-[16/9]">
+      <Image
+        src={images[teaserPath]()}
+        alt={image.teaser.alt}
+        class="h-full w-full object-cover object-center"
+      />
     </div>
-    <h2 class="text-xl leading-tight font-bold">{title}</h2>
-    <p class="text-md line-clamp-4 text-gray-700">{description}</p>
+    <div class="p-4">
+      <div class="-mb-3 text-sm text-gray-500">
+        {
+          date.toLocaleDateString("en-GB", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })
+        }
+      </div>
+      <h2 class="text-xl leading-tight font-bold">{title}</h2>
+      <p class="text-md line-clamp-4 text-gray-700">{description}</p>
+    </div>
   </div>
-</div>
+</a>

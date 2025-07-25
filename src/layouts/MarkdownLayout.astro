@@ -1,0 +1,43 @@
+---
+import Layout from "./Layout.astro";
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  frontmatter: CollectionEntry<"blog">["data"];
+}
+
+const { frontmatter } = Astro.props;
+const { title, description, date, image } = frontmatter;
+
+const images = import.meta.glob<{ default: any }>(
+  "/src/assets/blog/**/*.{jpeg,jpg,png,gif,webp}",
+);
+const featurePath = `/src/assets/blog/${image.feature}`;
+---
+
+<Layout>
+  <div class="px-20">
+    <div class="-mb-4 text-gray-600">
+      {
+        date.toLocaleDateString("en-GB", {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+        })
+      }
+    </div>
+    <h1 class="text-5xl">{title}</h1>
+    <h2 class="-mt-4 font-normal text-gray-600 italic">{description}</h2>
+  </div>
+  <div class="mb-8 aspect-[16/9] w-full">
+    <Image
+      src={images[featurePath]()}
+      alt={title}
+      class="h-full w-full object-cover object-center"
+    />
+  </div>
+  <div class="px-20 text-xl leading-relaxed">
+    <slot />
+  </div>
+</Layout>
