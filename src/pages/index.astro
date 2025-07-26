@@ -2,9 +2,10 @@
 import Intro from "../components/Intro.astro";
 import Tournaments from "../components/tournaments/Tournaments.astro";
 import Layout from "../layouts/Layout.astro";
-import InstagramIcon from "../components/icons/InstagramIcon.astro";
-import BlueskyIcon from "../components/icons/BlueskyIcon.astro";
-import YoutubeIcon from "../components/icons/YoutubeIcon.astro";
+import Instagram from "../components/icons/Instagram.astro";
+import Bluesky from "../components/icons/Bluesky.astro";
+import Youtube from "../components/icons/Youtube.astro";
+import BlogPreview from "../components/blog/BlogPreview.astro";
 ---
 
 <Layout>
@@ -15,10 +16,11 @@ import YoutubeIcon from "../components/icons/YoutubeIcon.astro";
     We do all things student buzzer quizzing.
   </h2>
   <div class="fill-ukqb-red flex h-8 justify-center gap-x-4">
-    <InstagramIcon />
-    <BlueskyIcon />
-    <YoutubeIcon />
+    <Instagram />
+    <Bluesky />
+    <Youtube />
   </div>
   <Tournaments class="mt-40" />
   <Intro class="mt-40" />
+  <BlogPreview class="mt-40 mb-40" />
 </Layout>
