@@ -38,6 +38,11 @@ const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
     />
   </div>
   <div class="px-20 text-xl leading-relaxed">
-    <slot />
+    <!-- Centre images and captions (a caption is an emphasis element after an image element) -->
+    <div
+      class="[&_img]:mx-auto [&_img]:block [&_img]:h-auto [&_img]:max-w-full [&_p:has(img)+_p>em]:mt-2 [&_p:has(img)+_p>em]:mb-4 [&_p:has(img)+_p>em]:block [&_p:has(img)+_p>em]:text-center [&_p:has(img)+_p>em]:text-gray-600 [&_p:has(img)+_p>em]:italic"
+    >
+      <slot />
+    </div>
   </div>
 </Layout>

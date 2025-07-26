@@ -68,7 +68,7 @@ _University Challenge_ is filmed in short bursts at the end of February, March a
 
 A single quizbowl tournament will provide a team with more games than they could ever hope to get in a series of _University Challenge_ filming. Nervousness on the buzzer has doomed many a team, and playing quizbowl can help overcome that, even if it won’t prepare you for the pressure of the cameras and studio lights.
 
-![Buzzer]({{ site.url }}{{ site.baseurl }}/images/2023-how-to-win-uc-2.jpg){: .center-image }
+![Buzzer](../../assets/blog/2023-how-to-win-uc-2.jpg)
 _Quizbowl tournaments are invaluable for gaining the experience of answering questions on the buzzer while under pressure against an unfamiliar team._
 
 Take the 2020–21 Imperial team, for example. After their relegation to highest-scoring losers in their first round, they made an active effort to compete in quizbowl tournaments as a team. After the filming break, they came back fighting, squeaking past Exeter in the playoffs and eventually reaching the semi-finals. Things could have turned out quite differently without that extra experience.
