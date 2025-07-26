@@ -27,10 +27,6 @@
 }
 
 @layer components {
-  #header.scrolled {
-    @apply bg-ukqb-red-bg/80 shadow-[0_0.375rem_1.5rem_0_rgb(140_152_164_/_13%)] backdrop-blur-md;
-  }
-
   .card-shadow {
     box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.05);
   }
