@@ -16,7 +16,7 @@ const images = import.meta.glob<{ default: any }>(
 const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
 ---
 
-<Layout>
+<Layout title={title}>
   <div class="px-20">
     <div class="-mb-4 text-gray-600">
       {
