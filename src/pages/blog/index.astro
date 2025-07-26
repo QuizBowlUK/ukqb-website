@@ -10,7 +10,7 @@ const posts = (await getCollection("blog")).sort(
 
 <Layout title="Blog">
   <h1>Blog</h1>
-  <div class="mb-20 grid grid-cols-3 gap-4">
+  <div class="mb-20 grid grid-cols-1 gap-4 md:grid-cols-3">
     {posts.map((post) => <Card post={post} />)}
   </div>
 </Layout>
