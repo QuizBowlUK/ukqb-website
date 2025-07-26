@@ -17,7 +17,7 @@ const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
 ---
 
 <Layout title={title}>
-  <div class="px-20">
+  <div class="px-0 md:px-20">
     <div class="-mb-4 text-gray-600">
       {
         date.toLocaleDateString("en-GB", {
@@ -27,7 +27,7 @@ const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
         })
       }
     </div>
-    <h1 class="text-5xl">{title}</h1>
+    <h1 class="text-4xl md:text-5xl">{title}</h1>
     <h2 class="-mt-4 font-normal text-gray-600 italic">{description}</h2>
   </div>
   <div class="mb-8 aspect-[16/9] w-full">
@@ -37,7 +37,7 @@ const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
       class="h-full w-full object-cover object-center"
     />
   </div>
-  <div class="px-20 text-xl leading-relaxed">
+  <div class="px-0 text-lg leading-relaxed md:px-20 md:text-xl">
     <!-- Centre images and captions (a caption is an emphasis element after an image element) -->
     <div
       class="[&_img]:mx-auto [&_img]:block [&_img]:h-auto [&_img]:max-w-full [&_p:has(img)+_p>em]:mt-2 [&_p:has(img)+_p>em]:mb-4 [&_p:has(img)+_p>em]:block [&_p:has(img)+_p>em]:text-center [&_p:has(img)+_p>em]:text-gray-600 [&_p:has(img)+_p>em]:italic"
