@@ -6,14 +6,14 @@ import logo from "../assets/logo-cropped.png";
 <!-- TODO: investigate padding + margin around the nav and ul, make sure p-2 is actually correct -->
 <header
   id="header"
-  class="bg-ukqb-red-bg sticky top-0 z-40 flex px-10 py-4 transition-all duration-300"
+  class="bg-ukqb-red-bg flex px-10 py-4"
 >
   <a href="/" class="flex flex-1 items-center">
     <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto" />
   </a>
   <nav>
-    <ul class="flex list-none items-center justify-center gap-x-12 pl-0">
-      <li><a href="/blog">Blog</a></li>
+    <ul class="flex list-none items-center justify-center gap-x-12 pl-0 text-lg">
+      <li><a href="/blog" class="no-underline text-inherit">Blog</a></li>
       <li>Resources</li>
       <li>Videos</li>
       <li>About us</li>
