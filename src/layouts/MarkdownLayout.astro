@@ -13,7 +13,7 @@ const { title, description, date, image } = frontmatter;
 const images = import.meta.glob<{ default: any }>(
   "/src/assets/blog/**/*.{jpeg,jpg,png,gif,webp}",
 );
-const featurePath = `/src/assets/blog/${image.feature}`;
+const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
 ---
 
 <Layout>

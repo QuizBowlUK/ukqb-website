@@ -10,9 +10,9 @@ const blog = defineCollection({
     image: z.object({
       teaser: z.object({
         path: z.string(),
-        alt: z.string(),
+        alt: z.string().optional(),
       }),
-      feature: z.string(),
+      feature: z.string().optional(),
     }),
   }),
 });

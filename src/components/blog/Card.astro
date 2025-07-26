@@ -30,7 +30,7 @@ if (!images[teaserPath]) {
     <div class="aspect-[16/9]">
       <Image
         src={images[teaserPath]()}
-        alt={image.teaser.alt}
+        alt={image.teaser.alt ?? ""}
         class="h-full w-full object-cover object-center"
       />
     </div>
