@@ -26,10 +26,6 @@
     @apply font-sans;
   }
 
-  p {
-    @apply text-xl;
-  }
-
   /* Remove default button styling */
   button {
     @apply cursor-pointer border-none bg-transparent p-0;
