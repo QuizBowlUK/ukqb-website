@@ -53,6 +53,6 @@
   }
 
   .mobile-dropdown-item {
-    @apply text-dark hover:text-coral block;
+    @apply block;
   }
 }
