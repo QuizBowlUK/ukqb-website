@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import Card from "./Card.astro";
 
 const { class: className } = Astro.props;
-const tournaments = (await getCollection("tournaments")).sort();
+const tournaments = (await getCollection("tournaments")).sort(
+  (a, b) => a.data.date.getTime() - b.data.date.getTime(),
+);
 ---
 
 <div class={className}>

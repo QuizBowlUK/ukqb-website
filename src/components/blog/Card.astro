@@ -17,7 +17,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 );
 if (!images[teaserPath]) {
   throw new Error(
-    `"${teaserPath}" does not exist in glob: "src/assets/blog/*.{jpeg,jpg,png,gif,webp}"`,
+    `"${teaserPath}" does not exist in glob: "src/assets/blog/**/*.{jpeg,jpg,png,gif,webp}"`,
   );
 }
 ---

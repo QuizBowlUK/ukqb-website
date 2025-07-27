@@ -1,6 +1,26 @@
 import { defineCollection, z } from "astro:content";
 import { file, glob } from "astro/loaders";
 
+const committee = defineCollection({
+  loader: async () => {
+    const data = await import("./data/committee.json");
+    return data.default.map((member: any) => ({
+      id: member.name
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9-]/g, ""),
+      ...member,
+    }));
+  },
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    position: z.string(),
+    bio: z.string(),
+    image: z.string(),
+  }),
+});
+
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "src/data/blog" }),
   schema: z.object({
@@ -18,7 +38,7 @@ const blog = defineCollection({
 });
 
 const tournaments = defineCollection({
-  loader: file("src/tournaments.json"),
+  loader: file("src/data/tournaments.json"),
   schema: z.object({
     id: z.string(),
     name: z.string(),
@@ -30,4 +50,4 @@ const tournaments = defineCollection({
   }),
 });
 
-export const collections = { blog, tournaments };
+export const collections = { committee, blog, tournaments };
