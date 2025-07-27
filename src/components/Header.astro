@@ -3,17 +3,18 @@ import { Astronav, Dropdown, DropdownItems, MenuItems } from "astro-navbar";
 import { Image } from "astro:assets";
 import logo from "../assets/logo-cropped.png";
 import ChevronDown from "./icons/ChevronDown.astro";
+import Hamburger from "./icons/Hamburger.astro";
 ---
 
 <Astronav>
-  <MenuItems class="grid grid-cols-[1fr_auto_1fr] px-10 py-2">
-    <div class="flex items-center">
+  <MenuItems class="flex justify-between gap-x-8 px-10 py-2">
+    <div class="flex flex-1 items-center">
       <a href="/">
         <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto" />
       </a>
     </div>
     <ul
-      class="flex list-none items-center justify-center gap-x-12 pl-0 text-lg"
+      class="hidden list-none items-center justify-center gap-x-12 pl-0 text-lg md:flex"
     >
       <li><a href="/blog" class="text-inherit no-underline">Blog</a></li>
       <li>
@@ -80,9 +81,140 @@ import ChevronDown from "./icons/ChevronDown.astro";
       <li>Videos</li>
       <li>About us</li>
     </ul>
-    <div></div>
+    <div class="flex flex-1 items-center justify-end">
+      <label
+        for="mobile-menu-toggle"
+        class="text-dark cursor-pointer p-2 md:hidden"
+        aria-label="Open menu"
+      >
+        <Hamburger class="h-6 w-6" />
+      </label>
+    </div>
   </MenuItems>
 </Astronav>
+
+<!-- Hidden checkbox for menu toggle -->
+<input
+  type="checkbox"
+  id="mobile-menu-toggle"
+  class="peer sr-only md:hidden"
+  aria-hidden="true"
+/>
+
+<!-- Mobile Slide Menu -->
+<div
+  id="mobile-menu"
+  class="bg-ukqb-red-bg fixed inset-y-0 right-0 z-40 w-64 translate-x-full transform shadow-lg transition-transform duration-300 peer-checked:translate-x-0 md:hidden"
+>
+  <div class="border-dark flex items-center justify-between border-b px-4 py-2">
+    <div class="text-lg font-bold">Menu</div>
+    <label for="mobile-menu-toggle" class="text-dark cursor-pointer p-2">
+      <span class="sr-only">Close menu</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={2}
+          d="M6 18L18 6M6 6l12 12"
+        >
+        </path>
+      </svg>
+    </label>
+  </div>
+  <nav class="px-4 py-2">
+    <ul class="space-y-4 pl-0">
+      <li class="text-lg">
+        <a href="/blog" class="mb-2 font-bold">Blog</a>
+      </li>
+      <li class="text-lg">
+        <div class="mb-2 font-bold">Resources</div>
+        <ul class="ml-4 space-y-2 pl-0">
+          <li>
+            <a href="/resources/intro-to-qb" class="mobile-dropdown-item">
+              Introduction to quizbowl
+            </a>
+          </li>
+          <li>
+            <a href="/resources/discord" class="mobile-dropdown-item">
+              Discord
+            </a>
+          </li>
+          <li>
+            <a href="/resources/societies" class="mobile-dropdown-item">
+              University quiz societies
+            </a>
+          </li>
+          <li>
+            <a href="/resources/study-resources" class="mobile-dropdown-item">
+              Study resources
+            </a>
+          </li>
+          <li>
+            <a href="/resources/forums" class="mobile-dropdown-item">
+              Quizbowl forums
+            </a>
+          </li>
+          <li>
+            <a href="/resources/statistics" class="mobile-dropdown-item">
+              Statistics
+            </a>
+          </li>
+          <li>
+            <a href="/resources/hosting" class="mobile-dropdown-item">
+              Tournament hosting guide
+            </a>
+          </li>
+          <li>
+            <a href="/resources/glossary" class="mobile-dropdown-item">
+              Quizbowl glossary
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="text-lg">
+        <div class="mb-2 font-bold">Conduct</div>
+        <ul class="ml-4 space-y-2 pl-0">
+          <li>
+            <a href="/conduct/misconduct" class="mobile-dropdown-item">
+              Safeguarding reporting form
+            </a>
+          </li>
+          <li>
+            <a href="/conduct/cheating" class="mobile-dropdown-item">
+              Cheating reporting form
+            </a>
+          </li>
+          <li>
+            <a href="/conduct/conduct" class="mobile-dropdown-item">
+              Code of conduct
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="text-lg">
+        <a href="/videos" class="mb-2 font-bold">Videos</a>
+      </li>
+      <li class="text-lg">
+        <a href="/about" class="mb-2 font-bold">About us</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Overlay for Mobile Menu -->
+<label
+  for="mobile-menu-toggle"
+  class="pointer-events-none fixed inset-0 z-30 bg-black opacity-0 transition-opacity duration-300 peer-checked:pointer-events-auto peer-checked:opacity-50"
+  aria-hidden="true"
+>
+</label>
 
 <style>
   a,
@@ -90,5 +222,8 @@ import ChevronDown from "./icons/ChevronDown.astro";
   a:focus,
   a:visited {
     @apply text-inherit no-underline;
+  }
+  li {
+    @apply list-none;
   }
 </style>
