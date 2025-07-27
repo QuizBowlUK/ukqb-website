@@ -46,9 +46,7 @@ All the above is best illustrated with some examples, so here is a tossup and bo
 
 ##### Tossup
 
-> <p style="font-size: 18px">
-
-    <span style="font-weight: bold">At the Council of Reims, Leo IX opposed this leader’s intended marriage. According to tradition, this leader’s mother was the daughter of a tanner from Falaise [fah-LEZ]. This king’s archbishop Lanfranc eventually gained dispensation for his marriage to Matilda of Flanders. He defeated the supporters of (*)</span> Edgar the Atheling, who opposed his succession to Edward the Confessor. For 10 points, name this Duke of Normandy who won the Battle of Hastings.</p>
+> <p style="font-size: 18px"><span style="font-weight: bold">At the Council of Reims, Leo IX opposed this leader’s intended marriage. According to tradition, this leader’s mother was the daughter of a tanner from Falaise [fah-LEZ]. This king’s archbishop Lanfranc eventually gained dispensation for his marriage to Matilda of Flanders. He defeated the supporters of (*)</span> Edgar the Atheling, who opposed his succession to Edward the Confessor. For 10 points, name this Duke of Normandy who won the Battle of Hastings.</p>
 
 > <p style="font-size: 18px">ANSWER: <span style="font-weight: bold; text-decoration: underline;">William the Conqueror</span> (or <span style="font-weight: bold; text-decoration: underline;">William I</span> of England or <span style="font-weight: bold; text-decoration: underline;">William the Bastard</span> or <span style="font-weight: bold; text-decoration: underline;">William II of Normandy</span>; prompt on "William"; do not accept or prompt on "William II")</p>
 
