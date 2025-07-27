@@ -51,8 +51,4 @@
   .dropdown-item:hover {
     @apply bg-gray-100;
   }
-
-  .mobile-dropdown-item {
-    @apply block;
-  }
 }
