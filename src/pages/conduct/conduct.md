@@ -5,7 +5,7 @@ title: Code of conduct
 
 As part of our commitment to safeguarding and fair play, UKQB events are run in accordance with the following code of conduct. The following forms can be used to report any violations of the code and the cheating statement:
 
-- <p style="font-size: 18px"><span style="font-weight: bold"><a href="https://quizbowl.co.uk/misconduct/">safeguarding reporting form</a></span></p>
+- <p style="font-size: 18px"><span style="font-weight: bold"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfL6gCjXK5XUGbuioxjELdWKyPRf9prlOaQsvAwcigTUfWp7g/viewform">safeguarding reporting form</a></span></p>
 - <p style="font-size: 18px"><span style="font-weight: bold"><a href="https://quizbowl.co.uk/cheating/">cheating reporting form</a></span></p>
 
 # Code of conduct
