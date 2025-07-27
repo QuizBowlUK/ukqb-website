@@ -18,7 +18,7 @@ import Hamburger from "./icons/Hamburger.astro";
     >
       <li><a href="/blog" class="text-inherit no-underline">Blog</a></li>
       <li>
-        <Dropdown class="group pl-0">
+        <Dropdown class="navbar-dropdown group">
           <!-- TODO: investigate why there is padding on the left -->
           <button class="flex items-center text-lg text-inherit">
             <span>Resources</span>
@@ -27,7 +27,7 @@ import Hamburger from "./icons/Hamburger.astro";
             />
           </button>
           <DropdownItems>
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown-items">
               <a href="/resources/intro-to-qb" class="dropdown-item">
                 Introduction to quizbowl
               </a>
@@ -55,7 +55,7 @@ import Hamburger from "./icons/Hamburger.astro";
         </Dropdown>
       </li>
       <li>
-        <Dropdown class="group pl-0">
+        <Dropdown class="navbar-dropdown group">
           <!-- TODO: investigate why there is padding on the left -->
           <button class="flex items-center text-lg text-inherit">
             <span>Conduct</span>
@@ -64,7 +64,7 @@ import Hamburger from "./icons/Hamburger.astro";
             />
           </button>
           <DropdownItems>
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown-items">
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfL6gCjXK5XUGbuioxjELdWKyPRf9prlOaQsvAwcigTUfWp7g/viewform"
                 class="dropdown-item"
@@ -83,7 +83,7 @@ import Hamburger from "./icons/Hamburger.astro";
       </li>
       <li>Videos</li>
       <li>
-        <Dropdown class="group pl-0">
+        <Dropdown class="navbar-dropdown group">
           <!-- TODO: investigate why there is padding on the left -->
           <button class="flex items-center text-lg text-inherit">
             <span>About us</span>
@@ -92,7 +92,7 @@ import Hamburger from "./icons/Hamburger.astro";
             />
           </button>
           <DropdownItems>
-            <div class="navbar-dropdown grid-cols-1">
+            <div class="navbar-dropdown-items grid-cols-1">
               <a href="/about/statement-of-purpose" class="dropdown-item">
                 Statement of purpose
               </a>

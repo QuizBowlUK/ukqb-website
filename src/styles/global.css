@@ -45,7 +45,11 @@
   }
 
   .navbar-dropdown {
-    @apply absolute left-1/2 mt-2 grid -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-2 border-gray-300 bg-white p-3 shadow-sm;
+    @apply relative pl-0;
+  }
+
+  .navbar-dropdown-items {
+    @apply absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-2 border-gray-300 bg-white p-3 shadow-sm;
   }
 
   .dropdown-item {
