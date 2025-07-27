@@ -1,6 +1,5 @@
 ---
-layout: archive
-permalink: /contact/
+layout: ../layouts/MarkdownLayout.astro
 title: Contact us
 ---
 

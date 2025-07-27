@@ -1,10 +1,11 @@
 import { defineCollection, z } from "astro:content";
 import { file, glob } from "astro/loaders";
+import data from "./data/committee.json";
 
 const committee = defineCollection({
   loader: async () => {
-    const data = await import("./data/committee.json");
-    return data.default.map((member: any) => ({
+    // const data = await import("./data/committee.json");
+    return data.map((member: any) => ({
       id: member.name
         .toLowerCase()
         .replace(/\s+/g, "-")
