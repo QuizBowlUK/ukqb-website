@@ -10,6 +10,7 @@
 @theme {
   --color-ukqb-red: #aa0000;
   --color-ukqb-red-bg: #fffafa;
+  --color-ukqb-red-hover: #ffeded;
   --font-sans: "Atkinson Hyperlegible", sans-serif;
 }
 
@@ -49,7 +50,7 @@
   }
 
   .navbar-dropdown-items {
-    @apply absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-2 border-gray-300 bg-white p-3 shadow-sm;
+    @apply bg-ukqb-red-bg absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-1 border-gray-300 p-3 shadow-sm;
   }
 
   .dropdown-item {
@@ -57,6 +58,6 @@
   }
 
   .dropdown-item:hover {
-    @apply bg-gray-100;
+    @apply bg-ukqb-red-hover;
   }
 }
