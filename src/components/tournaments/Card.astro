@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import Dots from "./Dots.astro";
 
 export interface Props {
   tournament: CollectionEntry<"tournaments">;
@@ -7,12 +8,6 @@ export interface Props {
 
 const { tournament } = Astro.props;
 const { name, dots, eligibility, date, location, link } = tournament.data;
-
-let title = `${name} (${dots} dot`;
-if (eligibility === "open") {
-  title += " open";
-}
-title += ")";
 
 let normalisedLocation: string | undefined;
 if (location === undefined) {
@@ -23,18 +18,29 @@ if (location === undefined) {
   normalisedLocation = location.join(", ");
 }
 
-let description = date.toLocaleDateString("en-GB", {
-  day: "numeric",
-  month: "short",
-  year: "numeric",
-});
+const descriptionItems = [];
+if (eligibility === "open") {
+  descriptionItems.push("Open");
+}
 if (normalisedLocation) {
-  description += ` · ${normalisedLocation}`;
+  descriptionItems.push(normalisedLocation);
 }
 ---
 
-<div class="card-shadow rounded-xl bg-white px-4 md:px-5 md:py-2">
-  <h4>{title}</h4>
-  <p class="-mt-6">{description}</p>
+<div class="card-shadow rounded-xl bg-white px-4 py-4 md:px-5">
+  <div class="flex items-center justify-between">
+    {
+      date.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+      })
+    }
+    <Dots dots={dots} />
+  </div>
+  <h4 class="mt-1 -mb-1 flex items-center gap-3 text-2xl">
+    {name}
+  </h4>
+  <p class="mb-0">{descriptionItems.join(" · ")}</p>
   {link && <a href={link}>View Facebook event</a>}
 </div>
