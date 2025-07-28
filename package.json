@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.4.2",
     "@fontsource/atkinson-hyperlegible": "^5.2.6",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.11.1",
@@ -22,6 +23,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "pa11y": "^9.0.0",
+    "pa11y-ci": "^4.0.0",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.14",
