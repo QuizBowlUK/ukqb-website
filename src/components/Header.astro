@@ -237,4 +237,9 @@ import Hamburger from "./icons/Hamburger.astro";
   li {
     @apply list-none;
   }
+
+  /* Prevent body scrolling when mobile menu is open */
+  body:has(#mobile-menu-toggle:checked) {
+    overflow: hidden;
+  }
 </style>
