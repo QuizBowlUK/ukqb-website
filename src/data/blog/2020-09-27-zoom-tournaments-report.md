@@ -18,6 +18,6 @@ May saw the inaugural [**Spring Undergraduate Novice**](https://hsquizbowl.org/d
 
 Finally, in June, [**Deep Bench Open**](https://hsquizbowl.org/db/tournaments/6508/) saw a return to raise money for COVID charities. Four teams of eight were first split into singles and pairs for a fast paced morning where only tossups were heard, followed by an afternoon of regular difficulty quizbowl in the standard teams of four. The final standings saw Evan Lynch’s Canto Generalists edge out the strong field of teams, with strong individual performances from Evan Lynch, Joseph Krol and Daoud Jackson. Not only was the tournament a success but it managed to raise almost £450 for NHS Charities Together.
 
-In September, UKQB [held their elections]({{ site.url }}{% post_url /articles/2020-07-29-elections-announcement-2021 %}), seeing seven new members from four universities join several experienced members. The new biographies can be found on the [About Us]({{ site.url }}{{ site.baseurl }}/about/) page.
+In September, UKQB [held their elections](/blog/2020-07-29-elections-announcement-2021), seeing seven new members from four universities join several experienced members. The new biographies can be found on the [About Us](/about/committee) page.
 
 UK Quizbowl wishes to thank all those who gave up their time to organise and moderate these tournaments, and for adapting to this new Zoom era of quizzing, and look forward to an even bigger, more inclusive and exciting season for 2020/21.

@@ -74,4 +74,4 @@ Thousands of sample questions of varying difficulties are available on the [Quiz
 
 ## Glossary
 
-For more on the jargon which Quizbowl has built up, see this [glossary]({{ site.url }}{{ site.baseurl }}/glossary/) of terms.
+For more on the jargon which Quizbowl has built up, see this [glossary](/resources/glossary) of terms.
