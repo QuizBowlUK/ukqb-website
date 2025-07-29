@@ -105,34 +105,25 @@ import Hamburger from "./icons/Hamburger.astro";
         <a href="/contact" class="text-inherit no-underline">Contact us</a>
       </li>
     </ul>
-    <div class="flex flex-1 items-center justify-end">
-      <label
-        for="mobile-menu-toggle"
-        class="text-dark cursor-pointer p-2 md:hidden"
-        aria-label="Open menu"
-      >
-        <Hamburger class="h-6 w-6" />
-      </label>
+    <div class="flex flex-1 cursor-pointer items-center justify-end p-2">
+      <Hamburger class="mobile-menu-trigger h-6 w-6 md:hidden" />
     </div>
   </MenuItems>
 </Astronav>
 
-<!-- Hidden checkbox for menu toggle -->
-<input
-  type="checkbox"
-  id="mobile-menu-toggle"
-  class="peer sr-only md:hidden"
-  aria-hidden="true"
-/>
+<div
+  id="mobile-menu-overlay"
+  class="mobile-menu-trigger pointer-events-none fixed inset-0 z-20 bg-black opacity-0 transition-opacity duration-300"
+>
+</div>
 
-<!-- Mobile Slide Menu -->
 <div
   id="mobile-menu"
-  class="bg-ukqb-red-bg fixed inset-y-0 right-0 z-40 max-h-full w-64 translate-x-full transform overflow-y-auto shadow-lg transition-transform duration-300 peer-checked:translate-x-0 md:hidden"
+  class="bg-ukqb-red-bg fixed inset-y-0 right-0 z-40 w-64 translate-x-full overflow-y-auto shadow-lg duration-300"
 >
   <div class="border-dark flex items-center justify-between border-b px-4 py-2">
     <div class="text-lg font-bold">Menu</div>
-    <label for="mobile-menu-toggle" class="text-dark cursor-pointer p-2">
+    <div class="mobile-menu-trigger cursor-pointer p-2">
       <span class="sr-only">Close menu</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +141,7 @@ import Hamburger from "./icons/Hamburger.astro";
         >
         </path>
       </svg>
-    </label>
+    </div>
   </div>
   <nav class="px-4 py-2">
     <ul class="space-y-4 pl-0">
@@ -225,13 +216,28 @@ import Hamburger from "./icons/Hamburger.astro";
   </nav>
 </div>
 
-<!-- Overlay for Mobile Menu -->
-<label
-  for="mobile-menu-toggle"
-  class="pointer-events-none fixed inset-0 z-30 bg-black opacity-0 transition-opacity duration-300 peer-checked:pointer-events-auto peer-checked:opacity-50"
-  aria-hidden="true"
->
-</label>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+
+    function toggleMobileMenu() {
+      mobileMenu?.classList.toggle("translate-x-full");
+
+      // We want the overlay to always exist in the DOM to use the transitions when toggling the menu
+      // so we use pointer-events-none instead of hidden to stop it from doing anything
+      mobileMenuOverlay?.classList.toggle("pointer-events-none");
+      mobileMenuOverlay?.classList.toggle("opacity-50");
+
+      // Stop body from scrolling behind the overlay when mobile menu is open
+      document.body?.classList.toggle("overflow-hidden");
+    }
+
+    document.querySelectorAll(".mobile-menu-trigger").forEach((element) => {
+      element.addEventListener("click", toggleMobileMenu);
+    });
+  });
+</script>
 
 <style>
   a,
@@ -242,10 +248,5 @@ import Hamburger from "./icons/Hamburger.astro";
   }
   li {
     @apply list-none;
-  }
-
-  /* Prevent body scrolling when mobile menu is open */
-  body:has(#mobile-menu-toggle:checked) {
-    overflow: hidden;
   }
 </style>
