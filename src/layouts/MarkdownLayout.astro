@@ -6,13 +6,13 @@ const { title } = frontmatter;
 ---
 
 <Layout title={title}>
-  <div class="px-0 md:px-20">
+  <div class="px-0 md:px-40">
     <slot name="date" />
     <h1 class="text-4xl md:text-5xl">{title}</h1>
     <slot name="description" />
   </div>
   <slot name="image" />
-  <div class="px-0 text-lg leading-relaxed md:px-20 md:text-2xl">
+  <div class="px-0 text-lg leading-relaxed md:px-40 md:text-xl">
     <!-- Centre images and captions (a caption is an emphasis element after an image element) -->
     <div
       class="[&_img]:mx-auto [&_img]:block [&_img]:h-auto [&_img]:max-w-full [&_p:has(img)+_p>em]:mt-2 [&_p:has(img)+_p>em]:mb-4 [&_p:has(img)+_p>em]:block [&_p:has(img)+_p>em]:text-center [&_p:has(img)+_p>em]:text-gray-600 [&_p:has(img)+_p>em]:italic"
