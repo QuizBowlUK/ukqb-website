@@ -47,11 +47,11 @@ UK Quizbowl will advertise the upcoming tournaments of a term to university soci
 
 Tournament announcements should give an idea of the difficulty of the questions, but this is, naturally, quite subjective.
 
-As a rule of thumb, an example set of easier questions (from 2017’s British Novice set) can be found <a href="{{ site.url }}{{ site.baseurl }}/assets/novice2017.pdf" alt="">here</a>. Harder questions (from 2017’s Oxford Open Tournament) can be found <a href="{{ site.url }}{{ site.baseurl }}/assets/oot2017.pdf" alt="">here</a>. Much more information about questions can be found in our <a href="/resources/intro-to-qb" alt="">introduction to quizbowl</a> and on the list of <a href="/resources/study-resources" alt="">quizbowl resources</a>.
+As a rule of thumb, an example set of easier questions (from 2017’s British Novice set) can be found <a href="/novice2017.pdf" alt="">here</a>. Harder questions (from 2017’s Oxford Open Tournament) can be found <a href="/oot2017.pdf" alt="">here</a>. Much more information about questions can be found in our <a href="/resources/intro-to-qb" alt="">introduction to quizbowl</a> and on the list of <a href="/resources/study-resources" alt="">quizbowl resources</a>.
 
 # Where do the questions come from?
 
-There are several sources for questions. Some will be written by members of UK Quizbowl (like the <a href="{{ site.url }}{{ site.baseurl }}/assets/novice2017.pdf" alt=""> Novice set above</a>), some by members of similar American organisations, and some by members of individual university societies, both in the UK (like the <a href="{{ site.url }}{{ site.baseurl }}/assets/oot2017.pdf" alt="">Oxford set above</a>) and North America. They are written by people who are, or have been recently, active quiz players.
+There are several sources for questions. Some will be written by members of UK Quizbowl (like the <a href="/novice2017.pdf" alt=""> Novice set above</a>), some by members of similar American organisations, and some by members of individual university societies, both in the UK (like the <a href="/oot2017.pdf" alt="">Oxford set above</a>) and North America. They are written by people who are, or have been recently, active quiz players.
 
 # How do I improve?
 
