@@ -6,12 +6,12 @@ const { title } = frontmatter;
 ---
 
 <Layout title={title}>
-  <div class="mx-auto md:w-[65ch]">
+  <div class="mx-auto md:max-w-[65ch]">
     <slot name="date" />
     <h1 class="text-4xl md:text-5xl">{title}</h1>
     <slot name="description" />
     <div class="mx-auto max-w-screen">
-      <div class="lg:-mx-40">
+      <div class="md:-mx-20 lg:-mx-40">
         <slot name="image" />
       </div>
     </div>
