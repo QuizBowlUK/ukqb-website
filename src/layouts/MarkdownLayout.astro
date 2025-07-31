@@ -6,16 +6,18 @@ const { title } = frontmatter;
 ---
 
 <Layout title={title}>
-  <div class="mx-auto md:max-w-[65ch]">
+  <div class="mx-auto md:w-[65ch]">
     <slot name="date" />
     <h1 class="text-4xl md:text-5xl">{title}</h1>
     <slot name="description" />
-  </div>
-  <slot name="image" />
-  <div class="mx-auto text-lg leading-relaxed md:max-w-[65ch] md:text-xl">
+    <div class="mx-auto max-w-screen">
+      <div class="lg:-mx-40">
+        <slot name="image" />
+      </div>
+    </div>
     <!-- Centre images and captions (a caption is an emphasis element after an image element) -->
     <div
-      class="[&_img]:mx-auto [&_img]:block [&_img]:h-auto [&_img]:max-w-full [&_p:has(img)+_p>em]:mt-2 [&_p:has(img)+_p>em]:mb-4 [&_p:has(img)+_p>em]:block [&_p:has(img)+_p>em]:text-center [&_p:has(img)+_p>em]:text-gray-600 [&_p:has(img)+_p>em]:italic"
+      class="text-lg leading-relaxed md:text-xl [&_img]:mx-auto [&_img]:block [&_img]:h-auto [&_img]:max-w-full [&_p:has(img)+_p>em]:mt-2 [&_p:has(img)+_p>em]:mb-4 [&_p:has(img)+_p>em]:block [&_p:has(img)+_p>em]:text-center [&_p:has(img)+_p>em]:text-gray-600 [&_p:has(img)+_p>em]:italic"
     >
       <slot />
     </div>
