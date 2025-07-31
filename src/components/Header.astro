@@ -81,7 +81,6 @@ import Hamburger from "./icons/Hamburger.astro";
           </DropdownItems>
         </Dropdown>
       </li>
-      <li>Videos</li>
       <li>
         <Dropdown class="navbar-dropdown group">
           <!-- TODO: investigate why there is padding on the left -->
@@ -105,8 +104,8 @@ import Hamburger from "./icons/Hamburger.astro";
         <a href="/contact" class="text-inherit no-underline">Contact us</a>
       </li>
     </ul>
-    <div class="flex flex-1 cursor-pointer items-center justify-end p-2">
-      <Hamburger class="mobile-menu-trigger h-6 w-6 lg:hidden" />
+    <div class="flex flex-1 items-center justify-end p-2">
+      <Hamburger class="mobile-menu-trigger h-6 w-6 cursor-pointer lg:hidden" />
     </div>
   </MenuItems>
 </Astronav>
@@ -194,9 +193,6 @@ import Hamburger from "./icons/Hamburger.astro";
             <a href="/conduct/conduct">Code of conduct</a>
           </li>
         </ul>
-      </li>
-      <li class="text-lg">
-        <a href="/videos" class="mb-2 font-bold">Videos</a>
       </li>
       <li class="text-lg">
         <div class="mb-2 font-bold">About us</div>
