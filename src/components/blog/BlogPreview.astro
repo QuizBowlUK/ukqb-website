@@ -13,7 +13,7 @@ const posts = (await getCollection("blog")).sort(
 
 <div class={className}>
   <h3>Blog</h3>
-  <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     {posts.slice(0, NUM_PREVIEW_POSTS).map((post) => <Card post={post} />)}
   </div>
   {
