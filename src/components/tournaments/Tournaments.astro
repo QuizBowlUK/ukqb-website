@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Card from "./Card.astro";
+import Dots from "./Dots.astro";
 
 const { class: className } = Astro.props;
 const tournaments = (await getCollection("tournaments")).sort(
@@ -12,5 +13,23 @@ const tournaments = (await getCollection("tournaments")).sort(
   <h3>Upcoming tournaments</h3>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
     {tournaments.map((tournament) => <Card tournament={tournament} />)}
+  </div>
+  <div class="mt-8 flex items-center justify-center gap-10">
+    <div class="flex items-center gap-2">
+      <Dots dots={1} />
+      Novice
+    </div>
+    <div class="flex items-center gap-2">
+      <Dots dots={2} />
+      Medium
+    </div>
+    <div class="flex items-center gap-2">
+      <Dots dots={3} />
+      Hard
+    </div>
+    <div class="flex items-center gap-2">
+      <Dots dots={4} />
+      Very hard
+    </div>
   </div>
 </div>
