@@ -17,8 +17,6 @@ Bonus questions in quizbowl are very similar to those in _University Challenge_,
 
 ## Quizbowl and _University Challenge_
 
-_For a deeper look into quizbowl history in the UK, see [this page](/resources/history)._
-
 Quizbowl is a sibling of _University Challenge_: they both developed from an American radio and TV show called _College Bowl_, which began in the 1950s. _University Challenge_ is focused on being an entertaining TV show, while quizbowl aims to produce the fairest possible competition between teams. Nevertheless, quizbowl players have an outstanding record of success on the show in recent years.
 
 ## Topic distribution
