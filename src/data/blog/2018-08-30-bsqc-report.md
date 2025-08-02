@@ -33,6 +33,6 @@ An enormous thanks is due once again to Edmund Dickinson for adapting the NAQT S
 
 #### Statistics
 
-Links to the statistics are the following: [prelims](http://www.hsquizbowl.org/db/tournaments/5089/stats/prelims/); [playoffs (with contributing morning games)](http://hsquizbowl.org/db/tournaments/5089/stats/playoffs/); [all games](http://hsquizbowl.org/db/tournaments/5089/stats/all_games/).
+Links to the statistics are the following: [prelims](https://www.hsquizbowl.org/db/tournaments/5089/stats/prelims/); [playoffs (with contributing morning games)](https://hsquizbowl.org/db/tournaments/5089/stats/playoffs/); [all games](https://hsquizbowl.org/db/tournaments/5089/stats/all_games/).
 
 The questions used are not publicly available, but if you would like information on how to purchase them then please email <contact@quizbowl.co.uk>.

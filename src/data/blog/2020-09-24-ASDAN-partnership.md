@@ -8,7 +8,7 @@ image:
     alt: Image related to 2020-09-24-ASDAN-partnership.md
 ---
 
-UKQB is extremely glad to announce our first international partnership with [**ASDAN China**](http://www.seedasdan.org/en/). In close cooperation, we are going to provide question sets and moderators for regional and national quizbowl tournaments for high school students in China in the coming academic year. Travel restrictions permitting, the national winners will be invited to one of the UKQB tournaments in 2021. More information will be coming soon on the UKQB website and [Facebook page](https://www.facebook.com/quizbowluk/). If you are a student in China willing to take part or a coach organising a team, please [contact ASDAN](mailto:info@seedasdan.org) for any inquiries.
+UKQB is extremely glad to announce our first international partnership with [**ASDAN China**](https://www.seedasdan.org/en/). In close cooperation, we are going to provide question sets and moderators for regional and national quizbowl tournaments for high school students in China in the coming academic year. Travel restrictions permitting, the national winners will be invited to one of the UKQB tournaments in 2021. More information will be coming soon on the UKQB website and [Facebook page](https://www.facebook.com/quizbowluk/). If you are a student in China willing to take part or a coach organising a team, please [contact ASDAN](mailto:info@seedasdan.org) for any inquiries.
 
 ##### About ASDAN
 

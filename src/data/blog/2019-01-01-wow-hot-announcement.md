@@ -14,7 +14,7 @@ We are excited to announce two quizbowl tournaments coming up in this month, **W
 
 The University of Warwick will be hosting WOW in conjuction with UK Quizbowl at the university campus in Coventry on Saturday, 19<sup>th</sup> January. This will be an **open** tournament – anybody, be they current student or long-since graduate, is eligible to enter – with a field cap of 18 teams.
 
-This event will be the UK mirror of the American tournament [Spartan Housewrite](http://hsquizbowl.org/db/questionsets/2185/), which is aimed at players with some previous experience of quizbowl. The difficulty is targeted at matching that of 2018’s [Cambridge Hard Autumn Tournament](/blog/2018-10-01-chat-2018-announcement) and similar to the 2017 [ACF Regionals](http://hsquizbowl.org/db/questionsets/1897/). The question distribution can be found [here](http://hsquizbowl.org/forums/viewtopic.php?f=8&t=21140), and the question set will **not** be Briticised.
+This event will be the UK mirror of the American tournament [Spartan Housewrite](https://hsquizbowl.org/db/questionsets/2185/), which is aimed at players with some previous experience of quizbowl. The difficulty is targeted at matching that of 2018’s [Cambridge Hard Autumn Tournament](/blog/2018-10-01-chat-2018-announcement) and similar to the 2017 [ACF Regionals](https://hsquizbowl.org/db/questionsets/1897/). The question distribution can be found [here](https://hsquizbowl.org/forums/viewtopic.php?f=8&t=21140), and the question set will **not** be Briticised.
 
 There are no eligibility restrictions for this tournament. To enter a team, please fill in the form **[here](https://goo.gl/forms/1MJaFkowvqLtHtIU2)**. The provisional entry fee is £70 per team, with discounts as follows:
 

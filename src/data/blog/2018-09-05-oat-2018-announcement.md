@@ -15,7 +15,7 @@ Base fees will be £60 per team, with a £20 discount for teams composed entirel
 
 This event is for registered students only. Sign up a team or as an individual here: **<https://goo.gl/forms/nsfWlEdppJunoX713>**.
 
-The tournament is based on the Early Fall Tournament (EFT) 2018 set, which is being played in the US and details of which can be found [here](http://hsquizbowl.org/forums/viewtopic.php?f=8&t=20808). The set will be changed so that the more egregious American content is removed and replaced with more British friendly questions.
+The tournament is based on the Early Fall Tournament (EFT) 2018 set, which is being played in the US and details of which can be found [here](https://hsquizbowl.org/forums/viewtopic.php?f=8&t=20808). The set will be changed so that the more egregious American content is removed and replaced with more British friendly questions.
 
 Difficulty wise, this tournament will be slightly more difficult than the easiest tournaments played on the UK quizbowl scene (e.g., ACF Fall or UK Novice, if you played last season), but easier than the British Student Quiz Championship. Novices are very much welcome to attend, but it is worth bearing in mind that the target difficulty is slightly above a set that’s aimed at people who’ve not played quizbowl before. There will be tournaments aimed explicitly at people who’ve not played before later in the year.
 
@@ -25,4 +25,4 @@ An example question from last year’s event is as follows:
 >   <span style="font-weight: bold">This man insisted that most of his alleged crimes were foreign propaganda in a 1997 interview with Nate Thayer. This leader’s economic policies were taken from a dissertation that an advisor wrote at the Sorbonne in 1959. Two years after taking power, he revealed that the existence of the nation’s ruling party, called “The Organization” or Angkar [ahn-kuh]. This man, whose common name is actually a nom de guerre, went by the title (*)</span> “Brother Number One” and overthrew the dictator Lon Nol. To implement this man’s idea of returning the country to “Year Zero,” the army forced millions of people into the countryside, where they ended up in “killing fields” and death camps like S-21. For 10 points, name this murderous leader of Democratic Kampuchea and the Khmer Rouge.</p>
 > <p style="font-size: 18px">ANSWER: <span style="font-weight: bold; text-decoration: underline;">Pol Pot</span> (or <span style="font-weight: bold; text-decoration: underline;">Saloth Sar</span>)</p>
 
-All the questions from last year’s set can be found [here](http://collegiate.quizbowlpackets.com/2048/).
+All the questions from last year’s set can be found [here](https://collegiate.quizbowlpackets.com/2048/).

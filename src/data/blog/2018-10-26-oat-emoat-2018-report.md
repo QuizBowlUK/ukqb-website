@@ -25,7 +25,7 @@ _Southampton A (left) went up against Oxford A (right) for the OAT title._
 
 That meant there would to be a one-game final between Oxford A and Southampton A. The final was a tense affair, with neither team managing to get their nose significantly in front. Oxford A battled their way to a lead by question 20, but their advantage was narrow enough that if Southampton were to get the last question they would win the tournament. On the last starter, however, Oxford clinched the title.
 
-Top individual scorers in the prelims were Evan Lynch, Joseph Krol of Cambridge A and Ben Beardsley of Warwick A. Congratulations to them and everyone who participated in this tournament, which was played to a very high standard. Full tournament statistics can be found [here](http://hsquizbowl.org/db/tournaments/5228/).
+Top individual scorers in the prelims were Evan Lynch, Joseph Krol of Cambridge A and Ben Beardsley of Warwick A. Congratulations to them and everyone who participated in this tournament, which was played to a very high standard. Full tournament statistics can be found [here](https://hsquizbowl.org/db/tournaments/5228/).
 
 Edinburgh welcomed eight teams to the first quizbowl tournament held north of the border: two teams from each of the Universities of Edinburgh, Glasgow and Dundee, a team from Durham, and an exhibition team comprising players from Strathclyde, Queen’s Belfast, Heriot Watt and Cambridge. Teams played in a round robin format, which made for a slightly shorter, but by no means less exciting, day compared to Oxford.
 

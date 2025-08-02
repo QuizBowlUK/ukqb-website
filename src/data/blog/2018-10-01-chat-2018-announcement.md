@@ -25,4 +25,4 @@ This tournament is officially around 'regular' difficulty, but in practice is li
 >
 > <p style="font-size: 18px">ANSWER: Virginia <span style="font-weight: bold; text-decoration: underline;">Woolf</span></p>
 
-The full set of packets from last year is available online [here](http://collegiate.quizbowlpackets.com/2056/).
+The full set of packets from last year is available online [here](https://collegiate.quizbowlpackets.com/2056/).

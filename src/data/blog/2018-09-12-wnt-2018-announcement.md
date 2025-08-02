@@ -19,4 +19,4 @@ A sample question from the tournament last year is below:
 >
 > ANSWER: <span style="font-weight: bold; text-decoration: underline;">Afghanistan</span>.
 
-The whole tournament from 2017 can be found online [here](http://collegiate.quizbowlpackets.com/2040/).
+The whole tournament from 2017 can be found online [here](https://collegiate.quizbowlpackets.com/2040/).
