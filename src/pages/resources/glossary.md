@@ -15,9 +15,11 @@ Over the years, the quizbowl community has developed its own somewhat specific j
 
 **Cap:** The number of teams which can play in a given tournament: constraints on rooms and number of people willing to moderate may lead to small field caps. The largest UK tournament has a field cap of 24 teams.
 
-**Collegiate:** A tournament which is only open to teams comprised of current university students.
+**Closed:** A tournament which is only open to teams comprised of current university students.
 
 **Distribution:** The way in which different topics are spread in a given packet. Most packets will contain questions on science, literature, history, art, classical music, religion, mythology, philosophy, social science, geography and ‘trash’: this rewards teams with a wide range of expertise. Distributions are usually described in the form X/X, where X is a number; this means the number of starters and bonuses respectively of a category that will appear in an average packet.
+
+**Dot:** The dot scale is the main difficulty scale for quizbowl tournaments. One dot ● tournaments (e.g. ACF Fall, British Novice) are intended for novices, two dot ●● tournaments (e.g. ACF Winter) are of medium difficulty, three dot ●●● tournaments (e.g. ACF Regionals) are hard, and four dot ●●● tournaments (e.g. ACF Nationals) are very hard.
 
 **Grail:** The act of getting all of the tossups in a match. This happens very, very rarely.
 
