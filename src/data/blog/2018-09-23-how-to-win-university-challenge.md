@@ -72,4 +72,4 @@ Quizbowl will also help you with speed, particularly in conferring. Despite his 
 
 Winning the final, of course, is something that really depends on the luck of the questions you get, and holding your nerve. By that point, your opponent will, by definition, be a team just as good at _University Challenge_ as you are, and, by the evidence of recent years, almost certainly will have played quizbowl --- don’t put yourself at an unnecessary disadvantage!
 
-This whole process for next year’s competition will be starting soon, so why not try out quizbowl at one of our upcoming tournaments in [**Oxford**]({% post_url /articles/2018-09-05-oat-2018-announcement %}), [**Edinburgh**]({% post_url /articles/2018-09-10-emoat-2018-announcement %}), or [**Warwick**]({% post_url /articles/2018-09-12-wnt-2018-announcement %})?
+This whole process for next year’s competition will be starting soon, so why not try out quizbowl at one of our upcoming tournaments in [**Oxford**](/blog/2018-09-05-oat-2018-announcement), [**Edinburgh**](/blog/2018-09-10-emoat-2018-announcement), or [**Warwick**](/blog/2018-09-12-wnt-2018-announcement)?

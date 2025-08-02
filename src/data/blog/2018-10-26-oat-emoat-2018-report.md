@@ -45,4 +45,4 @@ Full EMOAT statistics will be available soon; in the meantime, some data is avai
 
 The photos from the day can be found at the following links: [OAT photos](https://photos.app.goo.gl/Ao2ZUcx8xjTdsH5x6), [EMOAT photos](https://photos.app.goo.gl/t4jWDLfLkB9VXwQ7A).
 
-If you have enjoyed OAT or EMOAT, or have not yet had a chance to play a quizbowl tournament, check out the [announcement]({% post_url /articles/2018-10-13-novice-2018-announcement %}) of the 2018 British Novice Tournament: it will be the best chance to get started in quizbowl this year!
+If you have enjoyed OAT or EMOAT, or have not yet had a chance to play a quizbowl tournament, check out the [announcement](/blog/2018-10-13-novice-2018-announcement) of the 2018 British Novice Tournament: it will be the best chance to get started in quizbowl this year!

@@ -32,4 +32,4 @@ Four may play in any one game, but larger squads are permissible. One substituti
 
 The questions themselves are adapted by UK Quizbowl from Division I of the NAQT Sectional Championship Tournament, which has already been played in the USA. Players intending to participate in BSQC have a personal responsibility to ensure that they avoid contact with this question set and discussion following it.
 
-A report from BSQC–2018 can be found [on our blog]({% post_url /articles/2018-08-30-bsqc-report %}). We look forward to seeing a great number of teams on the 10<sup>th</sup>!
+A report from BSQC–2018 can be found [on our blog](/blog/2018-08-30-bsqc-report). We look forward to seeing a great number of teams on the 10<sup>th</sup>!
