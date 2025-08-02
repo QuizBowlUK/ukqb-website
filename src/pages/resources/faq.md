@@ -35,7 +35,7 @@ This depends on the number of rounds, which depends on the number of teams and t
 
 # How much does it cost to attend a tournament?
 
-Tournament fees usually range from £30 to £60 per team. There are usually discounts available for new teams, and teams who have travelled long distances to attend. These fees pay the costs of organising the tournament, which includes paying the question writers, possibly venue hire, as well as supporting the society which hosts the tournaments.
+Tournament fees usually range from £80 to £100 per team. There are usually discounts available for new teams, and teams who have travelled long distances to attend. These fees pay the costs of organising the tournament, which includes paying the question writers, possibly venue hire, as well as supporting the society which hosts the tournaments.
 
 In tandem with this, hosting tournaments can be a useful way for new societies to earn money to put towards attending other tournaments.
 
