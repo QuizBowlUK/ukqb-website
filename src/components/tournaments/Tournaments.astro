@@ -14,7 +14,7 @@ const tournaments = (await getCollection("tournaments")).sort(
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
     {tournaments.map((tournament) => <Card tournament={tournament} />)}
   </div>
-  <div class="mt-8 flex items-center justify-center gap-10">
+  <div class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
     <div class="flex items-center gap-2">
       <Dots dots={1} />
       Novice
