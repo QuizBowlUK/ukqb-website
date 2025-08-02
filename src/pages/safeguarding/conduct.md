@@ -39,7 +39,7 @@ UKQB takes cheating at online tournaments very seriously, and we see it as compl
 
 The TD may at various points enter the virtual room. One purpose of this is to ensure that competitors are complying with the above rules and to ensure no wrongdoing is taking place.
 
-Competitors who believe another participant may be cheating are able to report such behaviour to the TD directly or via the [**cheating reporting form**](/conduct/cheating/).
+Competitors who believe another participant may be cheating are able to report such behaviour to the TD directly or via the [**cheating reporting form**](/safeguarding/cheating/).
 
 UKQB reserves the right to suspend or expel players from tournaments who are suspected of rule breaking. We also reserve the right to draw inferences based on statistical evidence, though this is unlikely to form the entire basis of any decision made by a UKQB TD or committee.
 
