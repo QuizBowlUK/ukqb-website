@@ -9,12 +9,12 @@ export interface Props {
 const { committee } = Astro.props;
 const { position, name, bio, image } = committee.data;
 
-const imagePath = `/src/assets/${image}`;
-
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/**/*.{jpeg,jpg,png,gif,webp}",
 );
-if (!images[imagePath]) {
+
+const imagePath = `/src/assets/${image}`;
+if (image && !images[imagePath]) {
   throw new Error(
     `"${image}" does not exist in glob: "src/assets/**/*.{jpeg,jpg,png,gif,webp}"`,
   );
@@ -28,7 +28,11 @@ const formattedBio = bio.replace(/\n/g, "<br>");
   class="hover:bg-ukqb-red-hover flex flex-col items-center gap-x-6 gap-y-4 rounded-lg p-4 transition-colors duration-300 md:flex-row md:items-center md:gap-y-0"
 >
   <div class="w-full md:w-1/4">
-    <Image src={images[imagePath]()} alt={name} class="h-auto w-full" />
+    {
+      image && (
+        <Image src={images[imagePath]()} alt={name} class="h-auto w-full" />
+      )
+    }
   </div>
   <div class="w-full md:w-3/4">
     <h2>{position}: <span class="font-normal">{name}</span></h2>
