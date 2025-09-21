@@ -10,7 +10,8 @@ import Hamburger from "./icons/Hamburger.astro";
   <MenuItems class="flex justify-between gap-x-8 py-6">
     <div class="flex flex-1 items-center">
       <a href="/">
-        <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto" />
+        <!-- Padding to force logo to align vertically with the rest of the header -->
+        <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto pt-3" />
       </a>
     </div>
     <ul
