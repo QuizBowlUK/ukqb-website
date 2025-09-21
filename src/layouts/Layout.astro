@@ -27,12 +27,12 @@ const fullTitle = title ? `${title} • UK Quizbowl` : "UK Quizbowl";
     <title>{fullTitle}</title>
   </head>
   <body class="bg-ukqb-red-bg m-0 p-0">
-    <Header />
     <div class="container mx-auto">
       <!-- The final max width excludes the padding, so if we put the padding in the
            container div above, the actual max width is [max width defined in container class
            + padding] which causes the contents to overflow -->
-      <div class="px-10 md:px-20 lg:px-40">
+      <div class="px-5 md:px-20 lg:px-40">
+        <Header />
         <slot />
       </div>
     </div>
