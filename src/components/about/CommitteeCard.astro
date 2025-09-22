@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+
+export interface Props {
+  committee: CollectionEntry<"committee">;
+}
+
+const { committee } = Astro.props;
+const { position, name, bio, image } = committee.data;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/**/*.{jpeg,jpg,png,gif,webp}",
+);
+
+const imagePath = `/src/assets/${image}`;
+if (image && !images[imagePath]) {
+  throw new Error(
+    `"${image}" does not exist in glob: "src/assets/**/*.{jpeg,jpg,png,gif,webp}"`,
+  );
+}
+
+// Convert newlines to HTML line breaks
+const formattedBio = bio.replace(/\n/g, "<br>");
+---
+
+<div
+  class="hover:bg-ukqb-red-hover flex flex-col items-center gap-x-6 gap-y-4 rounded-lg py-4 transition-colors duration-300 md:flex-row md:items-center md:gap-y-0 md:p-4"
+>
+  <div class="w-full md:w-1/4">
+    {
+      image && (
+        <Image src={images[imagePath]()} alt={name} class="h-auto w-full" />
+      )
+    }
+  </div>
+  <div class="w-full md:w-3/4">
+    <h2>{position}: <span class="font-normal">{name}</span></h2>
+    <p set:html={formattedBio} class="text-xl" />
+  </div>
+</div>

@@ -1,0 +1,29 @@
+---
+import Button from "./Button.astro";
+const { class: className } = Astro.props;
+---
+
+<div class={className}>
+  <h3>What is quizbowl?</h3>
+  <p class="-mt-2 text-xl md:-mt-6 md:text-3xl/12">
+    Quizbowl is, essentially, a game similar to the TV show University
+    Challenge, but with some differences in focus. Click on the links below to
+    find out more!
+  </p>
+  <div class="flex flex-wrap gap-x-2 gap-y-2">
+    <Button variant="secondary" href="/resources/intro-to-qb">Overview</Button>
+    <Button variant="secondary" href="/resources/glossary"
+      >Quizbowl glossary</Button
+    >
+  </div>
+
+  <h3 class="mt-12 md:mt-24">Who are UK Quizbowl?</h3>
+  <p class="-mt-2 text-xl md:-mt-6 md:text-3xl/12">
+    We help run quizbowl tournaments throughout the year, from novice
+    tournaments for beginners to national championships. If you are interested
+    in setting up a quiz society at your university but do not know where to
+    start or just want to know more about upcoming tournaments, please contact
+    us!
+  </p>
+  <Button href="/contact">Get in touch!</Button>
+</div>

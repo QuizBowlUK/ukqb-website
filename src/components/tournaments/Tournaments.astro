@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import Card from "./Card.astro";
+import Dots from "./Dots.astro";
+
+const { class: className } = Astro.props;
+
+// Get current date in UK timezone
+const now = new Date();
+const ukDate = new Date(
+  now.toLocaleString("en-US", { timeZone: "Europe/London" }),
+);
+ukDate.setHours(0, 0, 0, 0);
+
+// Filter tournaments to only show tournaments happening today or later
+const allTournaments = await getCollection("tournaments");
+const futureTournaments = allTournaments.filter((tournament) => {
+  const tournamentDate = new Date(tournament.data.date);
+  tournamentDate.setHours(0, 0, 0, 0);
+  return tournamentDate >= ukDate;
+});
+
+const tournaments = futureTournaments.sort(
+  (a, b) => a.data.date.getTime() - b.data.date.getTime(),
+);
+---
+
+<div class={className}>
+  <h3>Upcoming tournaments</h3>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
+    {tournaments.map((tournament) => <Card tournament={tournament} />)}
+  </div>
+  <div class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
+    <div class="flex items-center gap-2">
+      <Dots dots={1} />
+      Novice
+    </div>
+    <div class="flex items-center gap-2">
+      <Dots dots={2} />
+      Medium
+    </div>
+    <div class="flex items-center gap-2">
+      <Dots dots={3} />
+      Hard
+    </div>
+    <div class="flex items-center gap-2">
+      <Dots dots={4} />
+      Very hard
+    </div>
+  </div>
+</div>

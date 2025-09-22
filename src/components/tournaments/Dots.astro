@@ -1,0 +1,27 @@
+---
+import Dot from "../icons/Dot.astro";
+import HalfDot from "../icons/HalfDot.astro";
+
+export interface Props {
+  dots: number;
+  class?: string;
+}
+
+const { dots, class: className } = Astro.props;
+
+const colours = ["fill-[#059]", "fill-[#892]", "fill-[#812]", "fill-[#fa0]"];
+const numFullDots = Math.floor(dots);
+---
+
+<div class:list={["flex items-center gap-0.5", className]}>
+  {
+    Array.from({ length: numFullDots }, () => (
+      <Dot class:list={["h-4 w-4", colours[numFullDots - 1]]} />
+    ))
+  }
+  {
+    dots % 1 === 0.5 && (
+      <HalfDot class:list={["h-4 w-4", colours[numFullDots - 1]]} />
+    )
+  }
+</div>

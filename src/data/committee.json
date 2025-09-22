@@ -1,0 +1,164 @@
+[
+  {
+    "position": "President",
+    "name": "Bethany Howard",
+    "bio": "Bethany is the UKQB president, having previously held the role of social media officer on the committee. She is in her fourth and final year of an MEng in Biomedical Engineering at Imperial, where she serves as an OCM on the quiz society committee. When she’s not quizzing or doing her degree, you can usually find Bethany playing hockey, consuming a concerning amount of celebrity gossip or ranting about motorsports.",
+    "image": "committee-25/bethany.jpeg"
+  },
+  {
+    "position": "Treasurer",
+    "name": "Sam Moore",
+    "bio": "Sam is the UKQB Treasurer. After completing a PhD in Cosmology at Durham University, Sam is now working as a climate researcher and teaching in China - emulating all of the best traits of Richard Nixon. Outside of quizzing, Sam enjoys reading literature and thinking about how enjoyable economics is.",
+    "image": "committee-25/sam.png"
+  },
+  {
+    "position": "Secretary",
+    "name": "Kai Madgwick",
+    "bio": "Kai is the secretary of UK Quizbowl. They are currently in their second year of a PhD in AI and Astrophysics at the University of Manchester, where they are also the Competitive Quizzing Officer of the Quiz Society. Prior to that, they played quizbowl for 3 years whilst on their Integrated Masters at Durham, where they spent 2 years as the President of DUQS. They maintain that astronomy is the best subject, not only in quiz, but in every aspect of life.",
+    "image": "committee-25/kai.jpg"
+  },
+  {
+    "position": "Tournament Supervisor",
+    "name": "Rhys Lewis",
+    "bio": "Rhys is the UKQB tournaments supervisor, and has just finished his masters in mathematics at the University of Sheffield, having previously spent three years at the University of Cambridge, being society president for a year. Outside of quizzing, he enjoys watching sports, mostly football, cricket and Formula 1, listening to music, and annoying people with his various takes on food and TV shows.",
+    "image": "committee-25/rhys.png"
+  },
+  {
+    "position": "Blog Manager",
+    "name": "Allison Owens",
+    "bio": "Allison is the UKQB Blog Manager and has been playing quizbowl since 2022. She finished a Masters in linguistics at the University of Sheffield last year.\n\nWhen she isn't quizzing, Allison may be found working at the University of Sheffield, talking about minimalist syntax and engaging with several crafty hobbies.",
+    "image": "committee-25/allison.png"
+  },
+  {
+    "position": "Outreach Officer",
+    "name": "Brendan Bethlehem",
+    "bio": "Brendan is UKQB's outreach officer, a role which can be summarised as making sure as many people as possible get to play student quizbowl. He is currently a third year Linguistics student at the University of Cambridge, specialising in Historical Linguistics.\n\nWhen not quizzing, Brendan can be found writing and editing quiz questions, doing admin work in his other role as President of Cambridge University Quiz Society, on various forms of transit (see photo), rock climbing, singing, at a pub, or doing several of the above things combined.",
+    "image": "committee-25/brendan.png"
+  },
+  {
+    "position": "Communications Officer",
+    "name": "Oscar O'Flanagan",
+    "bio": "Oscar is serving as UKQB's communications officer, keeping societies and external players in the loop about our events. Previously, he held positions as blog manager and president in the 2024-25 season. Oscar is entering his second year of a PhD in atmospheric physics at Imperial College London, where he had been introduced to quizbowl as an undergraduate.\n\nIn the event that Oscar is neither working, quizzing, nor writing quizzes, he may be playing classical guitar or replaying old games in the Total War series.",
+    "image": "committee-25/oscar.jpg"
+  },
+  {
+    "position": "Social Media Manager",
+    "name": "Isobel Dobbie",
+    "bio": "Izzy is the social media manager for UKQB and is a second year English Literature student at Sheffield. Outside of the quiz world, she can be found attempting to write her essays, reading either her course literature or her favourite romantasies, and going to galleries. She is an understated and rational fan of the Pre-Raphaelite Brotherhood.",
+    "image": "committee-25/izzy.jpg"
+  },
+  {
+    "position": "Safeguarding Officer",
+    "name": "Nathan Easow",
+    "bio": "Nathan is in his third year of studying Medicine at the University of Manchester, and is the Treasurer of Manchester University Quiz Society.\n\nWhen he isn’t quizzing, he can be found playing grand strategy games, singing, and experiencing the joy and suffering (mostly suffering) associated with being a supporter of Manchester United.",
+    "image": "committee-25/nathan.jpg"
+  },
+  {
+    "position": "Safeguarding Officer",
+    "name": "CT Tang",
+    "bio": "CT (pictured on the left) is entering his final year of Materials Science & Engineering at the University of Sheffield. He is also the Quiz Bowl officer for Sheffield Quiz Society, having fallen down the quiz hole in 2024 (he has since never escaped and has made a life down there).\n\nWhen escaped from the lab, he can be found frolicking in the Peak District, falling over repeatedly on ice, or generally scampering about and causing problems before he is soon re-captured.",
+    "image": "committee-25/ct.jpg"
+  },
+  {
+    "position": "Digital Content Officer",
+    "name": "Jamie Burchett",
+    "bio": "Jamie is UKQB's Digital Content Officer, in charge of video output, a largely practical role despite having done an entirely theoretical MA in Film Studies at Southampton, where they served on the quiz society committee and helped bring them back into quizbowl. They are also a prolific writer for tournaments within and outside of the UK circuit, which has led to them teaming up with Brendan to head-edit 2025's housewritten British Novice set. Outside of quiz, they can usually be found listening to or making music, or scrolling aimlessly through social media.",
+    "image": ""
+  },
+  {
+    "position": "Webmaster",
+    "name": "Justin Keung",
+    "bio": "Justin is the webmaster for UKQB. He manages this website and will happily take feature requests to scratch his web dev itch. He recently graduated with a BEng Computing from Imperial and is now working as a software engineer.\n\nWhen not quizzing or carding, he can be found playing the piano, doom scrolling, or stressing about things.",
+    "image": "committee-25/justink.jpeg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Agnijo Banerjee",
+    "bio": "Agnijo is a UKQB Ordinary Committee Member who has been playing student quizbowl since 2022 for Cambridge. They are in their second year of being on the UKQB Committee and hope to contribute towards maintaining a welcoming environment throughout the quiz circuit and towards the smooth running of the circuit. They are currently in their fourth year of a PhD in maths.",
+    "image": "committee-25/agnijo.png"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Mikey Brown",
+    "bio": "Mikey is (slowly and painfully) pursuing a PhD in Political Science at the University of Birmingham exploring the Industrial Relations of neoliberal public services. He has played quizbowl since 2023 and is Tournament Secretary at Birmingham QuizSoc.",
+    "image": "committee-25/mikey.png"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Louise Chase",
+    "bio": "Louise is serving on UQKB's committee as an OCM, having previously studied twice at the University of Southampton: first for a BA in Archaeology & History, and more recently for a Master's in Creative Writing. At Southampton she previously served on their committee as Quiz Master of the Arts, though she is currently on the hunt for somewhere to begin her PhD.\n\nWhen not quizzing (and avoiding questions of when she'll appear on The Chase) Louise can be found rambling about the Hunters of Artemis and Assassin's Creed, or strategically planning her next trip to Waterstones to expand the library slowly overtaking her bedroom.",
+    "image": "committee-25/louise.jpg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Benedykt Chodzko-Zajko",
+    "bio": "Benedykt is a UKQB Ordinary Committee Member who is also the President of the University of Southampton's Quiz Society.  He is studying for an MEng in Mechanical Engineering.\n\nIn the unlikely event that quizzing or engineering is not taking over his life, he can be found on a train or at the airport, or watching sport, taking a particular interest in shouting at Ferrari's Formula 1 strategists through the television.",
+    "image": "committee-25/benedykt.jpg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Robert Crawley",
+    "bio": "Robert is an OCM on the current UKQB committee. Prior to this, he spent two years as Competitions Convenor for Warwick University Quiz Society whilst completing his degree in mathematics, during which time he also helped establish WaShBowl.\n\nWhen not frantically trying to come up with new ideas for QLL or WaShBowl, he can be found applying for PhDs, coding, being pressed into DIY and wondering how many times he can mention WaShBowl into this bio before the president tells him off.",
+    "image": ""
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Ros Daffin",
+    "bio": "Ros is an OCM on this year's UKQB committee. She's going into her final year of Biomedical Sciences at Southampton, where she is currently Vice President of the Quiz Society after holding a succession of other positions.\n\nWhen not quizzing or in a lab they can be found listening to music, attempting to learn various languages or running, occasionally all at the same time.",
+    "image": "committee-25/ros.jpg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Lewys Jenkins",
+    "bio": "Lewys is a UKQB Ordinary Committee Member, helping represent the interests of the University of Bristol where he has played Quizbowl for two years and failed to get onto the Quiz Society committee twice. Having studied Mathematics at Bristol, his hobbies include folding under no pressure at maths questions, perusing Waterstones at length and glazing to an incredible degree Swansea City Association Football Club.",
+    "image": "committee-25/lewys.jpg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Justin Lee",
+    "bio": "Justin Lee is a UKQB Ordinary Committee Member, serving his third term in four years. Having finished his Chemistry Masters degree, he is now on the hunt for a graduate course.\n\nJustin's non-quiz hobbies include enjoying his selection of history podcasts and video games, writing fanfiction about the Redwall series, and (ineffectually) supporting Leicester City Football Club.",
+    "image": "committee-25/justinl.jpg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Nathan Long",
+    "bio": "Nathan is an OCM on this year's committee, and is a second year Chemistry student at Imperial College London. He is also Treasurer at ICQS, and played his first tournament at British Novice 2024.\n\nWhen not quizzing or inhaling fumes in a windowless synthesis lab, he can be found cooking, looking at paintings of ships, or forgetting basic degree content. The highs and lows of Nathan's weeks involve weekly quiz practice and having to watch Manchester United (in that order).",
+    "image": "committee-25/nathan.png"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Jacob Price",
+    "bio": "Jacob is an ordinary member of the UKQB committee. He has just finished his masters in physics and astrophysics at the University of Sheffield, and is now starting a PhD at the University of Cambridge. His favourite quiz subjects are history, geography, astronomy and pop culture, but when not quizzing, you can typically find him listening to Björk and Sonic Youth or doing some sports-related activity.",
+    "image": "committee-25/jacob.jpg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Tom Roberts",
+    "bio": "Tom is an OCM who has recently graduated from a degree in History and Politics at the University of Sheffield, during which time he was a member of the quiz society for 2 years and served on committee for the past year.\n\nWhen not failing to answer questions on books he has read and his degree, Tom can usually be found watching Leeds United attempt to play football, listening to Sufjan Stevens or watching youtube videos about rollercoasters.",
+    "image": "committee-25/tom.jpg"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Aisling Skeet",
+    "bio": "Aisling is an OCM currently in her final year of studying Psychology at Durham. She is the president of Durham University Quiz Society, and is also the designer and manufacturer of Kitsune buzzers.\n\nOutside of quiz, Aisling enjoys building 3D printers and CNC machines, and infodumping on anyone within range about autism research. She can be found attempting to convince DUQS members to listen to the Magnus Archives.",
+    "image": "committee-25/aisling.png"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Aaron Storr",
+    "bio": "Aaron is an Ordinary Member of the UKQB Committee. He previously studied Politics at Sheffield University, and was formerly the Publicity Officer for Sheffield Quiz Society.\n\nOn the extremely rare occasions where Aaron is not quizzing at UKQB or OQL events, you might find him engaging in some of his other hyperfixations such as Rubik's Cubes, Grand Strategy games, and continually learning about his quiz specialty; history.",
+    "image": "committee-25/aaron.png"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Abigail Tan",
+    "bio": "Abigail is a UKQB OCM now in her fourth year serving on the committee. She played student quizbowl from 2020 to 2023 while studying maths at Cambridge, and has continued to be involved in open tournaments. As a new member of ACF and editor for the upcoming 2026 ACF Nationals, this year she hopes in particular to help with logistics coordinating ACF tournaments in the UK. When not quizzing, Abigail can often be found studying ancient history, learning old languages, or reading.",
+    "image": "committee-25/abigail.png"
+  },
+  {
+    "position": "Ordinary Member",
+    "name": "Benjamin Watson",
+    "bio": "Benjamin is an ordinary member of the UKQB committee. After studying Philosophy, Politics and Economics at Warwick, they recently completed a Masters degree in American Literature at Oxford, playing for both universities' quizbowl teams. They particularly enjoy questions on literature, philosophy, critical theory and current affairs.\n\nOutside of quiz, their interests include running, looking at contemporary art, and adding to their concerningly overflown bookshelves in a second-hand shop somewhere.",
+    "image": "committee-25/benjamin.jpg"
+  }
+]

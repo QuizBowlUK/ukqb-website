@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import MarkdownLayout from "./MarkdownLayout.astro";
+
+export interface Props {
+  frontmatter: CollectionEntry<"blog">["data"];
+}
+
+const { frontmatter } = Astro.props;
+const { title, description, date, image } = frontmatter;
+
+const images = import.meta.glob<{ default: any }>(
+  "/src/assets/blog/**/*.{jpeg,jpg,png,gif,webp}",
+);
+const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
+---
+
+<MarkdownLayout frontmatter={frontmatter}>
+  <div class="-mb-4 text-gray-600" slot="date">
+    {
+      date.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })
+    }
+  </div>
+  <h2 class="-mt-4 font-normal text-gray-600 italic" slot="description">
+    {description}
+  </h2>
+  <div class="mb-8 aspect-[16/9] w-full" slot="image">
+    <Image
+      src={images[featurePath]()}
+      alt={title}
+      class="h-full w-full object-cover object-center"
+    />
+  </div>
+  <slot />
+</MarkdownLayout>

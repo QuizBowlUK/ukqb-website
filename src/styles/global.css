@@ -1,0 +1,59 @@
+@import "@fontsource/atkinson-hyperlegible/400.css";
+@import "@fontsource/atkinson-hyperlegible/700.css";
+
+/* Disable preflight for Tailwind */
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-ukqb-red: #aa0000;
+  --color-ukqb-red-bg: #fffafa;
+  --color-ukqb-red-hover: #ffeded;
+  --font-sans: "Atkinson Hyperlegible", sans-serif;
+}
+
+@layer base {
+  h3 {
+    @apply text-2xl md:text-4xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  html,
+  button {
+    @apply font-sans;
+  }
+
+  /* Remove default button styling */
+  button {
+    @apply cursor-pointer border-none bg-transparent p-0;
+  }
+
+  button:focus {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .card-shadow {
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-dropdown {
+    @apply relative pl-0;
+  }
+
+  .navbar-dropdown-items {
+    @apply bg-ukqb-red-bg absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-1 border-gray-300 p-3 shadow-sm;
+  }
+
+  .dropdown-item {
+    @apply flex cursor-pointer flex-col gap-2 rounded-lg p-4 transition-colors duration-200 select-none;
+  }
+
+  .dropdown-item:hover {
+    @apply bg-ukqb-red-hover;
+  }
+}

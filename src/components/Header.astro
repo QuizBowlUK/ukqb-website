@@ -1,0 +1,251 @@
+---
+import { Astronav, Dropdown, DropdownItems, MenuItems } from "astro-navbar";
+import { Image } from "astro:assets";
+import logo from "../assets/logo-cropped.png";
+import ChevronDown from "./icons/ChevronDown.astro";
+import Hamburger from "./icons/Hamburger.astro";
+---
+
+<Astronav>
+  <MenuItems class="flex justify-between gap-x-8 py-6">
+    <div class="flex flex-1 items-center">
+      <a href="/">
+        <!-- Padding to force logo to align vertically with the rest of the header -->
+        <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto pt-3" />
+      </a>
+    </div>
+    <ul
+      class="my-0 hidden list-none items-center justify-center gap-x-12 pl-0 text-lg lg:flex"
+    >
+      <li><a href="/blog" class="text-inherit no-underline">Blog</a></li>
+      <li>
+        <Dropdown class="navbar-dropdown group">
+          <!-- TODO: investigate why there is padding on the left -->
+          <button class="flex items-center text-lg text-inherit">
+            <span>Resources</span>
+            <ChevronDown
+              class="size-5 transform transition-transform duration-200 group-open:rotate-180 md:ml-2"
+            />
+          </button>
+          <DropdownItems>
+            <div class="navbar-dropdown-items">
+              <a href="/resources/intro-to-qb" class="dropdown-item">
+                Introduction to quizbowl
+              </a>
+              <a href="/resources/discord" class="dropdown-item">Discord</a>
+              <a href="/resources/societies" class="dropdown-item">
+                University quiz societies
+              </a>
+              <a href="/resources/study-resources" class="dropdown-item">
+                Study resources
+              </a>
+              <a href="/resources/forums" class="dropdown-item">
+                Quizbowl forums
+              </a>
+              <a href="/resources/statistics" class="dropdown-item">
+                Statistics
+              </a>
+              <a href="/resources/hosting" class="dropdown-item">
+                Tournament hosting guide
+              </a>
+              <a href="/resources/glossary" class="dropdown-item">
+                Quizbowl glossary
+              </a>
+              <a href="/resources/faq" class="dropdown-item">FAQ</a>
+            </div>
+          </DropdownItems>
+        </Dropdown>
+      </li>
+      <li>
+        <Dropdown class="navbar-dropdown group">
+          <!-- TODO: investigate why there is padding on the left -->
+          <button class="flex items-center text-lg text-inherit">
+            <span>Safeguarding</span>
+            <ChevronDown
+              class="size-5 transform transition-transform duration-200 group-open:rotate-180 md:ml-2"
+            />
+          </button>
+          <DropdownItems>
+            <div class="navbar-dropdown-items grid-cols-1">
+              <a
+                href="https://forms.gle/Cu653HRzndZiU4mM8"
+                class="dropdown-item"
+              >
+                Safeguarding reporting form
+              </a>
+              <a href="/safeguarding/cheating" class="dropdown-item">
+                Cheating reporting form
+              </a>
+              <a href="/safeguarding/conduct" class="dropdown-item">
+                Code of conduct
+              </a>
+            </div>
+          </DropdownItems>
+        </Dropdown>
+      </li>
+      <li>
+        <Dropdown class="navbar-dropdown group">
+          <!-- TODO: investigate why there is padding on the left -->
+          <button class="flex items-center text-lg text-inherit">
+            <span>About us</span>
+            <ChevronDown
+              class="size-5 transform transition-transform duration-200 group-open:rotate-180 md:ml-2"
+            />
+          </button>
+          <DropdownItems>
+            <div class="navbar-dropdown-items grid-cols-1">
+              <a href="/about/statement-of-purpose" class="dropdown-item">
+                Statement of purpose
+              </a>
+              <a href="/about/committee" class="dropdown-item">Committee</a>
+            </div>
+          </DropdownItems>
+        </Dropdown>
+      </li>
+      <li>
+        <a href="/contact" class="text-inherit no-underline">Contact us</a>
+      </li>
+    </ul>
+    <div class="flex flex-1 items-center justify-end p-2">
+      <Hamburger class="mobile-menu-trigger h-6 w-6 cursor-pointer lg:hidden" />
+    </div>
+  </MenuItems>
+</Astronav>
+
+<div
+  id="mobile-menu-overlay"
+  class="mobile-menu-trigger pointer-events-none fixed inset-0 z-20 bg-black opacity-0 transition-opacity duration-300"
+>
+</div>
+
+<div
+  id="mobile-menu"
+  class="bg-ukqb-red-bg fixed inset-y-0 right-0 z-40 w-64 translate-x-full overflow-y-auto shadow-lg duration-300"
+>
+  <div class="border-dark flex items-center justify-between border-b px-4 py-2">
+    <div class="text-lg font-bold">Menu</div>
+    <div class="mobile-menu-trigger cursor-pointer p-2">
+      <span class="sr-only">Close menu</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={2}
+          d="M6 18L18 6M6 6l12 12"
+        >
+        </path>
+      </svg>
+    </div>
+  </div>
+  <nav class="px-4 py-2">
+    <ul class="space-y-4 pl-0">
+      <li class="text-lg">
+        <a href="/blog" class="mb-2 font-bold">Blog</a>
+      </li>
+      <li class="text-lg">
+        <div class="mb-2 font-bold">Resources</div>
+        <ul class="ml-4 space-y-2 pl-0">
+          <li>
+            <a href="/resources/intro-to-qb">Introduction to quizbowl</a>
+          </li>
+          <li>
+            <a href="/resources/discord">Discord</a>
+          </li>
+          <li>
+            <a href="/resources/societies">University quiz societies</a>
+          </li>
+          <li>
+            <a href="/resources/study-resources">Study resources</a>
+          </li>
+          <li>
+            <a href="/resources/forums">Quizbowl forums</a>
+          </li>
+          <li>
+            <a href="/resources/statistics">Statistics</a>
+          </li>
+          <li>
+            <a href="/resources/hosting">Tournament hosting guide</a>
+          </li>
+          <li>
+            <a href="/resources/glossary">Quizbowl glossary</a>
+          </li>
+          <li>
+            <a href="/resources/faq">FAQ</a>
+          </li>
+        </ul>
+      </li>
+      <li class="text-lg">
+        <div class="mb-2 font-bold">Safeguarding</div>
+        <ul class="ml-4 space-y-2 pl-0">
+          <li>
+            <a href="https://forms.gle/Cu653HRzndZiU4mM8">
+              Safeguarding reporting form
+            </a>
+          </li>
+          <li>
+            <a href="/safeguarding/cheating">Cheating reporting form</a>
+          </li>
+          <li>
+            <a href="/safeguarding/conduct">Code of conduct</a>
+          </li>
+        </ul>
+      </li>
+      <li class="text-lg">
+        <div class="mb-2 font-bold">About us</div>
+        <ul class="ml-4 space-y-2 pl-0">
+          <li>
+            <a href="/about/statement-of-purpose">Statement of purpose</a>
+          </li>
+          <li>
+            <a href="/about/committee">Committee</a>
+          </li>
+        </ul>
+      </li>
+      <li class="text-lg">
+        <a href="/contact" class="mb-2 font-bold">Contact us</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+
+    function toggleMobileMenu() {
+      mobileMenu?.classList.toggle("translate-x-full");
+
+      // We want the overlay to always exist in the DOM to use the transitions when toggling the menu
+      // so we use pointer-events-none instead of hidden to stop it from doing anything
+      mobileMenuOverlay?.classList.toggle("pointer-events-none");
+      mobileMenuOverlay?.classList.toggle("opacity-50");
+
+      // Stop body from scrolling behind the overlay when mobile menu is open
+      document.body?.classList.toggle("overflow-hidden");
+    }
+
+    document.querySelectorAll(".mobile-menu-trigger").forEach((element) => {
+      element.addEventListener("click", toggleMobileMenu);
+    });
+  });
+</script>
+
+<style>
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    @apply text-inherit no-underline;
+  }
+  li {
+    @apply list-none;
+  }
+</style>

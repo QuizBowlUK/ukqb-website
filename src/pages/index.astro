@@ -1,0 +1,26 @@
+---
+import Intro from "../components/Intro.astro";
+import Tournaments from "../components/tournaments/Tournaments.astro";
+import Layout from "../layouts/Layout.astro";
+import Instagram from "../components/icons/Instagram.astro";
+import Bluesky from "../components/icons/Bluesky.astro";
+import Youtube from "../components/icons/Youtube.astro";
+import BlogPreview from "../components/blog/BlogPreview.astro";
+---
+
+<Layout>
+  <h1 class="mt-24 -mb-2 text-center text-4xl md:mt-48 md:text-6xl">
+    Welcome to <span class="text-ukqb-red">UK Quizbowl</span>
+  </h1>
+  <h2 class="text-center text-2xl font-normal md:text-4xl">
+    We do all things student buzzer quizzing.
+  </h2>
+  <div class="fill-ukqb-red flex h-8 justify-center gap-x-4">
+    <Instagram />
+    <Bluesky />
+    <Youtube />
+  </div>
+  <Tournaments class="mt-20 md:mt-40" />
+  <Intro class="mt-20 md:mt-40" />
+  <BlogPreview class="mt-20 mb-40 md:mt-40" />
+</Layout>

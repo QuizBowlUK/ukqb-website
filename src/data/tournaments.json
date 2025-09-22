@@ -1,0 +1,71 @@
+[
+  {
+    "name": "DART IV",
+    "id": "dart-iv",
+    "dots": 1.5,
+    "eligibility": "open",
+    "date": "13 Sep 2025",
+    "location": "Online"
+  },
+  {
+    "name": "NAFTA",
+    "id": "nafta",
+    "dots": 3.5,
+    "eligibility": "open",
+    "date": "11 Oct 2025",
+    "location": "University of Oxford",
+    "link": "https://fb.me/e/3pOhk677e"
+  },
+  {
+    "name": "ACF Fall",
+    "id": "acf-fall",
+    "dots": 1,
+    "eligibility": "closed",
+    "date": "18 Oct 2025",
+    "location": "University of Cambridge, Durham University",
+    "link": {
+      "Southern mirror link": "https://fb.me/e/6YIux2d7M",
+      "Northern mirror link": "https://fb.me/e/7GAuTNrFN"
+    }
+  },
+  {
+    "name": "Penn Bowl",
+    "id": "penn-bowl",
+    "dots": 3,
+    "eligibility": "open",
+    "date": "1 Nov 2025",
+    "location": "LSE"
+  },
+  {
+    "name": "Scarlet Houseknight",
+    "id": "scarlet-houseknight",
+    "dots": 1.5,
+    "eligibility": "closed",
+    "date": "8 Nov 2025",
+    "location": "University of Birmingham"
+  },
+  {
+    "name": "ACF Winter",
+    "id": "acf-winter",
+    "dots": 2,
+    "eligibility": "closed",
+    "date": "15 Nov 2025",
+    "location": "University of Warwick"
+  },
+  {
+    "name": "British Novice",
+    "id": "british-novice",
+    "dots": 1,
+    "eligibility": "closed",
+    "date": "29 Nov 2025",
+    "location": "University of Southampton, University of Sheffield"
+  },
+  {
+    "name": "X, formerly known as TitA",
+    "id": "x",
+    "dots": 2,
+    "eligibility": "closed",
+    "date": "13 Dec 2025",
+    "location": "Imperial College London"
+  }
+]

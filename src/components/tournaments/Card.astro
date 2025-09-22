@@ -1,0 +1,47 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Dots from "./Dots.astro";
+import Link from "./Link.astro";
+
+export interface Props {
+  tournament: CollectionEntry<"tournaments">;
+}
+
+const { tournament } = Astro.props;
+const { name, dots, eligibility, date, location, link } = tournament.data;
+
+let normalisedLocation: string | undefined;
+if (location === undefined) {
+  normalisedLocation = undefined;
+} else if (typeof location === "string") {
+  normalisedLocation = location;
+} else {
+  normalisedLocation = location.join(", ");
+}
+
+const descriptionItems = [];
+if (eligibility === "open") {
+  descriptionItems.push("Open");
+}
+if (normalisedLocation) {
+  descriptionItems.push(normalisedLocation);
+}
+---
+
+<div class="card-shadow rounded-xl bg-white px-4 py-4 md:px-5">
+  <div class="flex items-center justify-between">
+    {
+      date.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+      })
+    }
+    <Dots dots={dots} />
+  </div>
+  <h4 class="mt-1 -mb-1 flex items-center gap-3 text-2xl">
+    {name}
+  </h4>
+  <p class="mt-2 mb-2">{descriptionItems.join(" · ")}</p>
+  {link && <Link link={link} />}
+</div>
