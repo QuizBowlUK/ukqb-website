@@ -10,6 +10,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://ukqb-website.plain-fire-ac7d.workers.dev/", // TODO: change to quizbowl.co.uk
+  site: "https://quizbowl.co.uk",
   integrations: [sitemap()],
 });
