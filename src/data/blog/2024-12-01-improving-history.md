@@ -23,9 +23,16 @@ History is now an interest I deeply value for its own sake, and I am sure I woul
 
 It can initially be intimidating starting to learn a quizbowl category that you wouldn’t have previously considered a specialism of yours. I would highly recommend starting by focusing on the specific areas that you first became interested in, because quiz is supposed to be fun, and you will always remember things you learn in your favourite topics better than others.
 
+<<<<<<< HEAD:src/data/blog/2024-12-01-improving-history.md
 Once you want to branch out in quizbowl, you should familiarise yourself with the "canon", meaning the topics that are asked about often. Below are screenshots from a spreadsheet I made in March 2022, around the time I was getting started; this contains a number of European History topics I wanted to learn about, with rough temporal categorisations. This is obviously not exhaustive, but I obtained the list by _writing down things that came up_ in practices and tournaments which I had vaguely heard of through quiz, but didn't know much detail about. This is an effective way of gaining a grounding from which to branch out into learning more in-depth knowledge.
 
-![Chronological list of topics beginning Kievan Russ and Establishment of Hungary](../../assets/blog/abigail-tan-notes.png)
+# ![Chronological list of topics beginning Kievan Russ and Establishment of Hungary](../../assets/blog/abigail-tan-notes.png)
+
+Once you want to branch out in quizbowl, you should familiarise yourself with the "canon", meaning the topics that are asked about often. Below are screenshots from a spreadsheet I made in March 2022, around the time I was getting started; this contains a number of European History topics I wanted to learn about, with rough temporal categorisations. This is obviously not exhaustive, but I obtained the list by _writing down things that came up_ in practices and tournaments which I had vaguely heard of through quiz, but didn't know much detail about. This is an effective way of gaining a grounding from which to branch out into learning more in-depth knowledge.
+
+![Chronological list of topics beginning Kievan Russ and Establishment of Hungary]({{ site.url }}{{ site.baseurl }}/images/abigail-tan-notes.png){: .center-image }
+
+> > > > > > > master:\_posts/articles/2024-12-01-improving-history.md
 
 YouTube playlists such as the Crash Course series are good for getting a sense of the chronology— I watched the “Crash Course European History” series for a broad post-1450 overview. Inevitably, a chronological series like these can’t cover everything on its own; it makes sense to both do deeper dives into topics you find interesting (by reading books and online articles, or watching videos and listening to podcasts) and play more quizbowl, from which you can fill in the gaps when topics you haven’t already encountered come up.
 
@@ -37,4 +44,9 @@ In addition to just continuing to learn about what you are interested in, my two
 
 It’s very easy to hear or read about a fact in passing and then forget it (and then possibly be very annoyed at yourself when it comes up later in quiz). A good way of really making things stick is to write your own tossups or bonuses on interesting topics you find out about. Reading through your questions over and over again while writing will get you to remember the clues very well; occasionally a writer for a future tournament may have a similar idea for a question to you, and you’ll get it very early.
 
+<<<<<<< HEAD:src/data/blog/2024-12-01-improving-history.md
 Primary sources for ancient history are both a lot of fun to read, and get clued from directly in quizbowl much more than other historical periods. Sources like Herodotus’ _Histories_ and Plutarch’s _Parallel Lives_ are full of interesting and memorable anecdotes that often come up as early clues in tossups. Other sources for ancient Greek history that are well worth reading include Thucydides’ _History of the Peloponnesian War_ (which contains famous speeches and discourses like Pericles’ funeral oration, the Mytilenean Debate, and the Melian Dialogue), Xenophon’s _Hellenica_ and _Anabasis_ (respectively covering the period from 411 to 362 BC, and the March of the Ten Thousand), and the works of Diodorus Siculus and Polybius.
+=======
+Primary sources for ancient history are both a lot of fun to read, and get clued from directly in quizbowl much more than other historical periods. Sources like Herodotus’ _Histories_ and Plutarch’s _Parallel Lives_ are full of interesting and memorable anecdotes that often come up as early clues in tossups. Other sources for ancient Greek history that are well worth reading include Thucydides’ _History of the Peloponnesian War_ (which contains famous speeches and discourses like Pericles’ funeral oration, the Mytilenean Debate, and the Melian Dialogue), Xenophon’s _Hellenica_ and _Anabasis_ (respectively covering the period from 411 to 362 BC, and the March of the Ten Thousand), and the works of Diodorus Siculus and Polybius.
+
+> > > > > > > master:\_posts/articles/2024-12-01-improving-history.md
