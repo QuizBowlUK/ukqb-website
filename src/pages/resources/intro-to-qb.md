@@ -34,7 +34,7 @@ Quizbowl matches consist of either 20 or 24 cycles of a tossup followed by a bon
 - <p style="font-size: 18px">1: Popular Culture;</p>
 - <p style="font-size: 18px">1: Miscellaneous (any more of the above, or questions which cross between categories).</p>
 
-[^1]: These are often collated all together in discussions as RMPSS.
+Religion, mythology, philosophy, and social science are often collated all together in discussions as RMPSS.
 
 The above list is not fixed: some tournaments reduce the amount of "academic" content in favour of more popular culture, some will have categories such as Geography or Current Events, and some smaller tournaments (known as side events, usually played after a main academic tournament) focus on a single subject. Recent side events played in the UK include a music tournament written using snippets of audio rather than written questions, a tournament [all about food](http://trash.quizbowlpackets.com/2067/) (both gourmet and fast food) and a tournament [all about geography](http://collegiate.quizbowlpackets.com/2015/).
 
