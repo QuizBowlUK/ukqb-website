@@ -1,16 +1,19 @@
 ---
 export interface Props {
   link: string | Record<string, string>;
+  class?: string;
 }
 
-const { link } = Astro.props;
+const { link, class: className } = Astro.props;
 ---
 
 {
   typeof link === "string" ? (
-    <a href={link}>View Facebook event</a>
+    <a class={className} href={link}>
+      View Facebook event
+    </a>
   ) : (
-    <div class="flex flex-wrap gap-x-2">
+    <div class:list={["flex flex-wrap gap-x-2", className]}>
       {Object.entries(link).map(([linkText, url]) => (
         <a href={url}>{linkText}</a>
       ))}
