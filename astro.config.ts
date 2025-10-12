@@ -5,11 +5,15 @@ import tailwindcss from "@tailwindcss/vite";
 
 import sitemap from "@astrojs/sitemap";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
   site: "https://quizbowl.co.uk",
   integrations: [sitemap()],
+  adapter: cloudflare(),
 });
