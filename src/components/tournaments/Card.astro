@@ -8,7 +8,8 @@ export interface Props {
 }
 
 const { tournament } = Astro.props;
-const { name, dots, eligibility, date, location, link } = tournament.data;
+const { name, dots, eligibility, date, location, link, popCulture } =
+  tournament.data;
 
 let normalisedLocation: string | undefined;
 if (location === undefined) {
@@ -22,6 +23,9 @@ if (location === undefined) {
 const descriptionItems = [];
 if (eligibility === "open") {
   descriptionItems.push("Open");
+}
+if (popCulture) {
+  descriptionItems.push("Pop culture");
 }
 if (normalisedLocation) {
   descriptionItems.push(normalisedLocation);

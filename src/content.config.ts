@@ -48,6 +48,7 @@ const tournaments = defineCollection({
     eligibility: z.enum(["open", "closed"]),
     location: z.union([z.string(), z.array(z.string())]).optional(),
     link: z.union([z.string(), z.record(z.string(), z.string())]).optional(),
+    popCulture: z.boolean().optional(),
   }),
 });
 
