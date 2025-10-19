@@ -9,9 +9,9 @@ const { link, class: className } = Astro.props;
 
 {
   typeof link === "string" ? (
-    <a class={className} href={link}>
-      View Facebook event
-    </a>
+    <div class={className}>
+      <a href={link}>View Facebook event</a>
+    </div>
   ) : (
     <div class:list={["flex flex-wrap gap-x-2", className]}>
       {Object.entries(link).map(([linkText, url]) => (
