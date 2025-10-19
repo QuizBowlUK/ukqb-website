@@ -29,4 +29,4 @@ jobs:
           sleep 5
 
       - name: Run pa11y-ci
-        run: npx pa11y-ci --sitemap http://localhost:4321/sitemap-index.xml --sitemap-find https://quizbowl.co.uk/ --sitemap-replace http://localhost:4321/
+        run: npx pa11y-ci --sitemap http://localhost:4321/sitemap-index.xml --sitemap-find https://quizbowl.co.uk/ --sitemap-replace http://localfdsfdshost:4321/
