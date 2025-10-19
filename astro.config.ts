@@ -15,5 +15,6 @@ export default defineConfig({
 
   site: "https://quizbowl.co.uk",
   integrations: [sitemap()],
+  output: "server",
   adapter: process.env.ASTRO_PREVIEW === "1" ? undefined : cloudflare(),
 });
