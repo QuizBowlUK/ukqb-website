@@ -13,7 +13,7 @@ const now = new Date();
 const ukDate = new Date(
   now.toLocaleString("en-US", { timeZone: "Europe/London" }),
 );
-ukDate.setHours(0, 0, 0, 0);
+// ukDate.setHours(0, 0, 0, 0);
 
 // Filter tournaments to only show tournaments happening today or later
 const allTournaments = await getCollection("tournaments");
@@ -30,6 +30,7 @@ const tournaments = futureTournaments.sort(
 
 <div class={className}>
   <h3>Upcoming tournaments</h3>
+  <p>Date now: {ukDate}</p>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
     {tournaments.map((tournament) => <Card tournament={tournament} />)}
   </div>
