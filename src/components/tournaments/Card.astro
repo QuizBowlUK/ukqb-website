@@ -11,15 +11,6 @@ const { tournament } = Astro.props;
 const { name, dots, eligibility, date, location, link, popCulture } =
   tournament.data;
 
-let normalisedLocation: string | undefined;
-if (location === undefined) {
-  normalisedLocation = undefined;
-} else if (typeof location === "string") {
-  normalisedLocation = location;
-} else {
-  normalisedLocation = location.join(", ");
-}
-
 const descriptionItems = [];
 if (eligibility === "open") {
   descriptionItems.push("Open");
@@ -27,9 +18,11 @@ if (eligibility === "open") {
 if (popCulture) {
   descriptionItems.push("Pop culture");
 }
-if (normalisedLocation) {
-  descriptionItems.push(normalisedLocation);
+if (typeof location === "string") {
+  descriptionItems.push(location);
 }
+
+const description = descriptionItems.join(" · ");
 ---
 
 <div class="card-shadow h-fit rounded-xl bg-white px-4 py-4 md:px-5">
@@ -46,6 +39,15 @@ if (normalisedLocation) {
   <h4 class="mt-1 -mb-1 flex items-center gap-3 text-2xl">
     {name}
   </h4>
-  <p class="mt-2 mb-0">{descriptionItems.join(" · ")}</p>
+  <p class="mt-2 mb-0">{description}</p>
+  {
+    location &&
+      typeof location !== "string" &&
+      Object.entries(location).map(([siteName, siteLocation]) => (
+        <div class="mt-1 mb-0">
+          {siteLocation} ({siteName} mirror)
+        </div>
+      ))
+  }
   {link && <Link class="mt-2" link={link} />}
 </div>

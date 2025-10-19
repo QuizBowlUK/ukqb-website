@@ -61,13 +61,16 @@
     "dots": 1,
     "eligibility": "closed",
     "date": "29 Nov 2025",
-    "location": "University of Southampton (Southern mirror), University of Sheffield (Northern mirror)"
+    "location": {
+      "Southern": "University of Southampton",
+      "Northern": "University of Sheffield"
+    }
   },
   {
     "name": "X, formerly known as TitA",
     "id": "x",
     "dots": 2,
-    "eligibility": "closed",
+    "eligibility": "open",
     "date": "13 Dec 2025",
     "location": "Imperial College London",
     "popCulture": true
