@@ -15,7 +15,7 @@ export const prerender = process.env.ASTRO_PREVIEW === "1";
   <h1 class="mt-24 -mb-2 text-center text-4xl md:mt-48 md:text-6xl">
     Welcome to <span class="text-ukqb-red">UK Quizbowl</span>
   </h1>
-  <p>Prerender: {prerender}</p>
+  <p>Prerender: {prerender ? "true" : "false"}</p>
   <h2 class="text-center text-2xl font-normal md:text-4xl">
     We do all things student buzzer quizzing.
   </h2>
