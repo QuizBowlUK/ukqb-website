@@ -3,8 +3,6 @@ import { getCollection } from "astro:content";
 import Card from "./Card.astro";
 import Dots from "./Dots.astro";
 
-// We want to render the "upcoming tournaments" section every time the user loads the page to always fetch the current date
-
 const { class: className } = Astro.props;
 
 // Get current date in UK timezone
@@ -12,7 +10,7 @@ const now = new Date();
 const ukDate = new Date(
   now.toLocaleString("en-US", { timeZone: "Europe/London" }),
 );
-// ukDate.setHours(0, 0, 0, 0);
+ukDate.setHours(0, 0, 0, 0);
 
 // Filter tournaments to only show tournaments happening today or later
 const allTournaments = await getCollection("tournaments");

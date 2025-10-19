@@ -4,14 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build && echo '_worker.js' >> dist/.assetsignore",
-    "preview": "ASTRO_PREVIEW=1 astro preview",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
     "astro": "astro",
     "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^12.6.10",
     "@astrojs/sitemap": "^3.4.2",
     "@fontsource/atkinson-hyperlegible": "^5.2.6",
     "@tailwindcss/vite": "^4.1.11",

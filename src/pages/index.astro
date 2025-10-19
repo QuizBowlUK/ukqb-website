@@ -6,16 +6,12 @@ import Instagram from "../components/icons/Instagram.astro";
 import Bluesky from "../components/icons/Bluesky.astro";
 import Youtube from "../components/icons/Youtube.astro";
 import BlogPreview from "../components/blog/BlogPreview.astro";
-
-// We want to render the "upcoming tournaments" section every time the user loads the page to always fetch the current date
-export const prerender = process.env.ASTRO_PREVIEW === "1";
 ---
 
 <Layout>
   <h1 class="mt-24 -mb-2 text-center text-4xl md:mt-48 md:text-6xl">
     Welcome to <span class="text-ukqb-red">UK Quizbowl</span>
   </h1>
-  <p>Prerender: {prerender ? "true" : "false"}</p>
   <h2 class="text-center text-2xl font-normal md:text-4xl">
     We do all things student buzzer quizzing.
   </h2>
