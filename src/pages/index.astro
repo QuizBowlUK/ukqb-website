@@ -8,7 +8,7 @@ import Youtube from "../components/icons/Youtube.astro";
 import BlogPreview from "../components/blog/BlogPreview.astro";
 
 // We want to render the "upcoming tournaments" section every time the user loads the page to always fetch the current date
-export const prerender = false;
+export const prerender = process.env.ASTRO_PREVIEW === "1";
 ---
 
 <Layout>
