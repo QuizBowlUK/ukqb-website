@@ -6,6 +6,9 @@ import Instagram from "../components/icons/Instagram.astro";
 import Bluesky from "../components/icons/Bluesky.astro";
 import Youtube from "../components/icons/Youtube.astro";
 import BlogPreview from "../components/blog/BlogPreview.astro";
+
+// We want to render the "upcoming tournaments" section every time the user loads the page to always fetch the current date
+export const prerender = false;
 ---
 
 <Layout>
@@ -20,7 +23,7 @@ import BlogPreview from "../components/blog/BlogPreview.astro";
     <Bluesky />
     <Youtube />
   </div>
-  <Tournaments client:load class="mt-20 md:mt-40" />
+  <Tournaments class="mt-20 md:mt-40" />
   <Intro class="mt-20 md:mt-40" />
   <BlogPreview class="mt-20 mb-40 md:mt-40" />
 </Layout>
