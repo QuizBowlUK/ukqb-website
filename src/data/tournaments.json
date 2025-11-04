@@ -74,5 +74,58 @@
     "date": "13 Dec 2025",
     "location": "Imperial College London",
     "popCulture": true
+  },
+  {
+    "name": "CREEK II",
+    "id": "creek-ii",
+    "dots": 1.5,
+    "eligibility": "closed",
+    "date": "24 Jan 2026"
+  },
+  {
+    "name": "ACF Regionals",
+    "id": "regs",
+    "dots": 3,
+    "eligibility": "closed",
+    "date": "31 Jan 2026"
+  },
+  {
+    "name": "Cambridge and Oxford Open Tournament (COOT)",
+    "id": "coot",
+    "dots": 3,
+    "eligibility": "open",
+    "date": "21 Feb 2026",
+    "location": "University of Cambridge"
+  },
+  {
+    "name": "ARCADIA",
+    "id": "arcadia",
+    "dots": 2,
+    "eligibility": "closed",
+    "date": "28 Feb 2026"
+  },
+  {
+    "name": "British Student Quiz Championships (BSQC)",
+    "id": "bsqc",
+    "dots": 3,
+    "eligibility": "closed",
+    "date": "7 Mar 2026",
+    "location": "Imperial College London"
+  },
+  {
+    "name": "WaShBowl",
+    "id": "washbowl",
+    "dots": 2,
+    "eligibility": "closed",
+    "date": "14 Mar 2026",
+    "location": "University of Warwick",
+    "popCulture": true
+  },
+  {
+    "name": "HISTONE",
+    "id": "histone",
+    "dots": 1.5,
+    "eligibility": "open",
+    "date": "21 Mar 2026"
   }
 ]

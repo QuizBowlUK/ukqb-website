@@ -14,11 +14,15 @@ const { name, dots, eligibility, date, location, link, popCulture } =
 const descriptionItems = [];
 if (eligibility === "open") {
   descriptionItems.push("Open");
+} else {
+  descriptionItems.push("Student-only");
 }
 if (popCulture) {
   descriptionItems.push("Pop culture");
 }
-if (typeof location === "string") {
+if (location === undefined) {
+  descriptionItems.push("location TBC");
+} else if (typeof location === "string") {
   descriptionItems.push(location);
 }
 
