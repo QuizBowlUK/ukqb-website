@@ -62,7 +62,7 @@ If someone’s safety is at immediate risk, please contact the campus emergency 
   - The tournament safeguarding officer should discuss this privately with the participant and make it clear that this type of conduct is not acceptable
   - Any instance of this should be communicated to UKQB safeguarding officers
 - There are **immediate** safety concerns for a participant (eg: an allergic reaction or other medical emergency)
-  - Contact emergency services as needed and let UKQB know after the fact
+  - Contact campus security (and emergency services, if required) and let UKQB know after the fact
   - Evacuate others from the room but remain with the casualty
   - Ask the casualty whether they have any medication that needs to be administered (e.g. EpiPen, inhaler)
 - There are **long-term** safety concerns for a participant (eg: erratic behaviour, prolonged discussions of concerning topics)
