@@ -68,11 +68,20 @@
   },
   {
     "name": "X, formerly known as TitA",
-    "id": "x",
+    "id": "x-closed",
     "dots": 2,
-    "eligibility": "open",
+    "eligibility": "closed",
     "date": "13 Dec 2025",
     "location": "Imperial College London",
+    "popCulture": true
+  },
+  {
+    "name": "X, formerly known as TitA",
+    "id": "x-open",
+    "dots": 2,
+    "eligibility": "open",
+    "date": "10 Jan 2026",
+    "location": "University of Cambridge",
     "popCulture": true
   },
   {
