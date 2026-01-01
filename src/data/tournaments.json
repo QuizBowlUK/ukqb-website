@@ -6,7 +6,8 @@
     "eligibility": "open",
     "date": "10 Jan 2026",
     "location": "University of Cambridge",
-    "popCulture": true
+    "popCulture": true,
+    "link": "https://fb.me/e/3dpgS4rKC"
   },
   {
     "name": "CREEK II",
@@ -17,6 +18,9 @@
     "location": {
       "Northern": "Durham University",
       "Southern": "University of Southampton"
+    },
+    "link": {
+      "Northern mirror link": "https://fb.me/e/468q1VcOk"
     }
   },
   {
@@ -25,7 +29,8 @@
     "dots": 3,
     "eligibility": "closed",
     "date": "31 Jan 2026",
-    "location": "Imperial College London"
+    "location": "Imperial College London",
+    "link": "https://fb.me/e/6WQ15F3E1"
   },
   {
     "name": "Cambridge and Oxford Open Tournament (COOT)",
