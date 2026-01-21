@@ -34,6 +34,21 @@
     "link": "https://fb.me/e/6WQ15F3E1"
   },
   {
+    "name": "Winter Novice",
+    "id": "winter-novice",
+    "dots": 1,
+    "eligibility": "closed",
+    "date": "31 Jan 2026",
+    "location": {
+      "Northern": "University of Edinburgh",
+      "Southern": "University of Warwick"
+    },
+    "link": {
+      "Northern mirror link": "https://fb.me/e/89IyLqzJX",
+      "Southern mirror link": "https://fb.me/e/8FHb7e4Co"
+    }
+  },
+  {
     "name": "Cambridge and Oxford Open Tournament (COOT)",
     "id": "coot",
     "dots": 3,
