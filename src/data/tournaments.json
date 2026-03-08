@@ -1,87 +1,13 @@
 [
   {
-    "name": "X, formerly known as TitA",
-    "id": "x-open",
-    "dots": 2,
-    "eligibility": "open",
-    "date": "10 Jan 2026",
-    "location": "University of Cambridge",
-    "popCulture": true,
-    "link": "https://fb.me/e/3dpgS4rKC"
-  },
-  {
-    "name": "CREEK II",
-    "id": "creek-ii",
-    "dots": 1.5,
-    "eligibility": "closed",
-    "date": "24 Jan 2026",
-    "location": {
-      "Northern": "Durham University",
-      "Southern": "University of Southampton"
-    },
-    "link": {
-      "Northern mirror link": "https://fb.me/e/468q1VcOk",
-      "Southern mirror link": "https://fb.me/e/5dROEGFxE"
-    }
-  },
-  {
-    "name": "ACF Regionals",
-    "id": "regs",
-    "dots": 3,
-    "eligibility": "closed",
-    "date": "31 Jan 2026",
-    "location": "Imperial College London",
-    "link": "https://fb.me/e/6WQ15F3E1"
-  },
-  {
-    "name": "Winter Novice",
-    "id": "winter-novice",
-    "dots": 1,
-    "eligibility": "closed",
-    "date": "7 Feb 2026",
-    "location": {
-      "Northern": "University of Edinburgh",
-      "Southern": "University of Warwick"
-    },
-    "link": {
-      "Northern mirror link": "https://fb.me/e/89IyLqzJX",
-      "Southern mirror link": "https://fb.me/e/8FHb7e4Co"
-    }
-  },
-  {
-    "name": "Cambridge and Oxford Open Tournament (COOT)",
-    "id": "coot",
-    "dots": 3,
-    "eligibility": "open",
-    "date": "21 Feb 2026",
-    "location": "University of Cambridge",
-    "link": "https://fb.me/e/5uLNjFJ9t"
-  },
-  {
-    "name": "ARCADIA",
-    "id": "arcadia",
-    "dots": 2,
-    "eligibility": "closed",
-    "date": "28 Feb 2026",
-    "location": "University of Birmingham",
-    "link": "https://fb.me/e/9a3ytsjUe"
-  },
-  {
-    "name": "British Student Quiz Championships (BSQC)",
-    "id": "bsqc",
-    "dots": 3,
-    "eligibility": "closed",
-    "date": "7 Mar 2026",
-    "location": "Imperial College London"
-  },
-  {
     "name": "WaShBowl",
     "id": "washbowl",
     "dots": 2,
     "eligibility": "closed",
     "date": "14 Mar 2026",
     "location": "University of Warwick",
-    "popCulture": true
+    "popCulture": true,
+    "link": "https://fb.me/e/1X3npZUE5X"
   },
   {
     "name": "HISTONE",
@@ -89,6 +15,16 @@
     "dots": 1.5,
     "eligibility": "open",
     "date": "21 Mar 2026",
-    "location": "University of Manchester"
+    "location": "University of Manchester",
+    "link": "https://fb.me/e/9qmVMv8Ld"
+  },
+  {
+    "name": "Chicago Open 2026",
+    "id": "co",
+    "dots": 4,
+    "eligibility": "open",
+    "date": "8 Aug 2026",
+    "location": "University of Southampton",
+    "link": "https://fb.me/e/jTpGDe3Af"
   }
 ]
