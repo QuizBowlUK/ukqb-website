@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 export interface Props {
@@ -38,5 +39,6 @@ const fullTitle = title ? `${title} • UK Quizbowl` : "UK Quizbowl";
         <slot />
       </div>
     </div>
+    <Footer />
   </body>
 </html>
