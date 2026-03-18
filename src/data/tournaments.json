@@ -19,6 +19,43 @@
     "link": "https://fb.me/e/9qmVMv8Ld"
   },
   {
+    "name": "VAULT II",
+    "id": "vault-ii",
+    "dots": 1.5,
+    "eligibility": "closed",
+    "date": "25 Apr 2026"
+  },
+  {
+    "name": "Deep Bench",
+    "id": "deep-bench",
+    "dots": 2,
+    "eligibility": "open",
+    "date": "9 May 2026"
+  },
+  {
+    "name": "MRNA V",
+    "id": "mrna-v",
+    "dots": 2,
+    "eligibility": "closed",
+    "date": "6 Jun 2026"
+  },
+  {
+    "name": "WaShBowl III Open",
+    "id": "washbowl-open",
+    "dots": 2,
+    "eligibility": "open",
+    "date": "20 Jun 2026",
+    "popCulture": true
+  },
+  {
+    "name": "ICT",
+    "id": "ict",
+    "dots": 4,
+    "eligibility": "open",
+    "date": "11 Jul 2026",
+    "popCulture": true
+  },
+  {
     "name": "Chicago Open 2026",
     "id": "co",
     "dots": 4,

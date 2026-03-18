@@ -1,0 +1,90 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo-cropped.png";
+import Bluesky from "./icons/Bluesky.astro";
+import Instagram from "./icons/Instagram.astro";
+import Youtube from "./icons/Youtube.astro";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="border-ukqb-red bg-ukqb-red-hover mt-16 border-t-2">
+  <div class="mx-auto max-w-screen-xl px-5 py-12 md:px-10 md:py-16">
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Brand -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <a href="/" aria-label="UK Quizbowl home">
+          <Image src={logo} alt="UK Quizbowl" class="mb-3 h-8 w-auto" />
+        </a>
+        <p class="mb-4 max-w-xs text-sm leading-relaxed">
+          We do all things student buzzer quizzing — from novice tournaments for
+          beginners to national championships.
+        </p>
+        <div class="fill-ukqb-red flex h-5 items-center gap-x-3">
+          <Instagram />
+          <Bluesky />
+          <Youtube />
+        </div>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h4 class="mb-3 font-bold">Resources</h4>
+        <ul class="space-y-2 pl-0 text-sm">
+          <li><a href="/resources/intro-to-qb">Intro to quizbowl</a></li>
+          <li><a href="/resources/discord">Discord</a></li>
+          <li><a href="/resources/societies">University societies</a></li>
+          <li><a href="/resources/study-resources">Study resources</a></li>
+          <li><a href="/resources/glossary">Glossary</a></li>
+          <li><a href="/resources/statistics">Statistics</a></li>
+          <li><a href="/resources/faq">FAQ</a></li>
+          <li><a href="/resources/hosting">Hosting guide</a></li>
+        </ul>
+      </div>
+
+      <!-- Safeguarding -->
+      <div>
+        <h4 class="mb-3 font-bold">Safeguarding</h4>
+        <ul class="space-y-2 pl-0 text-sm">
+          <li>
+            <a href="https://forms.gle/Cu653HRzndZiU4mM8">Reporting form</a>
+          </li>
+          <li><a href="/safeguarding/cheating">Cheating report</a></li>
+          <li><a href="/safeguarding/conduct">Code of conduct</a></li>
+          <li><a href="/safeguarding/guide">Safeguarding guide</a></li>
+        </ul>
+      </div>
+
+      <!-- About -->
+      <div>
+        <h4 class="mb-3 font-bold">About</h4>
+        <ul class="space-y-2 pl-0 text-sm">
+          <li><a href="/about/committee">Committee</a></li>
+          <li>
+            <a href="/about/statement-of-purpose">Statement of purpose</a>
+          </li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-ukqb-red/20 mt-10 border-t pt-6 text-center text-xs">
+      © {year} UK Quizbowl. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<style>
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  a:hover {
+    color: var(--color-ukqb-red);
+  }
+  li {
+    list-style: none;
+  }
+</style>

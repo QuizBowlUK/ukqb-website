@@ -22,11 +22,10 @@ if (!images[teaserPath]) {
 }
 ---
 
-<a
-  href={`/blog/${post.id}`}
-  class="block text-inherit no-underline transition-shadow duration-200 hover:shadow-lg"
->
-  <div class="h-full overflow-hidden rounded-lg bg-white shadow-md md:h-100">
+<a href={`/blog/${post.id}`} class="group block text-inherit no-underline">
+  <div
+    class="h-full overflow-hidden rounded-xl border border-(--color-border) bg-white transition-all duration-200 group-hover:-translate-y-0.5 group-hover:shadow-md md:h-100"
+  >
     <div class="aspect-[16/9]">
       <Image
         src={images[teaserPath]()}
@@ -35,7 +34,9 @@ if (!images[teaserPath]) {
       />
     </div>
     <div class="p-4">
-      <div class="-mb-3 text-sm text-gray-500">
+      <div
+        class="-mb-3 text-xs font-medium tracking-wide text-gray-400 uppercase"
+      >
         {
           date.toLocaleDateString("en-GB", {
             day: "numeric",
@@ -44,8 +45,8 @@ if (!images[teaserPath]) {
           })
         }
       </div>
-      <h2 class="text-xl leading-tight font-bold">{title}</h2>
-      <p class="text-md -mt-2 line-clamp-4 text-gray-700 2xl:line-clamp-3">
+      <h2 class="text-lg leading-snug font-semibold">{title}</h2>
+      <p class="-mt-1 line-clamp-4 text-sm text-gray-500 2xl:line-clamp-3">
         {description}
       </p>
     </div>
