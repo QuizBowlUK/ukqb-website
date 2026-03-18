@@ -1,3 +1,4 @@
+@import "@fontsource-variable/inter";
 @import "@fontsource/atkinson-hyperlegible/400.css";
 @import "@fontsource/atkinson-hyperlegible/700.css";
 
@@ -11,19 +12,37 @@
   --color-ukqb-red: #aa0000;
   --color-ukqb-red-bg: #fffafa;
   --color-ukqb-red-hover: #ffeded;
-  --font-sans: "Atkinson Hyperlegible", sans-serif;
+  --color-border: #e4d8d8;
+  --font-sans: "Inter Variable", "Atkinson Hyperlegible", sans-serif;
 }
 
 @layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
   h2 {
     @apply text-2xl md:text-3xl;
+    letter-spacing: -0.02em;
   }
+
   h3 {
     @apply text-xl md:text-2xl;
+    letter-spacing: -0.015em;
   }
+
   h4 {
     @apply text-lg;
+    letter-spacing: -0.01em;
   }
+
   html,
   button {
     @apply font-sans;
@@ -37,11 +56,16 @@
   button:focus {
     @apply outline-none;
   }
+
+  /* Default link colour for body content (nav/button scoped styles take priority) */
+  a {
+    color: var(--color-ukqb-red);
+  }
 }
 
 @layer components {
   .card-shadow {
-    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border);
   }
 
   .navbar-dropdown {
@@ -49,11 +73,11 @@
   }
 
   .navbar-dropdown-items {
-    @apply bg-ukqb-red-bg absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-1 border-gray-300 p-3 shadow-sm;
+    @apply bg-ukqb-red-bg absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-1 rounded-lg border border-gray-200 p-2 shadow-lg;
   }
 
   .dropdown-item {
-    @apply flex cursor-pointer flex-col gap-2 rounded-lg p-4 transition-colors duration-200 select-none;
+    @apply flex cursor-pointer flex-col gap-2 rounded-md p-3 transition-colors duration-150 select-none;
   }
 
   .dropdown-item:hover {

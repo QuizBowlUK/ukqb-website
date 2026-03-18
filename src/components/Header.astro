@@ -266,10 +266,13 @@ import Hamburger from "./icons/Hamburger.astro";
 
 <style>
   a,
-  a:hover,
   a:focus,
   a:visited {
     @apply text-inherit no-underline;
+  }
+  a:hover,
+  .navbar-dropdown button:hover {
+    color: var(--color-ukqb-red);
   }
   li {
     @apply list-none;
