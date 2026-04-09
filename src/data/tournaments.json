@@ -13,21 +13,27 @@
     "id": "vault-ii",
     "dots": 1.5,
     "eligibility": "closed",
-    "date": "25 Apr 2026"
+    "date": "25 Apr 2026",
+    "location": {
+      "Northern": "University of Manchester",
+      "Southern": "University of Warwick"
+    }
   },
   {
     "name": "Deep Bench",
     "id": "deep-bench",
     "dots": 2,
     "eligibility": "open",
-    "date": "9 May 2026"
+    "date": "9 May 2026",
+    "location": "University of Edinburgh"
   },
   {
     "name": "MRNA V",
     "id": "mrna-v",
     "dots": 2,
     "eligibility": "closed",
-    "date": "6 Jun 2026"
+    "date": "6 Jun 2026",
+    "location": "University of Birmingham"
   },
   {
     "name": "WaShBowl III Open",
@@ -35,14 +41,16 @@
     "dots": 2,
     "eligibility": "open",
     "date": "20 Jun 2026",
-    "popCulture": true
+    "popCulture": true,
+    "location": "University of Cambridge"
   },
   {
     "name": "ICT",
     "id": "ict",
     "dots": 4,
     "eligibility": "open",
-    "date": "11 Jul 2026"
+    "date": "11 Jul 2026",
+    "location": "Imperial College London"
   },
   {
     "name": "Chicago Open 2026",
