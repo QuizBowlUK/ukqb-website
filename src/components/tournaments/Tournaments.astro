@@ -12,17 +12,16 @@ const ukDate = new Date(
 );
 ukDate.setHours(0, 0, 0, 0);
 
-// Filter tournaments to only show tournaments happening today or later
+// Filter tournaments to only show tournaments happening today or later.
+// Undated tournaments remain visible because their date is still TBC.
 const allTournaments = await getCollection("tournaments");
 const futureTournaments = allTournaments.filter((tournament) => {
-  const tournamentDate = new Date(tournament.data.date);
+  const tournamentDate = tournament.data.date;
+  if (tournamentDate === null) return true;
   tournamentDate.setHours(0, 0, 0, 0);
   return tournamentDate >= ukDate;
 });
-
-const tournaments = futureTournaments.sort(
-  (a, b) => a.data.date.getTime() - b.data.date.getTime(),
-);
+const tournaments = futureTournaments;
 ---
 
 <div class={className}>
