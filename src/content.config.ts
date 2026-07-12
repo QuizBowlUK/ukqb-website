@@ -44,7 +44,10 @@ const tournaments = defineCollection({
     id: z.string(),
     name: z.string(),
     dots: z.number(),
-    date: z.string().transform((date) => new Date(date)),
+    date: z
+      .string()
+      .transform((date) => new Date(date))
+      .nullable(),
     eligibility: z.enum(["open", "closed"]),
     location: z
       .union([z.string(), z.record(z.string(), z.string())])

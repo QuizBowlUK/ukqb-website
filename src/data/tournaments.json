@@ -9,6 +9,13 @@
     "link": "https://fb.me/e/jTpGDe3Af"
   },
   {
+    "name": "Terrapin Open",
+    "id": "terrapin-open",
+    "dots": 3,
+    "eligibility": "open",
+    "date": null
+  },
+  {
     "name": "ACF Fall",
     "id": "acf-fall",
     "dots": 1,

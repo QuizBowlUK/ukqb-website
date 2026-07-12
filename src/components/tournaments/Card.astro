@@ -32,11 +32,13 @@ const description = descriptionItems.join(" · ");
 <div class="card-shadow h-fit rounded-xl bg-white px-4 py-4 md:px-5">
   <div class="flex items-center justify-between">
     {
-      date.toLocaleDateString("en-GB", {
-        day: "numeric",
-        month: "short",
-        year: "numeric",
-      })
+      date
+        ? date.toLocaleDateString("en-GB", {
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+          })
+        : "Date TBC"
     }
     <Dots dots={dots} />
   </div>
