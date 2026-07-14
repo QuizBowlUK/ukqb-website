@@ -81,13 +81,9 @@ Being a tournament safeguarding officer is **not an expectation on you to be abl
 
 Discord: maltvitasoy
 
-Phone number: 07384 059172 (if urgent contact is needed)
-
 #### Nathan Easow
 
 Discord: natxian
-
-Phone number: 07421 325008 (if urgent contact is needed)
 
 ### UKQB links
 
