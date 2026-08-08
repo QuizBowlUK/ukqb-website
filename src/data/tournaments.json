@@ -13,35 +13,49 @@
     "id": "terrapin-open",
     "dots": 3,
     "eligibility": "open",
-    "date": null
+    "date": "26 Sep 2026",
+    "location": "University of Manchester"
   },
   {
     "name": "ACF Fall",
     "id": "acf-fall",
     "dots": 1,
     "eligibility": "closed",
-    "date": "17 Oct 2026"
+    "date": "17 Oct 2026",
+    "location": {
+      "Northern": "University of Edinburgh",
+      "Southern": "Imperial College London"
+    }
   },
   {
     "name": "Penn Bowl",
     "id": "penn-bowl",
     "dots": 3,
     "eligibility": "open",
-    "date": "24 Oct 2026"
+    "date": "24 Oct 2026",
+    "location": "University of Oxford"
   },
   {
     "name": "MONSTER",
     "id": "monster",
     "dots": 2,
     "eligibility": "closed",
-    "date": "31 Oct 2026"
+    "date": "31 Oct 2026",
+    "location": {
+      "Northern": "University of Edinburgh",
+      "Southern": "University of Cambridge"
+    }
   },
   {
     "name": "ACF Winter",
     "id": "acf-winter",
     "dots": 2,
     "eligibility": "closed",
-    "date": "14 Nov 2026"
+    "date": "14 Nov 2026",
+    "location": {
+      "Northern": "Durham University",
+      "Southern": "University of Southampton"
+    }
   },
   {
     "name": "TitA Closed",
@@ -49,14 +63,19 @@
     "dots": 0,
     "eligibility": "closed",
     "date": "21 Nov 2026",
-    "popCulture": true
+    "popCulture": true,
+    "location": "University of Birmingham"
   },
   {
     "name": "British Novice",
     "id": "british-novice",
     "dots": 1,
     "eligibility": "closed",
-    "date": "28 Nov 2026"
+    "date": "28 Nov 2026",
+    "location": {
+      "Northern": "University of Manchester",
+      "Southern": "University of Warwick"
+    }
   },
   {
     "name": "TitA Open",
@@ -64,6 +83,7 @@
     "dots": 0,
     "eligibility": "open",
     "date": "5 Dec 2026",
-    "popCulture": true
+    "popCulture": true,
+    "location": "University of Sheffield"
   }
 ]
