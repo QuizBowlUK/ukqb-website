@@ -24,6 +24,9 @@
   h4 {
     @apply text-lg;
   }
+  h5 {
+    @apply text-xl md:text-2xl;
+  }
   html,
   button {
     @apply font-sans;

@@ -62,7 +62,7 @@ If UKQB committee members feel a conversation is becoming too heated, they may t
 
 Cheating is generally dealt with on a case-by-case basis, with the process overseen by the UKQB Tournaments Secretary (and not the UKQB Safeguarding Officers, though they are often the initial point of contact). In general, if there is suspicion of cheating, there are primarily two scenarios that may occur:
 
-##### During the tournament itself, a mod or other member of the tournament running team observes and suspects that an individual is cheating.
+##### 1) During the tournament itself, a mod or other member of the tournament running team observes and suspects that an individual is cheating.
 
 In this case, the tournament's running team will inform other moderators at the tournament and inform the UKQB committee, primarily the Tournaments Secretary. Action will only be taken if it is determined by the Tournaments Secretary and the tournament running team, on the balance of probabilities (ie: that it is more likely than not), that cheating has occurred.
 
@@ -75,7 +75,7 @@ The following immediate action may be taken:
 
 Additionally, after the tournament, the university society that the individual(s) are part of will be informed.
 
-##### Either suspected cheating is reported after a tournament takes place, or suspected cheating is observed but cannot be suitably determined on the balance of probabilities to have occurred during a tournament.
+##### 2) Either suspected cheating is reported after a tournament takes place, or suspected cheating is observed but cannot be suitably determined on the balance of probabilities to have occurred during a tournament.
 
 In this case, the process instead typically results in evaluating the severity of it.
 
