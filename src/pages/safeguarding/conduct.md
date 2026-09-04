@@ -3,8 +3,6 @@ layout: ../../layouts/MarkdownLayout.astro
 title: Code of conduct
 ---
 
-# Code of conduct
-
 As part of our commitment to safeguarding and fair play, UKQB events[^1] are run in accordance with the following code of conduct.
 
 ## In all UKQB-run settings
