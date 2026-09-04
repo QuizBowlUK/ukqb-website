@@ -20,7 +20,9 @@ This includes tournaments hosted or co-hosted by UKQB, as well as on the officia
    - Threats of violence
    - Discriminatory jokes and language
    - Ridiculing or insulting other participants (in the quizzing context, this may include being rude to a teammate who is perceived to be "underperforming", or mocking members of another team)
-   - Generally, if someone asks a participant to stop engaging in a particular behaviour, then they should stop.
+
+- Generally, if someone asks a participant to stop engaging in a particular behaviour, then they should stop.
+
 4. If any member has been harassed, had discriminatory language used against them, or otherwise been made to feel unwelcome, it is strongly encouraged that they either make a report via the [safeguarding reporting form](https://docs.google.com/forms/d/e/1FAIpQLSe31AHhs71slwnO9cRf0tV6U1kpTpyePV26y6ImaHWUn7OdAA/viewform) or contact the UKQB safeguarding officers directly. No issue is “too small” to be reported, and we would prefer “over-reporting” than incidents going unnoticed.
 5. If UKQB members violate the code of conduct, the UKQB committee reserves the right to impose sanctions after investigating the misconduct. Any conduct that violates rule 2 will be immediately actionable and may include a permanent tournament ban, the informing of society presidents, and a possible report to police. Any other violations will follow the [sanctions policy](/safeguarding/sanctions-policy/).
 
@@ -60,7 +62,7 @@ Competitors who believe another participant may be cheating are encouraged to re
 
 UKQB reserves the right to suspend or expel players who are suspected of rule breaking from tournaments. We also reserve the right to draw inferences based on statistical evidence, though this will not form the entire basis of any decision made by a UKQB TD or committee.
 
-After the tournament, any suspected wrongdoing will be referred to members of the UKQB committee, who will review the evidence available and determine any sanctions that may need to be enacted, which could include a ban from UKQB events for a stipulated amount of time. Further details on the UKQB [sanctions policy](/safeguarding/sanctions-policy/) can be found here.
+After the tournament, any suspected wrongdoing will be referred to members of the UKQB committee, who will review the evidence available and determine any sanctions that may need to be enacted, which could include a ban from UKQB events for a stipulated amount of time. Further details on the UKQB [**sanctions policy**](/safeguarding/sanctions-policy/) can be found here.
 
 [^1]: For the purposes of this document, “UKQB event” refers to all tournaments that appear on our tournaments calendar.
 
