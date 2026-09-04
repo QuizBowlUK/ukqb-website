@@ -38,12 +38,12 @@ If this occurs at in-person tournaments, the tournament running team (tournament
 
 In general, “repeated incidents” does not necessarily have to be a second incident. Instead, it is usually something that points towards both a pattern of behaviour and an unwillingness to correct that behaviour.
 
-### Server behaviour:
+### **Server behaviour:**
 
 This includes any direct violation of server rules (found here), as well as behaviour on the server that we do not feel aligns with its aims (i.e: to be a welcoming community of hobbyists).
 
 - First incident: formal warning issued by safeguarding officers
-  The status of the warning as “formal” will be indicated in the message, all other warnings are considered informal
+  - The status of the warning as “formal” will be indicated in the message, all other warnings are considered informal
 - Repeated incidents: short-term (up to fourteen days) restriction of server access, which may include:
   - Slowmode
   - Loss of access to channels
@@ -56,13 +56,13 @@ Additionally, messages including content that violate the server rules (unclear 
 
 If UKQB committee members feel a conversation is becoming too heated, they may temporarily restrict message volume on a channel with slow mode. This may be done without warning. This can be done at their own discretion, but the UKQB committee should be informed.
 
-### Tournament violations:
+### **Tournament violations:**
 
 #### Cheating:
 
-Cheating is generally dealt with on a case-by-case basis, with the process overseen by the UKQB Tournaments Secretary (and not the UKQB Safeguarding Officers, though they are often the initial point of contact). In general, if there is suspicion of cheating, there are primarily two scenarios that may occur:
+Cheating is generally dealt with on a case-by-case basis, with the process overseen by the **UKQB Tournaments Secretary** (and not the UKQB Safeguarding Officers, though they are often the initial point of contact). In general, if there is suspicion of cheating, there are primarily two scenarios that may occur:
 
-##### 1) During the tournament itself, a mod or other member of the tournament running team observes and suspects that an individual is cheating.
+##### 1) **During the tournament itself**, a mod or other member of the tournament running team observes and suspects that an individual is cheating.
 
 In this case, the tournament's running team will inform other moderators at the tournament and inform the UKQB committee, primarily the Tournaments Secretary. Action will only be taken if it is determined by the Tournaments Secretary and the tournament running team, on the balance of probabilities (ie: that it is more likely than not), that cheating has occurred.
 
@@ -75,7 +75,7 @@ The following immediate action may be taken:
 
 Additionally, after the tournament, the university society that the individual(s) are part of will be informed.
 
-##### 2) Either suspected cheating is reported after a tournament takes place, or suspected cheating is observed but cannot be suitably determined on the balance of probabilities to have occurred during a tournament.
+##### 2) **Either** suspected cheating is reported **after a tournament takes place**, or suspected cheating is observed but **cannot be suitably determined on the balance of probabilities to have occurred during a tournament.**
 
 In this case, the process instead typically results in evaluating the severity of it.
 
@@ -90,6 +90,6 @@ Similar to behavioural concerns, an ongoing pattern of cheating may result in sh
 - Repeated incidents: short-term restriction from playing in UKQB hosted/co-hosted tournaments
 - Further repeated incident: Depending on the severity of previous incidents, this may result in a long-term or lifetime ban from UKQB tournaments
 
-Similarly, a long-term or lifetime tournament ban is a last resort. We have not had to do this in the past, and this is only reserved for serious instances where a member cannot be trusted to conduct themselves in a safe manner while at tournaments. A ledger will be kept of individuals with a lifetime UKQB tournament ban, which will be circulated among the tournament directors of any UKQB affiliated tournament.
+Similarly, a long-term or lifetime tournament ban is a _last resort._ We have not had to do this in the past, and this is only reserved for serious instances where a member cannot be trusted to conduct themselves in a safe manner while at tournaments. A ledger will be kept of individuals with a lifetime UKQB tournament ban, which will be circulated among the tournament directors of any UKQB affiliated tournament.
 
-Last updated 21/08/2026
+_Last updated 21/08/2026_
