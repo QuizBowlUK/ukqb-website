@@ -3,8 +3,6 @@ layout: ../../layouts/MarkdownLayout.astro
 title: Discord servers
 ---
 
-[**UK Quizbowl**](https://discord.gg/GY2RnCE): this is a casual server with past and present quizbowl players from the UK and elsewhere. Quizbowl packets are read out on Monday evenings.
-
-**UK Quiz**: this server is primarily intended for all current university students in the UK who are interested in quizbowl, but is also open to open players too. You can discuss tournaments here and practice online with students from other universities, but there's also room for chatting about things like _University Challenge_ or _Only Connect_. To join the server, either contact your university's quiz society for the invite link or [contact us directly](/contact).
+[**UK Quizbowl**](https://discord.gg/RV5bfgm7jy): this server is for anyone interested in engaging with UK Quizbowl, whether you're new to the game or an experienced player. You can discuss tournaments, find people to practise with online, and chat about quizbowl and other quizzes like _University Challenge_ or _Only Connect_.
 
 [**US Quizbowl**](https://discord.gg/quizbowl): its size might make it a bit intimidating, but the American quizbowl discord server is good for general chatting about quizbowl and tournaments, and occasionally a packet might be read out on there.
