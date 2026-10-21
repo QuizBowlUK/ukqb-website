@@ -14,6 +14,6 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BlogLayout frontmatter={post.data}>
+<BlogLayout frontmatter={post.data} sourceFiles={[post.filePath!]}>
   <Content />
 </BlogLayout>

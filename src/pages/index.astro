@@ -8,7 +8,14 @@ import Youtube from "../components/icons/Youtube.astro";
 import BlogPreview from "../components/blog/BlogPreview.astro";
 ---
 
-<Layout>
+<Layout
+  sourceFiles={[
+    "src/pages/index.astro",
+    "src/components/Intro.astro",
+    "src/data/tournaments.json",
+    "src/data/blog",
+  ]}
+>
   <h1 class="mt-24 -mb-2 text-center text-4xl md:mt-48 md:text-6xl">
     Welcome to <span class="text-ukqb-red">UK Quizbowl</span>
   </h1>

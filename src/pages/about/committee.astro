@@ -6,7 +6,10 @@ import CommitteeCard from "../../components/about/CommitteeCard.astro";
 const committee = await getCollection("committee");
 ---
 
-<Layout title="Committee">
+<Layout
+  title="Committee"
+  sourceFiles={["src/pages/about/committee.astro", "src/data/committee.json"]}
+>
   <h1>Committee</h1>
   <div class="space-y-4">
     {committee.map((member) => <CommitteeCard committee={member} />)}
