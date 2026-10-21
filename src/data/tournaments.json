@@ -44,6 +44,10 @@
     "location": {
       "Northern": "University of Edinburgh",
       "Southern": "University of Cambridge"
+    },
+    "link": {
+      "Edinburgh forum post": "https://hsquizbowl.org/forums/viewtopic.php?p=414248#p414248",
+      "Cambridge forum post": "https://hsquizbowl.org/forums/viewtopic.php?p=414253#p414253"
     }
   },
   {
@@ -55,6 +59,9 @@
     "location": {
       "Northern": "Durham University",
       "Southern": "University of Southampton"
+    },
+    "link": {
+      "Southampton signups": "https://hsquizbowl.org/forums/viewtopic.php?p=414036#p414036"
     }
   },
   {
@@ -64,7 +71,10 @@
     "eligibility": "closed",
     "date": "21 Nov 2026",
     "popCulture": true,
-    "location": "University of Birmingham"
+    "location": "University of Birmingham",
+    "link": {
+      "Signup forum post": "https://hsquizbowl.org/forums/viewtopic.php?p=414296#p414296"
+    }
   },
   {
     "name": "British Novice",
@@ -75,6 +85,9 @@
     "location": {
       "Northern": "University of Manchester",
       "Southern": "University of Warwick"
+    },
+    "link": {
+      "Playtesting signup": "https://forms.gle/1Yr2bchQ2yMmQyW17"
     }
   },
   {
@@ -85,5 +98,69 @@
     "date": "5 Dec 2026",
     "popCulture": true,
     "location": "University of Sheffield"
+  },
+  {
+    "name": "CLOPEN",
+    "id": "clopen",
+    "dots": 3,
+    "eligibility": "open",
+    "date": "9 Jan 2027"
+  },
+  {
+    "name": "ARCADIA",
+    "id": "arcadia",
+    "dots": 2,
+    "eligibility": "closed",
+    "date": "16 Jan 2027"
+  },
+  {
+    "name": "ACF Regionals",
+    "id": "acf-regionals",
+    "dots": 3,
+    "eligibility": "closed",
+    "date": "30 Jan 2027"
+  },
+  {
+    "name": "Winter Novice",
+    "id": "winter-novice",
+    "dots": 1,
+    "eligibility": "closed",
+    "date": "6 Feb 2027"
+  },
+  {
+    "name": "COOT",
+    "id": "coot",
+    "dots": 3,
+    "eligibility": "open",
+    "date": "13 Feb 2027"
+  },
+  {
+    "name": "Planetfall",
+    "id": "planetfall",
+    "dots": 1.5,
+    "eligibility": "closed",
+    "date": "20 Feb 2027"
+  },
+  {
+    "name": "BSQC",
+    "id": "bsqc",
+    "dots": 3,
+    "eligibility": "closed",
+    "date": "6 Mar 2027"
+  },
+  {
+    "name": "WaShBowl IV",
+    "id": "washbowl-iv",
+    "dots": 0,
+    "eligibility": "closed",
+    "date": "13 Mar 2027",
+    "popCulture": true
+  },
+  {
+    "name": "SOBA",
+    "id": "soba",
+    "dots": 2.5,
+    "eligibility": "open",
+    "date": "20 Mar 2027"
   }
 ]
