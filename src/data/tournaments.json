@@ -44,6 +44,10 @@
     "location": {
       "Northern": "University of Edinburgh",
       "Southern": "University of Cambridge"
+    },
+    "link": {
+      "Edinburgh forum post": "https://hsquizbowl.org/forums/viewtopic.php?p=414248#p414248",
+      "Cambridge forum post": "https://hsquizbowl.org/forums/viewtopic.php?p=414253#p414253"
     }
   },
   {
@@ -55,6 +59,9 @@
     "location": {
       "Northern": "Durham University",
       "Southern": "University of Southampton"
+    },
+    "link": {
+      "Southampton signups": "https://hsquizbowl.org/forums/viewtopic.php?p=414036#p414036"
     }
   },
   {
@@ -64,7 +71,10 @@
     "eligibility": "closed",
     "date": "21 Nov 2026",
     "popCulture": true,
-    "location": "University of Birmingham"
+    "location": "University of Birmingham",
+    "link": {
+      "Signup forum post": "https://hsquizbowl.org/forums/viewtopic.php?p=414296#p414296"
+    }
   },
   {
     "name": "British Novice",
@@ -75,6 +85,9 @@
     "location": {
       "Northern": "University of Manchester",
       "Southern": "University of Warwick"
+    },
+    "link": {
+      "Playtesting signup": "https://forms.gle/1Yr2bchQ2yMmQyW17"
     }
   },
   {
