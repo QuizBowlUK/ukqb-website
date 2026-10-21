@@ -5,9 +5,10 @@ import MarkdownLayout from "./MarkdownLayout.astro";
 
 export interface Props {
   frontmatter: CollectionEntry<"blog">["data"];
+  sourceFiles: string[];
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, sourceFiles } = Astro.props;
 const { title, description, date, image } = frontmatter;
 
 const images = import.meta.glob<{ default: any }>(
@@ -16,7 +17,7 @@ const images = import.meta.glob<{ default: any }>(
 const featurePath = `/src/assets/blog/${image.feature ?? image.teaser.path}`;
 ---
 
-<MarkdownLayout frontmatter={frontmatter}>
+<MarkdownLayout frontmatter={frontmatter} sourceFiles={sourceFiles}>
   <div class="-mb-4 text-gray-600" slot="date">
     {
       date.toLocaleDateString("en-GB", {

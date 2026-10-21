@@ -8,7 +8,14 @@ const posts = (await getCollection("blog")).sort(
 );
 ---
 
-<Layout title="Blog">
+<Layout
+  title="Blog"
+  sourceFiles={[
+    "src/pages/blog/index.astro",
+    "src/data/blog",
+    ...posts.map((post) => `src/assets/blog/${post.data.image.teaser.path}`),
+  ]}
+>
   <h1>Blog</h1>
   <div class="mb-20 grid grid-cols-1 gap-4 md:grid-cols-3">
     {posts.map((post) => <Card post={post} />)}
