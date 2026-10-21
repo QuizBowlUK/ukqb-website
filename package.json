@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "test": "node --test src/utils/lastUpdated.test.js",
-    "prebuild": "node scripts/prepare-git-history.js",
+    "test": "node --experimental-strip-types --test src/utils/lastUpdated.test.ts",
+    "prebuild": "node --experimental-strip-types scripts/prepare-git-history.ts",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",

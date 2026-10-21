@@ -2,6 +2,8 @@
 
 ## Page update timestamps
 
+Use Node.js 22.6 or newer to run the TypeScript build script and tests directly.
+
 Every page displays the latest Git commit date for its content, in UK time
 (GMT/BST). Blog publication dates remain separate. The homepage also tracks
 tournament and blog data; the blog index tracks blog data; the committee page

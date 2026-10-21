@@ -1,8 +1,12 @@
 import { execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 
-/** @param {string[]} sourceFiles @param {boolean} development */
-export function getLastUpdated(sourceFiles, development = false) {
+export function getLastUpdated(sourceFiles: string[]): Date;
+export function getLastUpdated(
+  sourceFiles: string[],
+  development: boolean,
+): Date | null;
+export function getLastUpdated(sourceFiles: string[], development = false) {
   if (
     execFileSync("git", ["rev-parse", "--is-shallow-repository"], {
       encoding: "utf8",

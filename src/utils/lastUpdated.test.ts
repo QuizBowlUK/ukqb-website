@@ -5,15 +5,17 @@ import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import test from "node:test";
-import { getLastUpdated } from "./lastUpdated.js";
-import { getBlogSourceFiles } from "./blogSourceFiles.js";
+import type { CollectionEntry } from "astro:content";
+import { getLastUpdated } from "./lastUpdated.ts";
+import { getBlogSourceFiles } from "./blogSourceFiles.ts";
 
 test("timestamps follow page content and data, ignoring unrelated commits", () => {
   const originalDirectory = process.cwd();
-  const prepareHistoryScript = resolve("scripts/prepare-git-history.js");
+  const prepareHistoryScript = resolve("scripts/prepare-git-history.ts");
   const directory = mkdtempSync(join(tmpdir(), "ukqb-last-updated-"));
-  const git = (...args) => execFileSync("git", args, { cwd: directory });
-  const commit = (date) => {
+  const git = (...args: string[]) =>
+    execFileSync("git", args, { cwd: directory });
+  const commit = (date: string) => {
     git("add", ".");
     execFileSync(
       "git",
@@ -76,7 +78,11 @@ test("timestamps follow page content and data, ignoring unrelated commits", () =
     );
     process.chdir(shallow);
     assert.throws(() => getLastUpdated(["page.md"]), /full Git history/);
-    execFileSync(process.execPath, [prepareHistoryScript], { cwd: shallow });
+    execFileSync(
+      process.execPath,
+      ["--experimental-strip-types", prepareHistoryScript],
+      { cwd: shallow },
+    );
     assert.equal(
       getLastUpdated(["page.md"]).toISOString(),
       "2026-01-01T12:00:00.000Z",
@@ -88,11 +94,18 @@ test("timestamps follow page content and data, ignoring unrelated commits", () =
 });
 
 test("blog sources include feature and body images, excluding remote URLs", () => {
-  const post = {
+  const post: CollectionEntry<"blog"> = {
     id: "post",
+    collection: "blog",
     filePath: "src/data/blog/post.md",
-    data: { image: { feature: "feature.jpg", teaser: { path: "teaser.jpg" } } },
+    data: {
+      title: "Post",
+      description: "Test post",
+      date: new Date("2026-01-01T12:00:00Z"),
+      image: { feature: "feature.jpg", teaser: { path: "teaser.jpg" } },
+    },
     rendered: {
+      html: "",
       metadata: {
         imagePaths: [
           "../../assets/blog/body.jpg",
