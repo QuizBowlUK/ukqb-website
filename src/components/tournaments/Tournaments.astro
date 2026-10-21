@@ -22,29 +22,104 @@ const futureTournaments = allTournaments.filter((tournament) => {
   return tournamentDate >= ukDate;
 });
 const tournaments = futureTournaments;
+const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
 ---
 
-<div class={className}>
+<div class={className} data-tournaments>
   <h2>Upcoming tournaments</h2>
+  <form hidden class="mb-6" data-tournament-filters>
+    <div class="flex flex-wrap gap-x-10 gap-y-4">
+      <fieldset class="m-0 border-0 p-0">
+        <legend class="mb-2 font-bold">Eligibility</legend>
+        <div class="flex flex-wrap gap-4">
+          <label class="flex cursor-pointer items-center gap-2">
+            <input type="checkbox" name="eligibility" value="open" checked />
+            Open
+          </label>
+          <label class="flex cursor-pointer items-center gap-2">
+            <input type="checkbox" name="eligibility" value="closed" checked />
+            Closed (student-only)
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="m-0 border-0 p-0">
+        <legend class="mb-2 font-bold">Difficulty</legend>
+        <div class="flex flex-wrap gap-x-4 gap-y-2">
+          {
+            difficultyLevels.map((label, dots) => (
+              <label class="flex cursor-pointer items-center gap-2">
+                <input type="checkbox" name="difficulty" value={dots} checked />
+                <span class="flex items-center gap-2">
+                  <span aria-hidden="true">
+                    <Dots dots={dots} />
+                  </span>
+                  <span>
+                    {label}
+                    <span class="sr-only"> ({dots} dots)</span>
+                  </span>
+                </span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+    </div>
+  </form>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
-    {tournaments.map((tournament) => <Card tournament={tournament} />)}
+    {
+      tournaments.map((tournament) => (
+        <div
+          data-tournament
+          data-eligibility={tournament.data.eligibility}
+          data-dots={tournament.data.dots}
+        >
+          <Card tournament={tournament} />
+        </div>
+      ))
+    }
   </div>
-  <div class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
-    <div class="flex items-center gap-2">
-      <Dots dots={1} />
-      Novice
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={2} />
-      Medium
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={3} />
-      Hard
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={4} />
-      Very hard
-    </div>
-  </div>
+  <p role="status" data-tournament-status></p>
 </div>
+
+<script>
+  import { matchesTournamentFilters } from "./filters.js";
+
+  document
+    .querySelectorAll<HTMLElement>("[data-tournaments]")
+    .forEach((section) => {
+      const form = section.querySelector<HTMLFormElement>(
+        "[data-tournament-filters]",
+      )!;
+      const cards = section.querySelectorAll<HTMLElement>("[data-tournament]");
+      const status = section.querySelector<HTMLElement>(
+        "[data-tournament-status]",
+      )!;
+
+      const update = () => {
+        const selected = new FormData(form);
+        const eligibility = selected.getAll("eligibility").map(String);
+        const difficulties = selected.getAll("difficulty").map(Number);
+        let count = 0;
+
+        cards.forEach((card) => {
+          card.hidden = !matchesTournamentFilters(
+            card.dataset.eligibility!,
+            Number(card.dataset.dots),
+            eligibility,
+            difficulties,
+          );
+          if (!card.hidden) count++;
+        });
+
+        status.textContent =
+          count === 0
+            ? "No tournaments match these filters."
+            : `${count} ${count === 1 ? "tournament" : "tournaments"} shown.`;
+      };
+
+      form.addEventListener("submit", (event) => event.preventDefault());
+      form.addEventListener("change", update);
+      form.hidden = false;
+      update();
+    });
+</script>
