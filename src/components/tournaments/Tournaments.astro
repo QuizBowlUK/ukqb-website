@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Card from "./Card.astro";
 import Dots from "./Dots.astro";
+import ChevronDown from "../icons/ChevronDown.astro";
 
 const { class: className } = Astro.props;
 
@@ -22,29 +23,252 @@ const futureTournaments = allTournaments.filter((tournament) => {
   return tournamentDate >= ukDate;
 });
 const tournaments = futureTournaments;
+const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
 ---
 
-<div class={className}>
+<div class={className} data-tournaments>
   <h2>Upcoming tournaments</h2>
+  <form hidden class="mb-4" data-tournament-filters>
+    <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
+      <details class="group relative" name="tournament-filter">
+        <summary
+          class="filter-trigger box-border flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-lg px-3 py-1 focus-visible:outline-2 focus-visible:outline-offset-2 sm:min-h-9"
+        >
+          Eligibility
+          <ChevronDown
+            class="size-4 transition-transform duration-200 group-open:rotate-180"
+          />
+        </summary>
+        <fieldset class="navbar-dropdown-items filter-options m-0 mt-1">
+          <legend class="sr-only">Eligibility</legend>
+          <label class="filter-option">
+            <input
+              class="sr-only"
+              type="checkbox"
+              name="eligibility"
+              value="open"
+              checked
+            />
+            Open
+            <span class="selection-mark" aria-hidden="true">✓</span>
+          </label>
+          <label class="filter-option">
+            <input
+              class="sr-only"
+              type="checkbox"
+              name="eligibility"
+              value="closed"
+              checked
+            />
+            Closed (student-only)
+            <span class="selection-mark" aria-hidden="true">✓</span>
+          </label>
+        </fieldset>
+      </details>
+      <details class="group relative" name="tournament-filter">
+        <summary
+          class="filter-trigger box-border flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-lg px-3 py-1 focus-visible:outline-2 focus-visible:outline-offset-2 sm:min-h-9"
+        >
+          Difficulty
+          <ChevronDown
+            class="size-4 transition-transform duration-200 group-open:rotate-180"
+          />
+        </summary>
+        <fieldset class="navbar-dropdown-items filter-options m-0 mt-1">
+          <legend class="sr-only">Difficulty</legend>
+          {
+            difficultyLevels.map((label, dots) => (
+              <label class="filter-option">
+                <input
+                  class="sr-only"
+                  type="checkbox"
+                  name="difficulty"
+                  value={dots}
+                  checked
+                />
+                <span class="flex items-center gap-2">
+                  <span aria-hidden="true">
+                    <Dots dots={dots} />
+                  </span>
+                  <span>
+                    {label}
+                    <span class="sr-only"> ({dots} dots)</span>
+                  </span>
+                </span>
+                <span class="selection-mark" aria-hidden="true">
+                  ✓
+                </span>
+              </label>
+            ))
+          }
+        </fieldset>
+      </details>
+    </div>
+  </form>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
-    {tournaments.map((tournament) => <Card tournament={tournament} />)}
+    {
+      tournaments.map((tournament) => (
+        <div
+          data-tournament
+          data-eligibility={tournament.data.eligibility}
+          data-dots={tournament.data.dots}
+        >
+          <Card tournament={tournament} />
+        </div>
+      ))
+    }
   </div>
-  <div class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
-    <div class="flex items-center gap-2">
-      <Dots dots={1} />
-      Novice
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={2} />
-      Medium
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={3} />
-      Hard
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={4} />
-      Very hard
-    </div>
-  </div>
+  <p role="status" data-tournament-status></p>
 </div>
+
+<script>
+  import { matchesTournamentFilters } from "./filters.js";
+
+  document
+    .querySelectorAll<HTMLElement>("[data-tournaments]")
+    .forEach((section) => {
+      const form = section.querySelector<HTMLFormElement>(
+        "[data-tournament-filters]",
+      )!;
+      const cards = section.querySelectorAll<HTMLElement>("[data-tournament]");
+      const status = section.querySelector<HTMLElement>(
+        "[data-tournament-status]",
+      )!;
+
+      const update = () => {
+        const selected = new FormData(form);
+        const eligibility = selected.getAll("eligibility").map(String);
+        const difficulties = selected.getAll("difficulty").map(Number);
+        let count = 0;
+
+        cards.forEach((card) => {
+          card.hidden = !matchesTournamentFilters(
+            card.dataset.eligibility!,
+            Number(card.dataset.dots),
+            eligibility,
+            difficulties,
+          );
+          if (!card.hidden) count++;
+        });
+
+        status.textContent =
+          count === 0
+            ? "No tournaments match these filters."
+            : `${count} ${count === 1 ? "tournament" : "tournaments"} shown.`;
+      };
+
+      document.addEventListener("click", (event) => {
+        form
+          .querySelectorAll<HTMLDetailsElement>("details[open]")
+          .forEach((dropdown) => {
+            if (
+              event.target instanceof Node &&
+              !dropdown.contains(event.target)
+            ) {
+              dropdown.open = false;
+            }
+          });
+      });
+      form.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          const dropdown =
+            form.querySelector<HTMLDetailsElement>("details[open]");
+          if (dropdown) {
+            dropdown.open = false;
+            dropdown.querySelector("summary")?.focus();
+          }
+        }
+      });
+
+      form.addEventListener("submit", (event) => event.preventDefault());
+      form.addEventListener("change", update);
+      form.hidden = false;
+      update();
+    });
+</script>
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .filter-trigger {
+    background: white;
+    box-shadow: 0 1px 4px rgb(60 10 10 / 8%);
+    transition: background-color 150ms;
+  }
+
+  .filter-trigger:hover,
+  details[open] > .filter-trigger {
+    background: var(--color-ukqb-red-hover);
+  }
+
+  .filter-options {
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    width: max-content;
+    max-width: calc(100vw - 2.5rem);
+    padding: 0.375rem;
+    border: 0;
+    gap: 0.125rem;
+    transform: none;
+    translate: none;
+    min-inline-size: 12rem;
+    grid-template-columns: 1fr;
+    box-shadow:
+      0 8px 24px rgb(60 10 10 / 10%),
+      0 1px 4px rgb(60 10 10 / 6%);
+  }
+
+  details:last-child .filter-options {
+    right: 0;
+    left: auto;
+  }
+
+  .filter-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-sizing: border-box;
+    min-height: 2.75rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 150ms;
+  }
+
+  .filter-option:hover {
+    background: rgb(170 0 0 / 4%);
+  }
+
+  .filter-option:has(input:checked) {
+    background: var(--color-ukqb-red-hover);
+    color: var(--color-ukqb-red);
+  }
+
+  .filter-option:has(input:focus-visible) {
+    outline: 2px solid var(--color-ukqb-red);
+    outline-offset: -2px;
+  }
+
+  .selection-mark {
+    margin-left: auto;
+    opacity: 0;
+  }
+
+  .filter-option:has(input:checked) .selection-mark {
+    opacity: 1;
+  }
+
+  @media (min-width: 640px) {
+    details:last-child .filter-options {
+      right: auto;
+      left: 0;
+    }
+
+    .filter-option {
+      min-height: 2.25rem;
+    }
+  }
+</style>
