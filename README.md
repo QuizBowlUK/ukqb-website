@@ -5,13 +5,18 @@
 Every page displays the latest Git commit date for its content, in UK time
 (GMT/BST). Blog publication dates remain separate. The homepage also tracks
 tournament and blog data; the blog index tracks blog data; the committee page
-tracks committee data. Shared navigation and styling changes do not reset content
+tracks committee data. Referenced blog images and committee portraits also count
+as content updates. Shared navigation and styling changes do not reset content
 timestamps. New Astro pages must pass their content paths to `Layout` via
 `sourceFiles`; Markdown pages use their source file automatically.
 
-Builds need Git history, not just a source archive or shallow checkout. CI fetches
-full history. For a shallow local or hosting checkout, run `git fetch --unshallow`
-before `npm run build`. Uncommitted edits receive their timestamp after committing.
+Builds need Git history, not just a source archive. `npm run build` automatically
+fetches full history for shallow checkouts, including hosting builds; fetching
+requires access to the Git remote. Direct Astro commands reject shallow history
+with instructions to run `git fetch --unshallow`. CI fetches full history upfront.
+New files without history show “Not yet committed” in development; production
+builds still require a committed timestamp. Uncommitted edits receive their
+timestamp after committing.
 
 ## How to add a new blog post
 

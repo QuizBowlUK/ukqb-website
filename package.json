@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "test": "node --test src/utils/lastUpdated.test.js",
+    "prebuild": "node scripts/prepare-git-history.js",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
