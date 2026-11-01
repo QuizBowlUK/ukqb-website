@@ -1,11 +1,11 @@
 ---
 import Layout from "./Layout.astro";
 
-const { frontmatter } = Astro.props;
+const { frontmatter, sourceFiles = [frontmatter.file] } = Astro.props;
 const { title } = frontmatter;
 ---
 
-<Layout title={title}>
+<Layout title={title} sourceFiles={sourceFiles}>
   <div class="mx-auto md:max-w-[65ch]">
     <slot name="date" />
     <h1 class="text-4xl md:text-5xl">{title}</h1>
