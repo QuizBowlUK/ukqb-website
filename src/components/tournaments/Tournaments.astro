@@ -205,14 +205,22 @@ const difficultyLevels = [
       filters
         .querySelectorAll<HTMLElement>(".filter-option")
         .forEach((option) => {
+          let pressTimer: ReturnType<typeof setTimeout> | undefined;
+          const clearPressed = () => {
+            clearTimeout(pressTimer);
+            delete option.dataset.pressed;
+          };
           option.addEventListener(
             "touchstart",
             () => {
-              option.dataset.pressed = "";
+              clearPressed();
+              pressTimer = setTimeout(() => {
+                option.dataset.pressed = "";
+              }, 150);
             },
             { passive: true },
           );
-          const clearPressed = () => delete option.dataset.pressed;
+          option.addEventListener("touchmove", clearPressed, { passive: true });
           option.addEventListener("touchend", clearPressed);
           option.addEventListener("touchcancel", clearPressed);
         });
