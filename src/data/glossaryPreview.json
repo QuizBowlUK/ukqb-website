@@ -1,0 +1,529 @@
+{
+  "groups": [
+    {
+      "name": "Format",
+      "entries": [
+        {
+          "term": "Quizbowl",
+          "definition": "Format of competitive, team, buzzer quiz in which correctly answering a tossup wins your team a set of bonuses."
+        },
+        {
+          "term": "Tournament",
+          "definition": "A competition event where teams play several games, in a round-robin format. A tournament will use a single question set, and usually consists of prelims, playoffs and a final. Tournaments are held at unis across the country, and last for an entire day (10am-6pm, with a lunch break of course)."
+        },
+        {
+          "term": "Tossup",
+          "definition": "A pyramidal series of clues which lead to a single answer. Formatted as clues, often with a powermark, followed by an answerline.",
+          "existing": {
+            "term": "Tossup",
+            "definition": "Question on which teams can buzz on to earn points, similar to starters on University Challenge; correctly answering a tossup will also give a team a chance to answer a set of bonuses. Tossups are significantly longer than University Challenge starters: most are between five and ten lines long, and are pyramidal. There are no tossups that involve looking at pictures or listening to music, although some may describe artworks or musical pieces."
+          }
+        },
+        {
+          "term": "Bonus set",
+          "definition": "Series of 3 bonus parts around some connecting theme; 1 easy, 1 medium, and 1 hard. The first part is preceded by a lead-in and “For 10 points each:”",
+          "existing": {
+            "term": "Bonus/bonus set",
+            "definition": "A set of three questions linked by some theme, which are awarded to a team after they correctly answer a tossup. Unlike on University Challenge, bonuses are worth 10 points in quizbowl, and there are no music or picture bonuses. Teams may confer on bonuses, but not tossups. Most bonus sets will have an easy, medium and hard part but not necessarily in that order."
+          }
+        },
+        {
+          "term": "Team",
+          "definition": "Quizbowl is played in teams of up to 4 people. Teams of 5 sometimes enter tournaments, but players take turns to sit out each game. At student tournaments, teams usually represent a single university, but chimeras may be formed in some circumstances."
+        },
+        {
+          "term": "Game",
+          "definition": "A Quizbowl game/match is played between 2 teams, who will hear every tossup from a single packet. The winner of the game is, unsurprisingly, the team which scores the most points during the game. A tossup will be read as a tiebreaker if needed. Games last around 30-45 mins."
+        }
+      ]
+    },
+    {
+      "name": "Scoring",
+      "entries": [
+        {
+          "term": "Points",
+          "definition": "Awarded to teams for correctly answering questions. 15 points for power, 10 for a get, -5 for a neg. 10 points for each bonus part."
+        },
+        {
+          "term": "Power",
+          "definition": "The first half of a tossup may be marked as “in power”; correctly buzzing on these harder clues earns the player’s team 15 points. Moderators may indicate such an event by saying “for power” or “for 15”. “To power” a tossup is to score 15 points in such a manner.",
+          "existing": {
+            "term": "Power",
+            "definition": "A particularly early correct buzz in a tossup, which earns the player more points. Powers usually are worth 15 points, and correct buzzes ‘out of power’ are worth 10. Not all tournaments have powers; the tournament director will usually make this clear at the start of the day."
+          }
+        },
+        {
+          "term": "Get",
+          "definition": "A get is a correctly converted tossup, specifically not a power."
+        },
+        {
+          "term": "Neg",
+          "definition": "To neg is to buzz in before the end of a tossup giving an incorrect answer. This loses your team 5 points (the moderator may therefore say “neg 5”); and only the opposing team may buzz for the remainder of the tossup. Players shouldn’t be overly afraid of negging.",
+          "existing": {
+            "term": "Neg",
+            "definition": "The act of interrupting a tossup before it is finished, and giving an incorrect answer. Performing a neg loses your team five points, and means that they cannot buzz again on that tossup."
+          }
+        },
+        {
+          "term": "Bounceback",
+          "definition": "A correct buzz after the opposing team has negged. It is good practice to wait until the very end of the question, since the other team cannot buzz. Failing to wait is described as vulching.",
+          "existing": {
+            "term": "Bounceback",
+            "definition": "Converting a tossup which has been negged by the other team"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Questions",
+      "entries": [
+        {
+          "term": "Clue",
+          "definition": "A sentence uniquely describing an answer; contains a hypernym."
+        },
+        {
+          "term": "Hypernym",
+          "definition": "A general term that describes the type of answer expected e.g. “this country”, “this artist”. Tossups should provide their hypernym as soon as possible. E.g. “This scientist names an equation stating a + b = c” is better as a firstline than “The equation, a + b = c, is named for this scientist.”"
+        },
+        {
+          "term": "Pyramidal",
+          "definition": "Tossups are described as pyramidal in that they start with harder/more obscure clues and get easier, ending with the giveaway.",
+          "existing": {
+            "term": "Pyramidal",
+            "definition": "One of the core principles of quizbowl, questions being pyramidal means that tossups should start with relatively obscure clues that reward in-depth knowledge of the topic, and then become progressively easier until the final line, the ‘giveaway’, which most teams are likely to know."
+          }
+        },
+        {
+          "term": "Giveaway",
+          "definition": "The easiest clue in a tossup, the giveaway is always preceded by “For 10 points,”"
+        },
+        {
+          "term": "Firstline",
+          "definition": "Opposite of a giveaway, the first clue of a tossup should be the most difficult. Such clues might be described as chestnuts. “To firstline” a tossup is to correctly buzz on this first clue."
+        },
+        {
+          "term": "Powermark",
+          "definition": "Usually formatted as (*), indicates that prior parts of the tossup are in power. Should be placed immediately before a word that is a significant clue. E.g. “In this play (*) Lothario …”."
+        },
+        {
+          "term": "Answerline",
+          "definition": "Formatted like this, “ANSWER: this is the answer”, may be followed by a list of acceptable or promptable answers."
+        },
+        {
+          "term": "Bonus part",
+          "definition": "Short question of usually 2 clues, possibly 1 longer clue, leading to a single answer."
+        },
+        {
+          "term": "Easy part",
+          "definition": "Bonus part that 90% of teams of the difficulty level of the question set would be expected to convert."
+        },
+        {
+          "term": "Medium part",
+          "definition": "Bonus part that 50% of teams of the difficulty level of the question set would be expected to convert."
+        },
+        {
+          "term": "Hard part",
+          "definition": "Bonus part that 10% of teams of the difficulty level of the question set would be expected to convert."
+        },
+        {
+          "term": "Accepts",
+          "definition": "Answers that are not the same thing as the main answerline, but equivalently correct in the context of the question. Any correct or acceptable answer is underlined and bolded."
+        },
+        {
+          "term": "Prompts",
+          "definition": "Answers that are a reasonable superset of the correct answer. Promptable answers are only underlined. If a player gives a promptable answer, the moderator will say “prompt” or read the directed prompt. The player then has 5 more seconds to convert the prompt. For example, if the answer was “Barbary Pirates”, the question would likely prompt on “pirates”.",
+          "existing": {
+            "term": "Prompt",
+            "definition": "An answer to a question that is not specific enough, but not incorrect. For example, a team answering ‘King Henry’ to a question about Henry VIII would be prompted, but a team saying ‘Henry III’ would not. Prompts may also be directed, meaning the mod asks the player for a specific extra piece of information. For example, a question on “symphonies by Beethoven” may prompt on “symphonies” alone by asking “by what composer?"
+          }
+        },
+        {
+          "term": "Directed prompt",
+          "definition": "Promptable answers that give the player a specific instruction on the type of answer expected. E.g. “from what country?”"
+        },
+        {
+          "term": "Notes",
+          "definition": "Questions may be preceded by “note to players” or “note to moderator”."
+        },
+        {
+          "term": "Note to players",
+          "definition": "Moderator reads this out to make players aware of something unusual about the answer to this question. Examples might be “description acceptable” or “two answers required”."
+        },
+        {
+          "term": "Note to moderator",
+          "definition": "Should not be read out to players - might inform moderator that the answerline is particularly complicated and they should read it carefully to themself before reading out the question."
+        },
+        {
+          "term": "Description acceptable",
+          "definition": "Indicates that players need not give a specific answer, but can rather give a description such as “the dog from the Wizard of Oz” (in place of Toto). Many quizzers perform a dab on hearing this note - a tradition supposedly started at Warwick!"
+        }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "entries": [
+        {
+          "term": "Statistics (or stats)",
+          "definition": "Summary data about team and individual performance at tournaments. Basic points data can be viewed on hsquizbowl.org. Buzzpoints are another form of stats available for most (but not all) tournaments."
+        },
+        {
+          "term": "PPG",
+          "definition": "Points per Game - the number of points a player or team scored in each game they played.",
+          "existing": {
+            "term": "PPG",
+            "definition": "Points per game; the number of points you have earned through buzzing divided by the number of games you have played."
+          }
+        },
+        {
+          "term": "PPB",
+          "definition": "Points per Bonus - a statistic measuring the average number of points (out of a maximum of 30) a team scored on bonuses that they earned."
+        },
+        {
+          "term": "mBPA",
+          "definition": "Modified Buzzpoint Area Under the Curve - essentially the percentage of words in tossups that a player prevented from being read by correctly buzzing."
+        },
+        {
+          "term": "Buzzpoints",
+          "definition": "Advanced statistics, showing where players buzzed in each tossup. MODAQ is used to score and track buzzpoints."
+        }
+      ]
+    },
+    {
+      "name": "Organisations",
+      "entries": [
+        {
+          "term": "UKQB (UK Quizbowl)",
+          "definition": "Organisation coordinating Quizbowl tournaments in the UK. They have a very active Discord server and you can run to be elected to their committee."
+        },
+        {
+          "term": "ACF",
+          "definition": "Academic Competition Federation: a collegiate Quizbowl writing organisation that produces 4 sets each year. Those are Fall, Winter, Regionals and Nationals. ACF tournaments use packet submissions from participating teams."
+        },
+        {
+          "term": "NAQT",
+          "definition": "National Academic Quiz Tournaments: a Quizbowl question writing organisation. UKQB does not mirror many NAQT tournaments."
+        }
+      ]
+    },
+    {
+      "name": "Equipment",
+      "entries": [
+        {
+          "term": "Buzzer",
+          "definition": "A system/device that determines which player has buzzed first. Physical buzzer systems include Andersons and Kitsunes. Online tournaments / packet readings might use websites like buzzin.live or simply typing “buzz” in a chat box."
+        },
+        {
+          "term": "Anderson buzzers",
+          "definition": "The black boxes on single cables, that make a nice noise. Very good buzzers, but they are made in America and the company won’t ship to the UK at all anymore. So current ones in use are quite old and susceptible to break."
+        },
+        {
+          "term": "Kitsunes",
+          "definition": "3d printed buzzers with too many cables (ours are sparkly purple!) Made by a Durham quizzer in their college bedroom - so they are easier to get more of, but not super reliable. And they have 2 sound options - quiet or horribly high pitched."
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "entries": [
+        {
+          "term": "MODAQ",
+          "definition": "Moderator Assistant for Quizbowl - a web application that allows moderators to mark where players have buzzed in a tossup."
+        },
+        {
+          "term": "Note",
+          "definition": "if you are not finding your quiz practice using resources like these fun, don’t do it!"
+        },
+        {
+          "term": "QBReader",
+          "definition": "Website that allows you to play quiz without anyone to read questions. Types out tossups and allows you to buzz in as normal. Has single and multiplayer modes. Also allows you to search past questions, and sort answers by frequency"
+        },
+        {
+          "term": "Anki",
+          "definition": "Flashcard application that is actually useful for studying in general, but also if you want to take on a lot of random information for Quiz."
+        }
+      ]
+    },
+    {
+      "name": "Gameplay",
+      "entries": [
+        {
+          "term": "Buzz",
+          "definition": "A player buzzes by using their buzzer to indicate that they think they know the answer to a tossup. If they win the buzzer race, they have 5 seconds (sometimes longer for online tournaments) to give an answer. If the answer is correct, their team gets points and a bonus set."
+        },
+        {
+          "term": "Moderator (or mod)",
+          "definition": "Person who reads and/or scores a Quizbowl game. Interpreting answerlines and enforcing other rules is at the moderator’s discretion, although their decisions may be protested.",
+          "existing": {
+            "term": "Moderator/Mod",
+            "definition": "The official in charge of reading questions and scoring games."
+          }
+        },
+        {
+          "term": "Protest",
+          "definition": "Players unhappy with a moderator’s decision may lodge a protest. These will usually only be resolved if it would change the outcome of a match. The tournament director is responsible for resolving protests."
+        },
+        {
+          "term": "Buzzer race",
+          "definition": "Event where multiple players press their buzzers at a similar time. The winner of the buzzer race is whoever pressed first, as determined by the buzzer system."
+        },
+        {
+          "term": "Convert",
+          "definition": "To convert a question is to get it correct, to convert a buzz is to not neg after buzzing. The conversion of a question is the percentage of games in which it was answered correctly. A team’s PPB might be called their bonus conversion."
+        },
+        {
+          "term": "Vulch",
+          "definition": "A buzz on a tossup somewhere between your opponents negging and the end of the question. A correct vulch out of power will earn you disapproving looks from your teammates. Vulching may also result in vulch powering or (more likely) vulch negging.",
+          "existing": {
+            "term": "Vulch",
+            "definition": "Because questions are pyramidal, and tossups become easier towards the end of the question, teams will usually wait until the final sentence of a tossup before buzzing after the other team has negged; not waiting until the end of the tossup in such situations is called vulching."
+          }
+        },
+        {
+          "term": "Vulch power",
+          "definition": "Buzzing between your opponent negging and the powermark. This is the only strategic reason for vulching, and should only be attempted if the opposing neg is clearly in power (i.e. on the first line) and you are 100% certain of the answer."
+        },
+        {
+          "term": "Vulch neg",
+          "definition": "Result of extreme selfishness where your team misses out on a set of bonuses (up to 40 points lost!) because you did not wait for the giveaway after an opposing neg."
+        }
+      ]
+    },
+    {
+      "name": "Tournaments",
+      "entries": [
+        {
+          "term": "Prelims",
+          "definition": "Seeded initial phase of a tournament, team rankings (by number of wins) from prelims determine what bracket teams are in for playoffs."
+        },
+        {
+          "term": "Playoffs",
+          "definition": "Second phase of a tournament; high performing teams from prelims play similarly successful teams in a top bracket and likewise for lower brackets."
+        },
+        {
+          "term": "Final",
+          "definition": "If no team clears the field, the top 2 teams (by number of wins) from the top bracket will play a final to determine the tournament winners. Other players are welcome to watch the final. If one team has more wins, the final will be advantaged in their favour."
+        },
+        {
+          "term": "Advantaged final",
+          "definition": "Best of three series of games, where the advantaged team starts with 1 win."
+        },
+        {
+          "term": "Exhibition final",
+          "definition": "If no final is needed to determine the winner, the 4 topscorers may instead be invited to play against the winning team to “exhibit” the finals packet."
+        },
+        {
+          "term": "Bracket",
+          "definition": "Like a group in a group stage tournament - each bracket member plays the others once. Tournament directors enjoy giving brackets silly themed names.",
+          "existing": {
+            "term": "Bracket",
+            "definition": "Many tournaments have too many teams for them all to play each other; in this case, teams will play in a ‘prelim bracket’ in the morning against a proportion of the field, and then play teams with roughly the same number of wins as them in the afternoon. The teams with the most wins in a prelim bracket will play in the ‘top bracket’."
+          }
+        },
+        {
+          "term": "Mirror",
+          "definition": "A tournament using a given question set. Sets will usually have several mirrors, for different locations and eligibilities.",
+          "existing": {
+            "term": "Mirror",
+            "definition": "A tournament that is held on questions written by people other than the moderators of the tournament. Most British quizbowl tournaments are written in America and mirrored in the UK and some tournaments, such as ACF Fall, receive separate mirrors in the north and south of the UK to reduce travel times for teams and reduce pressure on field caps."
+          }
+        },
+        {
+          "term": "ACF Fall",
+          "definition": "1 dot question set - usually the first student tournament run by UKQB each year."
+        },
+        {
+          "term": "ACF Winter",
+          "definition": "2 dot tournament."
+        },
+        {
+          "term": "ACF Regionals (or Regs)",
+          "definition": "3 dot tournament; particularly successful teams qualify for ACF Nationals."
+        },
+        {
+          "term": "ACF Nationals (or Nats)",
+          "definition": "Single mirror, 4 dot tournament, held in America, which teams must qualify for at Regionals. UK uni teams occasionally attend, but it is obviously very expensive and time consuming."
+        },
+        {
+          "term": "Clear the field",
+          "definition": "A team clears the field by defeating every other team they play. That team then wins the tournament outright, and there may be an exhibition final."
+        },
+        {
+          "term": "Topscorers",
+          "definition": "Individual players with the highest PPGs in a tournament. Along with tournament winners, topscorers are awarded book prizes."
+        },
+        {
+          "term": "Tournament Director (or TD)",
+          "definition": "Individual responsible for coordinating players and moderators for a tournament. Our Competitions Convenor usually serves as TD for tournaments held at Warwick.",
+          "existing": {
+            "term": "Tournament Director (TD)",
+            "definition": "The official in charge of a whole tournament. Any protests about moderator decisions should be directed to the tournament director, and their word is ultimately final."
+          }
+        },
+        {
+          "term": "Eligibility",
+          "definition": "Different tournaments have different criteria about who can play. UKQB runs novice, student/closed, and open tournaments."
+        },
+        {
+          "term": "Novice tournament",
+          "definition": "Tournament using a 1 dot question set, only players meeting UKQB’s mBPA criteria are able to play. A great way to try out quizzing!"
+        },
+        {
+          "term": "Student/closed tournament",
+          "definition": "Most tournaments are open to anyone studying as an undergrad or postgrad at a UK University.",
+          "existing": {
+            "term": "Closed",
+            "definition": "A tournament which can only be played by teams of current university students."
+          }
+        },
+        {
+          "term": "Open tournament",
+          "definition": "A tournament with no eligibility restrictions. Graduated players often attend so expect a challenging environment.",
+          "existing": {
+            "term": "Open",
+            "definition": "A tournament that is open to everyone: current university members, university alumni and people who have never been to university. These tournaments often have more challenging fields than collegiate tournaments."
+          }
+        },
+        {
+          "term": "WaShBowl",
+          "definition": "Pop culture question set, writing is led by former Warwick quizzers; student mirror is hosted at Warwick."
+        },
+        {
+          "term": "Book prizes",
+          "definition": "Academic, quizzy, or otherwise nerdy books."
+        },
+        {
+          "term": "Chimera",
+          "definition": "A team at a student tournament, consisting of players from multiple universities if the individual unis don’t have enough players. Often have silly hybrid names like City St Southcaster.",
+          "existing": {
+            "term": "Chimera",
+            "definition": "A team consisting of players from multiple universities. Chimeras may sometimes be used when a team would otherwise have very few players or to ensure that the number of teams is within the field cap. Not all closed tournaments allow chimeras."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Jargon",
+      "entries": [
+        {
+          "term": "Chestnut",
+          "definition": "Has far too many ironic and post-ironic uses to fully define. Perhaps the clearest definition is just “a fun fact”. Might sometimes be referred to as something that “you gotta know”.",
+          "existing": {
+            "term": "Chestnut",
+            "definition": "A fact, broadly speaking. In the original sense, “chestnuts” are clues which are oft-repeated and therefore good to learn; the term is now mostly used tongue-in-cheek. “Chestnut!” can also be used as an exclamation of surprise."
+          }
+        },
+        {
+          "term": "You Gotta Know/ Y.G.K.",
+          "definition": "Hopefully used ironically, referring to something that the speaker believes is an important thing for quizzers to be aware of. Also titles a genuinely useful series of articles by NAQT on improving at quiz.",
+          "existing": {
+            "term": "YGK",
+            "definition": "Stands for “You Gotta Know”. Often used ironically in response to obscure or overly niche clues, much like the similar phrase “get carding”.\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Writing",
+      "entries": [
+        {
+          "term": "Uniqueness",
+          "definition": "A key feature of Quizbowl clues, which differentiates it from other formats (e.g. University Challenge), is that every clue must uniquely identify the answerline. I.e. “This man won his first race at age 18” is not unique - players should be able to buzz at any point in the tossup, without having heard previous clues."
+        },
+        {
+          "term": "Question set",
+          "definition": "A set of packets produced by some group to be played as a tournament. Usually have around 14 packets. Sets may be produced by organisations such as ACF; or be housewritten.",
+          "existing": {
+            "term": "Set",
+            "definition": "The collection of questions which each tournament is played on. Each packet within a set will comply with that tournament’s distribution."
+          }
+        },
+        {
+          "term": "Packet",
+          "definition": "A set of tossups and bonuses (most often 20 of each), conforming to the question set’s distribution.",
+          "existing": {
+            "term": "Packet",
+            "definition": "The set of questions that each quizbowl match is played on. Most packets consist of 20 tossups and bonuses though this may differ in certain tournaments. Most quizbowl sets will also include a packet of spare questions in case a match ends in a draw or a question is thrown out."
+          }
+        },
+        {
+          "term": "Packet submission (or packet subs)",
+          "definition": "Teams entering ACF tournaments can earn a discount on their entry fee by writing half a packet of questions, according to a distribution provided by ACF. Warwick QuizSoc pays all student tournament entry fees for members, but we do appreciate people helping with packet subs.",
+          "existing": {
+            "term": "Packet submission",
+            "definition": "Tournaments that require teams to write questions (usually half a packet) in order to play, or charge a fee for not doing so."
+          }
+        },
+        {
+          "term": "Housewrite",
+          "definition": "A question set written by members of one or two quiz societies, rather than an organisation like ACF. May also refer to sets written by other loose groupings of quizzer (such as WaShbowl).",
+          "existing": {
+            "term": "Housewrite",
+            "definition": "A tournament that is hosted at a university, with questions mostly written by members (and alumni) of that university. COOT (Cambridge and Oxford Open Tournament) is the longest running example in the UK."
+          }
+        },
+        {
+          "term": "Distribution (or distro)",
+          "definition": "A specification of what categories of questions will appear in each packet of a question set. Formatted as follows “European Literature 1/1”, which means each packet will contain 1 tossup and 1 bonus on European Literature.",
+          "existing": {
+            "term": "Distribution/Distro",
+            "definition": "The way in which different topics are spread in a given packet. Distributions are usually described in the form X/Y, where X and Y are numbers; this means the number of tossups and bonuses respectively of a category that will appear in an average packet."
+          }
+        },
+        {
+          "term": "Difficulty level/dottage",
+          "definition": "Question sets are classified (from easiest to hardest) from 1 to 4 “dots” of difficulty.",
+          "existing": {
+            "term": "Dot",
+            "definition": "The dot scale is the main difficulty scale for quizbowl tournaments. One dot ● tournaments (e.g. ACF Fall, British Novice) are intended for novices, two dot ●● tournaments (e.g. ACF Winter) are of medium difficulty, three dot ●●● tournaments (e.g. ACF Regionals) are hard, and four dot ●●●● tournaments (e.g. ICT) are very hard."
+          }
+        }
+      ]
+    }
+  ],
+  "existingOnly": [
+    {
+      "term": "Briticise",
+      "definition": "The act of getting an American question set and replacing/editing questions to make it more suitable to a British audience. This may involve adding more questions on British content and reducing the amount of questions on American content and/or making questions on American content easier and questions on British content harder."
+    },
+    {
+      "term": "BSQC",
+      "definition": "British Student Quizbowl Championships. The most prestigious collegiate tournament of the year in the UK which teams must qualify to participate in."
+    },
+    {
+      "term": "Cap/Field cap",
+      "definition": "The maximum number of teams which can play in a given tournament: constraints on rooms and number of people willing to moderate may lead to small field caps."
+    },
+    {
+      "term": "Carding",
+      "definition": "Technique for retaining information for quiz through the use of flashcards. Physical cards or digital programs such as Anki are used by some quizzers. Can also refer to general quiz study and “get carding” is often used as an ironic term for learning more about a topic."
+    },
+    {
+      "term": "Clear",
+      "definition": "A set is clear when there are no further mirrors of that set worldwide. Clear sets may be discussed publicly; questions from unclear sets must not be discussed publicly or outside dedicated servers/channels to avoid spoiling questions for future mirrors."
+    },
+    {
+      "term": "Field",
+      "definition": "The set of players at a tournament. “Field strength” refers to the overall skill level of the players at the tournament, with stronger fields meaning competition is higher."
+    },
+    {
+      "term": "Grail",
+      "definition": "The act of one team getting all of the tossups in a match. This happens very, very rarely."
+    },
+    {
+      "term": "Restricted",
+      "definition": "A tournament which is intended for newer players and which players who have performed sufficiently well at previous tournaments may not play. Generally, 1 dot and 1.5 dot tournaments are restricted, with different requirements for each."
+    },
+    {
+      "term": "Stock/Stock Clue",
+      "definition": "A clue or a concept which is frequently asked about, due to genuine (or perceived) real-world or curriculum importance."
+    },
+    {
+      "term": "Safeguarding Officer",
+      "definition": "In a tournament, the safeguarding officer is the official responsible for making sure all participants feel safe and included. Anyone with concerns about safety or inclusion should be directed to them. In the wider UK quizbowl community, this also refers to officers elected to the UKQB Committee who are responsible for safety and inclusion within the community."
+    },
+    {
+      "term": "Scrim",
+      "definition": "An impromptu online practice session on the website QBreader,"
+    }
+  ]
+}

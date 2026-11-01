@@ -1,10 +1,19 @@
 ---
 import MarkdownLayout from "./MarkdownLayout.astro";
+import GlossaryPreview from "../components/GlossaryPreview.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
-<MarkdownLayout frontmatter={frontmatter}>
+<MarkdownLayout
+  frontmatter={frontmatter}
+  sourceFiles={[
+    frontmatter.file,
+    "src/components/GlossaryPreview.astro",
+    "src/data/glossaryPreview.json",
+    "public/resources/quizbowl-glossary-danny-fisher.pdf",
+  ]}
+>
   <div
     data-glossary-search
     hidden
@@ -31,14 +40,12 @@ const { frontmatter } = Astro.props;
   </div>
   <div data-glossary-entries>
     <slot />
+    <GlossaryPreview />
   </div>
 </MarkdownLayout>
 
 <script>
-  import {
-    isGlossaryEntry,
-    matchesGlossaryQuery,
-  } from "../utils/glossarySearch";
+  import { matchesGlossaryQuery } from "../utils/glossarySearch";
 
   const controls = document.querySelector<HTMLElement>(
     "[data-glossary-search]",
@@ -50,22 +57,18 @@ const { frontmatter } = Astro.props;
   );
 
   if (controls && input && status && content) {
-    const entries = Array.from(content.children).filter(
-      (element): element is HTMLParagraphElement => {
-        if (!(element instanceof HTMLParagraphElement)) return false;
-        const first = element.firstElementChild;
-        return (
-          first?.tagName === "STRONG" &&
-          isGlossaryEntry(
-            first.textContent ?? "",
-            first.nextSibling?.textContent ?? "",
-          )
-        );
-      },
+    const entries = Array.from(
+      content.querySelectorAll<HTMLElement>("[data-glossary-entry]"),
+    );
+    const sections = content.querySelectorAll<HTMLElement>(
+      "[data-glossary-section]",
+    );
+    const preview = content.querySelector<HTMLElement>(
+      "[data-glossary-preview]",
     );
 
-    if (entries.length) {
-      entries[0].before(controls);
+    if (entries.length && preview) {
+      preview.before(controls);
       const filterEntries = () => {
         let visible = 0;
         for (const entry of entries) {
@@ -76,6 +79,11 @@ const { frontmatter } = Astro.props;
           entry.hidden = !matches;
           if (matches) visible++;
         }
+        sections.forEach((section) => {
+          section.hidden = !Array.from(
+            section.querySelectorAll<HTMLElement>("[data-glossary-entry]"),
+          ).some((entry) => !entry.hidden);
+        });
         status.textContent = `${visible} ${visible === 1 ? "entry" : "entries"} found.`;
       };
       input.addEventListener("input", filterEntries);

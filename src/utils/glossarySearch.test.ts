@@ -1,15 +1,6 @@
 import { test } from "node:test";
 import { strict as assert } from "node:assert";
-import { isGlossaryEntry, matchesGlossaryQuery } from "./glossarySearch.ts";
-
-test("recognises both bold-label colon styles in the glossary redraft", () => {
-  assert.equal(
-    isGlossaryEntry("Bonus/bonus set:", " A set of three questions"),
-    true,
-  );
-  assert.equal(isGlossaryEntry("Field", ": The set of players"), true);
-  assert.equal(isGlossaryEntry("Emphasis", " without a colon"), false);
-});
+import { matchesGlossaryQuery } from "./glossarySearch.ts";
 
 test("matches case-insensitively in terms and definitions, and clears with whitespace", () => {
   const entry =

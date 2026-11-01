@@ -1,0 +1,85 @@
+---
+import preview from "../data/glossaryPreview.json";
+---
+
+<div data-glossary-preview>
+  <div class="my-8 rounded-lg border border-gray-300 p-5 sm:p-6">
+    <p class="mt-0 font-bold">Preview: two glossary contributions</p>
+    <p>
+      This temporary preview compares the existing UKQB glossary redraft with
+      Danny Fisher’s contribution. Matching entries appear side by side on wider
+      screens. This is not the intended production layout.
+    </p>
+    <h2 class="text-2xl">Who up Quizzing they Bowl?</h2>
+    <p class="mb-0">
+      Reading this entire document is unlikely to give you a full understanding
+      of Quizbowl. It is instead intended as a reference guide for rules and
+      terminology. The simplest answer to “What is Quizbowl?” is “The same rules
+      as University Challenge, except it’s 10 points per bonus and there’s a
+      fixed number of questions per game”. UKQB have a more thorough
+      <a href="https://quizbowl.co.uk/resources/intro-to-qb/">explanation</a>.
+      Full ACF rules can be found
+      <a href="https://acf-quizbowl.com/rules/gameplay/">here</a>.
+    </p>
+    <p class="mb-0 text-base text-gray-600">
+      Contributed by Danny Fisher · <a
+        href="/resources/quizbowl-glossary-danny-fisher.pdf"
+      >
+        View the original PDF
+      </a>
+    </p>
+  </div>
+
+  {
+    preview.groups.map((group) => (
+      <section data-glossary-section>
+        <h2>{group.name}</h2>
+        {group.entries.map((entry) => (
+          <article data-glossary-entry class="my-6">
+            <div class:list={[entry.existing && "grid gap-4 md:grid-cols-2"]}>
+              {entry.existing && (
+                <div class="rounded-lg border border-gray-300 p-4">
+                  <p class="mt-0 text-base font-bold text-gray-600">
+                    Existing UKQB glossary redraft
+                  </p>
+                  <p class="mb-0">
+                    <strong>{entry.existing.term}:</strong>{" "}
+                    {entry.existing.definition}
+                  </p>
+                </div>
+              )}
+              <div
+                class:list={[
+                  entry.existing && "rounded-lg border border-gray-300 p-4",
+                ]}
+              >
+                <p class="mt-0 text-base font-bold text-gray-600">
+                  Danny Fisher’s contribution
+                </p>
+                <p class="mb-0">
+                  <strong>{entry.term}:</strong> {entry.definition}
+                </p>
+              </div>
+            </div>
+          </article>
+        ))}
+      </section>
+    ))
+  }
+
+  <section data-glossary-section>
+    <h2>Other existing glossary entries</h2>
+    {
+      preview.existingOnly.map((entry) => (
+        <article data-glossary-entry class="my-6">
+          <p class="mb-1 text-base font-bold text-gray-600">
+            Existing UKQB glossary redraft
+          </p>
+          <p class="mt-0">
+            <strong>{entry.term}:</strong> {entry.definition}
+          </p>
+        </article>
+      ))
+    }
+  </section>
+</div>
