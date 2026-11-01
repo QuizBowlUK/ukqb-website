@@ -1,16 +1,33 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import {
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import test from "node:test";
 import type { CollectionEntry } from "astro:content";
 import { getLastUpdated } from "./lastUpdated.ts";
 import { getBlogSourceFiles } from "./blogSourceFiles.ts";
 
-test("timestamps follow page content and data, ignoring unrelated commits", () => {
+test("timestamps follow page content, data, images, and homepage components", () => {
   const originalDirectory = process.cwd();
+  const homepageSources = Array.from(
+    readFileSync("src/pages/index.astro", "utf8").matchAll(/"(src\/[^"]+)"/g),
+    ([, path]) => path,
+  );
+  const homepageComponents = [
+    "src/components/tournaments/Tournaments.astro",
+    "src/components/tournaments/Card.astro",
+    "src/components/tournaments/Link.astro",
+    "src/components/blog/BlogPreview.astro",
+    "src/components/blog/Card.astro",
+  ];
   const prepareHistoryScript = resolve("scripts/prepare-git-history.ts");
   const directory = mkdtempSync(join(tmpdir(), "ukqb-last-updated-"));
   const git = (...args: string[]) =>
@@ -39,6 +56,10 @@ test("timestamps follow page content and data, ignoring unrelated commits", () =
     process.chdir(directory);
     writeFileSync("page.md", "Page");
     writeFileSync("portrait.jpg", "Original photo");
+    for (const file of ["src/pages/index.astro", ...homepageComponents]) {
+      mkdirSync(dirname(file), { recursive: true });
+      writeFileSync(file, "Original content");
+    }
     commit("2026-01-01T12:00:00Z");
     writeFileSync("data.json", "{}");
     commit("2026-07-01T12:00:00Z");
@@ -67,6 +88,17 @@ test("timestamps follow page content and data, ignoring unrelated commits", () =
       getLastUpdated(["page.md", "portrait.jpg"]).toISOString(),
       "2026-08-01T12:00:00.000Z",
     );
+
+    for (const [index, component] of homepageComponents.entries()) {
+      const date = `2026-09-0${index + 1}T12:00:00Z`;
+      writeFileSync(component, "Updated content");
+      commit(date);
+      assert.equal(
+        getLastUpdated(homepageSources).toISOString(),
+        new Date(date).toISOString(),
+        `Homepage timestamp must track ${component}`,
+      );
+    }
 
     const shallow = join(directory, "shallow");
     git(
