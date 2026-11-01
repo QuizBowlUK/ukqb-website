@@ -1,0 +1,74 @@
+---
+import MarkdownLayout from "./MarkdownLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<MarkdownLayout frontmatter={frontmatter}>
+  <div data-glossary-search hidden>
+    <label for="glossary-search" class="block font-bold">
+      Search the glossary
+    </label>
+    <input
+      id="glossary-search"
+      type="search"
+      autocomplete="off"
+      class="mt-2 w-full rounded border border-gray-600 bg-white p-2 text-lg"
+      aria-describedby="glossary-search-status"
+    />
+    <p id="glossary-search-status" role="status" aria-live="polite"></p>
+  </div>
+  <div data-glossary-entries>
+    <slot />
+  </div>
+</MarkdownLayout>
+
+<script>
+  import {
+    isGlossaryEntry,
+    matchesGlossaryQuery,
+  } from "../utils/glossarySearch";
+
+  const controls = document.querySelector<HTMLElement>(
+    "[data-glossary-search]",
+  );
+  const input = document.querySelector<HTMLInputElement>("#glossary-search");
+  const status = document.querySelector<HTMLElement>("#glossary-search-status");
+  const content = document.querySelector<HTMLElement>(
+    "[data-glossary-entries]",
+  );
+
+  if (controls && input && status && content) {
+    const entries = Array.from(content.children).filter(
+      (element): element is HTMLParagraphElement => {
+        if (!(element instanceof HTMLParagraphElement)) return false;
+        const first = element.firstElementChild;
+        return (
+          first?.tagName === "STRONG" &&
+          isGlossaryEntry(
+            first.textContent ?? "",
+            first.nextSibling?.textContent ?? "",
+          )
+        );
+      },
+    );
+
+    if (entries.length) {
+      const filterEntries = () => {
+        let visible = 0;
+        for (const entry of entries) {
+          const matches = matchesGlossaryQuery(
+            entry.textContent ?? "",
+            input.value,
+          );
+          entry.hidden = !matches;
+          if (matches) visible++;
+        }
+        status.textContent = `${visible} ${visible === 1 ? "entry" : "entries"} found.`;
+      };
+      input.addEventListener("input", filterEntries);
+      filterEntries();
+      controls.hidden = false;
+    }
+  }
+</script>
