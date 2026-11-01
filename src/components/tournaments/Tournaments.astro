@@ -260,6 +260,12 @@ const difficultyLevels = [
     outline-offset: -2px;
   }
 
+  @media (hover: none) {
+    .filter-option {
+      transition: none;
+    }
+  }
+
   @media (hover: hover) and (pointer: fine) {
     .filter-option:hover {
       background: rgb(0 0 0 / 4%);
