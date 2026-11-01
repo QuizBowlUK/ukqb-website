@@ -261,8 +261,9 @@ const difficultyLevels = [
   }
 
   @media (hover: none) {
-    .filter-option:active {
-      background: #f8dddd;
+    .filter-option:active,
+    .filter-option:has(input:checked):active {
+      background: #f2cccc;
       transition: none;
     }
   }
