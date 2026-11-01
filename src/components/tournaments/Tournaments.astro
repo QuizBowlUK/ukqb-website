@@ -207,6 +207,29 @@ const difficultyLevels = [
         }
       });
 
+      filters
+        .querySelectorAll<HTMLElement>(".filter-option")
+        .forEach((option) => {
+          let pressTimer: ReturnType<typeof setTimeout> | undefined;
+          const clearPressed = () => {
+            clearTimeout(pressTimer);
+            delete option.dataset.pressed;
+          };
+          option.addEventListener(
+            "touchstart",
+            () => {
+              clearPressed();
+              pressTimer = setTimeout(() => {
+                option.dataset.pressed = "";
+              }, 150);
+            },
+            { passive: true },
+          );
+          option.addEventListener("touchmove", clearPressed, { passive: true });
+          option.addEventListener("touchend", clearPressed);
+          option.addEventListener("touchcancel", clearPressed);
+        });
+
       filters.addEventListener("change", update);
       filters.hidden = false;
       update();
@@ -247,6 +270,7 @@ const difficultyLevels = [
   }
 
   .filter-option {
+    -webkit-tap-highlight-color: transparent;
     background: transparent;
     box-sizing: border-box;
     min-height: 2.75rem;
@@ -262,6 +286,20 @@ const difficultyLevels = [
   .filter-option:has(input:focus-visible) {
     outline: 2px solid var(--color-ukqb-red);
     outline-offset: -2px;
+  }
+
+  @media (hover: none) {
+    .filter-option {
+      transition: none;
+    }
+
+    .filter-option[data-pressed] {
+      background: #fff4f4;
+    }
+
+    .filter-option:has(input:checked)[data-pressed] {
+      background: #f2cccc;
+    }
   }
 
   @media (hover: hover) and (pointer: fine) {
