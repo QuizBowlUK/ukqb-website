@@ -5,7 +5,11 @@ const { frontmatter } = Astro.props;
 ---
 
 <MarkdownLayout frontmatter={frontmatter}>
-  <div data-glossary-search hidden class="my-6">
+  <div
+    data-glossary-search
+    hidden
+    class="bg-ukqb-red-hover my-8 rounded-lg p-5 sm:p-6"
+  >
     <label for="glossary-search" class="block font-bold">
       Search the glossary
     </label>
@@ -13,7 +17,7 @@ const { frontmatter } = Astro.props;
       id="glossary-search"
       type="search"
       autocomplete="off"
-      class="focus-visible:outline-ukqb-red mt-2 box-border min-h-12 w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 font-sans text-lg shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="mt-2 box-border min-h-12 w-full rounded-lg border border-gray-400 bg-transparent px-4 py-2.5 font-sans text-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700"
       placeholder="Search terms and definitions"
       aria-describedby="glossary-search-status"
     />
