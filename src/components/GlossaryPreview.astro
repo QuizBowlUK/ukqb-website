@@ -10,6 +10,15 @@ import preview from "../data/glossaryPreview.json";
       Danny Fisher’s contribution. Matching entries appear side by side on wider
       screens. This is not the intended production layout.
     </p>
+    <div
+      class="flex flex-wrap gap-3 text-base"
+      aria-label="Contribution colour key"
+    >
+      <span class="bg-ukqb-red-hover rounded-lg px-3 py-2">
+        UKQB glossary redraft
+      </span>
+      <span class="rounded-lg bg-sky-100 px-3 py-2">Danny Fisher</span>
+    </div>
     <h2 class="text-2xl">Who up Quizzing they Bowl?</h2>
     <p class="mb-0">
       Reading this entire document is unlikely to give you a full understanding
@@ -38,25 +47,17 @@ import preview from "../data/glossaryPreview.json";
           <article data-glossary-entry class="my-6">
             <div class:list={[entry.existing && "grid gap-4 md:grid-cols-2"]}>
               {entry.existing && (
-                <div class="rounded-lg border border-gray-300 p-4">
-                  <p class="mt-0 text-base font-bold text-gray-600">
-                    Existing UKQB glossary redraft
-                  </p>
-                  <p class="mb-0">
+                <div class="bg-ukqb-red-hover rounded-lg p-4">
+                  <span class="sr-only">Existing UKQB glossary redraft: </span>
+                  <p class="m-0">
                     <strong>{entry.existing.term}:</strong>{" "}
                     {entry.existing.definition}
                   </p>
                 </div>
               )}
-              <div
-                class:list={[
-                  entry.existing && "rounded-lg border border-gray-300 p-4",
-                ]}
-              >
-                <p class="mt-0 text-base font-bold text-gray-600">
-                  Danny Fisher’s contribution
-                </p>
-                <p class="mb-0">
+              <div class="rounded-lg bg-sky-100 p-4">
+                <span class="sr-only">Danny Fisher’s contribution: </span>
+                <p class="m-0">
                   <strong>{entry.term}:</strong> {entry.definition}
                 </p>
               </div>
@@ -71,11 +72,12 @@ import preview from "../data/glossaryPreview.json";
     <h2>Other existing glossary entries</h2>
     {
       preview.existingOnly.map((entry) => (
-        <article data-glossary-entry class="my-6">
-          <p class="mb-1 text-base font-bold text-gray-600">
-            Existing UKQB glossary redraft
-          </p>
-          <p class="mt-0">
+        <article
+          data-glossary-entry
+          class="bg-ukqb-red-hover my-6 rounded-lg p-4"
+        >
+          <span class="sr-only">Existing UKQB glossary redraft: </span>
+          <p class="m-0">
             <strong>{entry.term}:</strong> {entry.definition}
           </p>
         </article>
