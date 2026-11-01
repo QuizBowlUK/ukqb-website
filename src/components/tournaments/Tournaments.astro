@@ -242,13 +242,10 @@ const difficultyLevels = [
   }
 
   .filter-option {
+    background: transparent;
     box-sizing: border-box;
     min-height: 2.75rem;
     padding: 0.5rem 0.75rem;
-  }
-
-  .filter-option:hover {
-    background: rgb(0 0 0 / 4%);
   }
 
   .filter-option:has(input:checked) {
@@ -257,13 +254,19 @@ const difficultyLevels = [
     font-weight: 700;
   }
 
-  .filter-option:has(input:checked):hover {
-    background: #f8dddd;
-  }
-
   .filter-option:has(input:focus-visible) {
     outline: 2px solid var(--color-ukqb-red);
     outline-offset: -2px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .filter-option:hover {
+      background: rgb(0 0 0 / 4%);
+    }
+
+    .filter-option:has(input:checked):hover {
+      background: #f8dddd;
+    }
   }
 
   @media (min-width: 640px) {
