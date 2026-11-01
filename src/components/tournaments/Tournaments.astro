@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Card from "./Card.astro";
 import Dots from "./Dots.astro";
+import ChevronDown from "../icons/ChevronDown.astro";
 
 const { class: className } = Astro.props;
 
@@ -22,29 +23,253 @@ const futureTournaments = allTournaments.filter((tournament) => {
   return tournamentDate >= ukDate;
 });
 const tournaments = futureTournaments;
+const difficultyLevels = [
+  "Pop culture",
+  "Novice",
+  "Medium",
+  "Hard",
+  "Very hard",
+];
 ---
 
-<div class={className}>
+<div class={className} data-tournaments>
   <h2>Upcoming tournaments</h2>
+  <div
+    hidden
+    class="mb-4"
+    role="group"
+    aria-label="Tournament filters"
+    data-tournament-filters
+  >
+    <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
+      <details class="group relative" name="tournament-filter">
+        <summary
+          class="filter-trigger box-border flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 rounded-lg px-4 py-2.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+        >
+          Eligibility
+          <ChevronDown
+            class="size-5 transition-transform duration-200 group-open:rotate-180"
+          />
+        </summary>
+        <fieldset class="navbar-dropdown-items filter-options m-0 mt-1">
+          <legend class="sr-only">Eligibility</legend>
+          <label
+            class="dropdown-item filter-option flex-row items-center justify-start gap-3"
+          >
+            <input
+              class="sr-only"
+              type="checkbox"
+              name="eligibility"
+              value="open"
+              checked
+            />
+            Open
+          </label>
+          <label
+            class="dropdown-item filter-option flex-row items-center justify-start gap-3"
+          >
+            <input
+              class="sr-only"
+              type="checkbox"
+              name="eligibility"
+              value="closed"
+              checked
+            />
+            Closed (student-only)
+          </label>
+        </fieldset>
+      </details>
+      <details class="group relative" name="tournament-filter">
+        <summary
+          class="filter-trigger box-border flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 rounded-lg px-4 py-2.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+        >
+          Difficulty
+          <ChevronDown
+            class="size-5 transition-transform duration-200 group-open:rotate-180"
+          />
+        </summary>
+        <fieldset class="navbar-dropdown-items filter-options m-0 mt-1">
+          <legend class="sr-only">Difficulty</legend>
+          {
+            difficultyLevels.map((label, dots) => (
+              <label class="dropdown-item filter-option flex-row items-center justify-start gap-3">
+                <input
+                  class="sr-only"
+                  type="checkbox"
+                  name="difficulty"
+                  value={dots === 0 ? "pop-culture" : dots}
+                  checked
+                />
+                <span class="flex items-center gap-2">
+                  <span aria-hidden="true">
+                    <Dots dots={dots} />
+                  </span>
+                  <span>
+                    {label}
+                    {dots > 0 && <span class="sr-only"> ({dots} dots)</span>}
+                  </span>
+                </span>
+              </label>
+            ))
+          }
+        </fieldset>
+      </details>
+    </div>
+  </div>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
-    {tournaments.map((tournament) => <Card tournament={tournament} />)}
+    {
+      tournaments.map((tournament) => (
+        <div
+          data-tournament
+          data-eligibility={tournament.data.eligibility}
+          data-dots={tournament.data.dots}
+          data-pop-culture={tournament.data.popCulture === true}
+        >
+          <Card tournament={tournament} />
+        </div>
+      ))
+    }
   </div>
-  <div class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
-    <div class="flex items-center gap-2">
-      <Dots dots={1} />
-      Novice
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={2} />
-      Medium
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={3} />
-      Hard
-    </div>
-    <div class="flex items-center gap-2">
-      <Dots dots={4} />
-      Very hard
-    </div>
-  </div>
+  <p role="status" data-tournament-status></p>
 </div>
+
+<script>
+  import { matchesTournamentFilters } from "./filters.ts";
+
+  document
+    .querySelectorAll<HTMLElement>("[data-tournaments]")
+    .forEach((section) => {
+      const filters = section.querySelector<HTMLElement>(
+        "[data-tournament-filters]",
+      )!;
+      const cards = section.querySelectorAll<HTMLElement>("[data-tournament]");
+      const status = section.querySelector<HTMLElement>(
+        "[data-tournament-status]",
+      )!;
+
+      const update = () => {
+        const eligibility = Array.from(
+          filters.querySelectorAll<HTMLInputElement>(
+            'input[name="eligibility"]:checked',
+          ),
+          (input) => input.value,
+        );
+        const difficulties = Array.from(
+          filters.querySelectorAll<HTMLInputElement>(
+            'input[name="difficulty"]:checked',
+          ),
+          (input) => input.value,
+        );
+        let count = 0;
+
+        cards.forEach((card) => {
+          card.hidden = !matchesTournamentFilters(
+            card.dataset.eligibility!,
+            Number(card.dataset.dots),
+            card.dataset.popCulture === "true",
+            eligibility,
+            difficulties,
+          );
+          if (!card.hidden) count++;
+        });
+
+        status.textContent =
+          count === 0
+            ? "No tournaments match these filters."
+            : `${count} ${count === 1 ? "tournament" : "tournaments"} shown.`;
+      };
+
+      document.addEventListener("click", (event) => {
+        filters
+          .querySelectorAll<HTMLDetailsElement>("details[open]")
+          .forEach((dropdown) => {
+            if (
+              event.target instanceof Node &&
+              !dropdown.contains(event.target)
+            ) {
+              dropdown.open = false;
+            }
+          });
+      });
+      filters.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          const dropdown =
+            filters.querySelector<HTMLDetailsElement>("details[open]");
+          if (dropdown) {
+            dropdown.open = false;
+            dropdown.querySelector("summary")?.focus();
+          }
+        }
+      });
+
+      filters.addEventListener("change", update);
+      filters.hidden = false;
+      update();
+    });
+</script>
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .filter-trigger {
+    background: var(--color-ukqb-red-hover);
+    color: var(--color-ukqb-red);
+    transition: background-color 150ms;
+  }
+
+  .filter-trigger:hover,
+  details[open] > .filter-trigger {
+    background: #f8dddd;
+  }
+
+  .filter-options {
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    width: max-content;
+    max-width: calc(100vw - 2.5rem);
+    transform: none;
+    translate: none;
+    min-inline-size: 12rem;
+    grid-template-columns: 1fr;
+  }
+
+  details:last-child .filter-options {
+    right: 0;
+    left: auto;
+  }
+
+  .filter-option {
+    box-sizing: border-box;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .filter-option:hover {
+    background: rgb(0 0 0 / 4%);
+  }
+
+  .filter-option:has(input:checked) {
+    background: var(--color-ukqb-red-hover);
+    color: var(--color-ukqb-red);
+    font-weight: 700;
+  }
+
+  .filter-option:has(input:checked):hover {
+    background: #f8dddd;
+  }
+
+  .filter-option:has(input:focus-visible) {
+    outline: 2px solid var(--color-ukqb-red);
+    outline-offset: -2px;
+  }
+
+  @media (min-width: 640px) {
+    details:last-child .filter-options {
+      right: auto;
+      left: 0;
+    }
+  }
+</style>

@@ -40,21 +40,29 @@ const blog = defineCollection({
 
 const tournaments = defineCollection({
   loader: file("src/data/tournaments.json"),
-  schema: z.object({
-    id: z.string(),
-    name: z.string(),
-    dots: z.number(),
-    date: z
-      .string()
-      .transform((date) => new Date(date))
-      .nullable(),
-    eligibility: z.enum(["open", "closed"]),
-    location: z
-      .union([z.string(), z.record(z.string(), z.string())])
-      .optional(),
-    link: z.union([z.string(), z.record(z.string(), z.string())]).optional(),
-    popCulture: z.boolean().optional(),
-  }),
+  schema: z
+    .object({
+      id: z.string(),
+      name: z.string(),
+      dots: z.number(),
+      date: z
+        .string()
+        .transform((date) => new Date(date))
+        .nullable(),
+      eligibility: z.enum(["open", "closed"]),
+      location: z
+        .union([z.string(), z.record(z.string(), z.string())])
+        .optional(),
+      link: z.union([z.string(), z.record(z.string(), z.string())]).optional(),
+      popCulture: z.boolean().optional(),
+    })
+    .refine(
+      (tournament) => tournament.dots !== 0 || tournament.popCulture === true,
+      {
+        message: "Tournaments with no dots must be marked as popCulture: true.",
+        path: ["dots"],
+      },
+    ),
 });
 
 export const collections = { committee, blog, tournaments };

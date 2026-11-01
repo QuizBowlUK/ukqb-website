@@ -48,7 +48,7 @@ All tournament details are specified in `src/data/tournaments.json`. The tournam
   }
 }
 ```
-The schema of the tournament object is specified in `src/content.config.ts`.
+The schema of the tournament object is specified in `src/content.config.ts`. Tournaments with `dots: 0` must set `popCulture: true`; otherwise the build fails validation.
 
 ## How to update committee bios
 The committee bios are specified in `src/data/committee.json`. Image paths are relative to `src/assets`. To force a paragraph break in the bio, add `\n\n` between paragraphs. A bio object may look like:
