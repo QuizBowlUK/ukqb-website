@@ -241,9 +241,24 @@ const difficultyLevels = [
     left: auto;
   }
 
+  .filter-option {
+    box-sizing: border-box;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .filter-option:hover {
+    background: rgb(0 0 0 / 4%);
+  }
+
   .filter-option:has(input:checked) {
     background: var(--color-ukqb-red-hover);
     color: var(--color-ukqb-red);
+    font-weight: 700;
+  }
+
+  .filter-option:has(input:checked):hover {
+    background: #f8dddd;
   }
 
   .filter-option:has(input:focus-visible) {
