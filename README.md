@@ -16,7 +16,7 @@ Builds need Git history, not just a source archive. `npm run build` automaticall
 fetches full history for shallow checkouts, including hosting builds; fetching
 requires access to the Git remote. Direct Astro commands reject shallow history
 with instructions to run `git fetch --unshallow`. CI fetches full history upfront.
-New files without history show “Not yet committed” in development; production
+New files without history hide the update footer in development; production
 builds still require a committed timestamp. Uncommitted edits receive their
 timestamp after committing.
 
