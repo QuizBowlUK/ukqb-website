@@ -1,5 +1,6 @@
 ---
 import Intro from "../components/Intro.astro";
+import Button from "../components/Button.astro";
 import Tournaments from "../components/tournaments/Tournaments.astro";
 import Layout from "../layouts/Layout.astro";
 import Instagram from "../components/icons/Instagram.astro";
@@ -15,6 +16,7 @@ const posts = await getCollection("blog");
   sourceFiles={[
     "src/pages/index.astro",
     "src/components/Intro.astro",
+    "src/components/Button.astro",
     "src/components/tournaments",
     "src/components/blog",
     "src/data/tournaments.json",
@@ -32,6 +34,11 @@ const posts = await getCollection("blog");
     <Instagram />
     <Bluesky />
     <Youtube />
+  </div>
+  <div class="mt-6 text-center">
+    <Button href="https://forms.gle/WyXttzRHdNg1aZJGA">
+      Sign up to the open mailing list
+    </Button>
   </div>
   <Tournaments class="mt-20 md:mt-40" />
   <Intro class="mt-20 md:mt-40" />
