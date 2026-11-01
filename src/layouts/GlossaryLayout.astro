@@ -1,0 +1,94 @@
+---
+import MarkdownLayout from "./MarkdownLayout.astro";
+import GlossaryPreview from "../components/GlossaryPreview.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<MarkdownLayout
+  frontmatter={frontmatter}
+  sourceFiles={[
+    frontmatter.file,
+    "src/components/GlossaryPreview.astro",
+    "src/data/glossaryPreview.json",
+    "public/resources/quizbowl-glossary-danny-fisher.pdf",
+  ]}
+>
+  <div
+    data-glossary-search
+    hidden
+    class="bg-ukqb-red-hover my-8 rounded-lg p-5 sm:p-6"
+  >
+    <label for="glossary-search" class="block font-bold">
+      Search the glossary
+    </label>
+    <input
+      id="glossary-search"
+      type="search"
+      autocomplete="off"
+      class="focus-visible:border-ukqb-red focus-visible:ring-ukqb-red/20 mt-2 box-border min-h-12 w-full rounded-lg border border-gray-400 bg-transparent px-4 py-2.5 font-sans text-lg transition-[border-color,box-shadow] duration-150 focus:outline-none focus-visible:ring-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent"
+      placeholder="Search terms and definitions"
+      aria-describedby="glossary-search-status"
+    />
+    <p
+      id="glossary-search-status"
+      class="mt-2 mb-0 text-base text-gray-600"
+      role="status"
+      aria-live="polite"
+    >
+    </p>
+  </div>
+  <div data-glossary-entries>
+    <slot />
+    <GlossaryPreview />
+  </div>
+</MarkdownLayout>
+
+<script>
+  import { matchesGlossaryQuery } from "../utils/glossarySearch";
+
+  const controls = document.querySelector<HTMLElement>(
+    "[data-glossary-search]",
+  );
+  const input = document.querySelector<HTMLInputElement>("#glossary-search");
+  const status = document.querySelector<HTMLElement>("#glossary-search-status");
+  const content = document.querySelector<HTMLElement>(
+    "[data-glossary-entries]",
+  );
+
+  if (controls && input && status && content) {
+    const entries = Array.from(
+      content.querySelectorAll<HTMLElement>("[data-glossary-entry]"),
+    );
+    const sections = content.querySelectorAll<HTMLElement>(
+      "[data-glossary-section]",
+    );
+    const preview = content.querySelector<HTMLElement>(
+      "[data-glossary-preview]",
+    );
+
+    if (entries.length && preview) {
+      preview.before(controls);
+      const filterEntries = () => {
+        let visible = 0;
+        for (const entry of entries) {
+          const matches = matchesGlossaryQuery(
+            entry.textContent ?? "",
+            input.value,
+          );
+          entry.hidden = !matches;
+          if (matches) visible++;
+        }
+        sections.forEach((section) => {
+          section.hidden = !Array.from(
+            section.querySelectorAll<HTMLElement>("[data-glossary-entry]"),
+          ).some((entry) => !entry.hidden);
+        });
+        status.textContent = `${visible} ${visible === 1 ? "entry" : "entries"} found.`;
+      };
+      input.addEventListener("input", filterEntries);
+      filterEntries();
+      controls.hidden = false;
+    }
+  }
+</script>
