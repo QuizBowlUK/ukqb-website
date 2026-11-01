@@ -202,6 +202,21 @@ const difficultyLevels = [
         }
       });
 
+      filters
+        .querySelectorAll<HTMLElement>(".filter-option")
+        .forEach((option) => {
+          option.addEventListener(
+            "touchstart",
+            () => {
+              option.dataset.pressed = "";
+            },
+            { passive: true },
+          );
+          const clearPressed = () => delete option.dataset.pressed;
+          option.addEventListener("touchend", clearPressed);
+          option.addEventListener("touchcancel", clearPressed);
+        });
+
       filters.addEventListener("change", update);
       filters.hidden = false;
       update();
@@ -261,10 +276,13 @@ const difficultyLevels = [
   }
 
   @media (hover: none) {
-    .filter-option:active,
-    .filter-option:has(input:checked):active {
-      background: #f2cccc;
+    .filter-option {
       transition: none;
+    }
+
+    .filter-option[data-pressed],
+    .filter-option:has(input:checked)[data-pressed] {
+      background: #f2cccc;
     }
   }
 
