@@ -1,13 +1,15 @@
 export function matchesTournamentFilters(
   eligibility: string,
   dots: number,
+  popCulture: boolean,
   selectedEligibility: string[],
-  selectedDifficulties: number[],
+  selectedDifficulties: string[],
 ) {
   return (
     selectedEligibility.includes(eligibility) &&
-    selectedDifficulties.some(
-      (level) => level === Math.floor(dots) || level === Math.ceil(dots),
-    )
+    ((popCulture && selectedDifficulties.includes("pop-culture")) ||
+      (dots > 0 &&
+        (selectedDifficulties.includes(String(Math.floor(dots))) ||
+          selectedDifficulties.includes(String(Math.ceil(dots))))))
   );
 }

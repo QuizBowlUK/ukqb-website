@@ -52,11 +52,14 @@
   }
 
   .navbar-dropdown-items {
-    @apply bg-ukqb-red-bg absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-1 border-gray-300 p-3 shadow-sm;
+    @apply bg-ukqb-red-bg absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-0.5 rounded-lg border-0 p-1.5;
+    box-shadow:
+      0 8px 24px rgb(60 10 10 / 10%),
+      0 1px 4px rgb(60 10 10 / 6%);
   }
 
   .dropdown-item {
-    @apply flex cursor-pointer flex-col gap-2 rounded-lg p-4 transition-colors duration-200 select-none;
+    @apply box-border flex min-h-11 cursor-pointer flex-col justify-center gap-2 rounded-md px-3 py-2 transition-colors duration-150 select-none;
   }
 
   .dropdown-item:hover {
