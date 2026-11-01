@@ -28,7 +28,13 @@ const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
 
 <div class={className} data-tournaments>
   <h2>Upcoming tournaments</h2>
-  <form hidden class="mb-4" data-tournament-filters>
+  <div
+    hidden
+    class="mb-4"
+    role="group"
+    aria-label="Tournament filters"
+    data-tournament-filters
+  >
     <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
       <details class="group relative" name="tournament-filter">
         <summary
@@ -104,7 +110,7 @@ const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
         </fieldset>
       </details>
     </div>
-  </form>
+  </div>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 2xl:grid-cols-3">
     {
       tournaments.map((tournament) => (
@@ -122,12 +128,12 @@ const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
 </div>
 
 <script>
-  import { matchesTournamentFilters } from "./filters.js";
+  import { matchesTournamentFilters } from "./filters.ts";
 
   document
     .querySelectorAll<HTMLElement>("[data-tournaments]")
     .forEach((section) => {
-      const form = section.querySelector<HTMLFormElement>(
+      const filters = section.querySelector<HTMLElement>(
         "[data-tournament-filters]",
       )!;
       const cards = section.querySelectorAll<HTMLElement>("[data-tournament]");
@@ -136,9 +142,18 @@ const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
       )!;
 
       const update = () => {
-        const selected = new FormData(form);
-        const eligibility = selected.getAll("eligibility").map(String);
-        const difficulties = selected.getAll("difficulty").map(Number);
+        const eligibility = Array.from(
+          filters.querySelectorAll<HTMLInputElement>(
+            'input[name="eligibility"]:checked',
+          ),
+          (input) => input.value,
+        );
+        const difficulties = Array.from(
+          filters.querySelectorAll<HTMLInputElement>(
+            'input[name="difficulty"]:checked',
+          ),
+          (input) => Number(input.value),
+        );
         let count = 0;
 
         cards.forEach((card) => {
@@ -158,7 +173,7 @@ const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
       };
 
       document.addEventListener("click", (event) => {
-        form
+        filters
           .querySelectorAll<HTMLDetailsElement>("details[open]")
           .forEach((dropdown) => {
             if (
@@ -169,10 +184,10 @@ const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
             }
           });
       });
-      form.addEventListener("keydown", (event) => {
+      filters.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
           const dropdown =
-            form.querySelector<HTMLDetailsElement>("details[open]");
+            filters.querySelector<HTMLDetailsElement>("details[open]");
           if (dropdown) {
             dropdown.open = false;
             dropdown.querySelector("summary")?.focus();
@@ -180,9 +195,8 @@ const difficultyLevels = ["No dots", "Novice", "Medium", "Hard", "Very hard"];
         }
       });
 
-      form.addEventListener("submit", (event) => event.preventDefault());
-      form.addEventListener("change", update);
-      form.hidden = false;
+      filters.addEventListener("change", update);
+      filters.hidden = false;
       update();
     });
 </script>

@@ -1,14 +1,8 @@
-/**
- * @param {string} eligibility
- * @param {number} dots
- * @param {string[]} selectedEligibility
- * @param {number[]} selectedDifficulties
- */
 export function matchesTournamentFilters(
-  eligibility,
-  dots,
-  selectedEligibility,
-  selectedDifficulties,
+  eligibility: string,
+  dots: number,
+  selectedEligibility: string[],
+  selectedDifficulties: number[],
 ) {
   return (
     selectedEligibility.includes(eligibility) &&

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { matchesTournamentFilters } from "./filters.js";
+import { matchesTournamentFilters } from "./filters.ts";
 
 test("eligibility and difficulty selections combine, including empty selections", () => {
   const both = ["open", "closed"];
