@@ -1,8 +1,15 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo-cropped.png";
+---
+
 <footer class="bg-ukqb-red mt-16 text-white">
   <div class="container mx-auto box-border px-5 py-10 md:px-10">
     <div class="flex flex-col gap-8 lg:flex-row lg:justify-between">
       <div>
-        <p class="mt-0 mb-2 text-2xl font-bold">UK Quizbowl</p>
+        <a href="/" class="bg-ukqb-red-bg mb-3 inline-block rounded p-3">
+          <Image src={logo} alt="UK Quizbowl home" class="block h-8 w-auto" />
+        </a>
         <p class="m-0">All things student buzzer quizzing.</p>
       </div>
       <nav aria-label="Footer navigation">
