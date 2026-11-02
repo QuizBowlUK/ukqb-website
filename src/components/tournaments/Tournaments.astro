@@ -179,9 +179,7 @@ const difficultyLevels = [
         });
 
         status.textContent =
-          count === 0
-            ? "No tournaments match these filters."
-            : `${count} ${count === 1 ? "tournament" : "tournaments"} shown.`;
+          count === 0 ? "No tournaments match these filters." : "";
       };
 
       document.addEventListener("click", (event) => {
