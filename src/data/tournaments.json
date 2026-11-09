@@ -61,6 +61,7 @@
       "Southern": "University of Southampton"
     },
     "link": {
+      "Durham signups": "https://hsquizbowl.org/forums/viewtopic.php?t=30570",
       "Southampton signups": "https://hsquizbowl.org/forums/viewtopic.php?p=414036#p414036"
     }
   },
@@ -97,7 +98,12 @@
     "eligibility": "open",
     "date": "5 Dec 2026",
     "popCulture": true,
-    "location": "University of Sheffield"
+    "location": "University of Sheffield",
+    "link": {
+      "Forum post": "https://hsquizbowl.org/forums/viewtopic.php?p=414613#p414613",
+      "Player signup": "https://docs.google.com/forms/d/e/1FAIpQLSdCiRbOUh-uyPxTBiAFbJRz_I3JfAtECoRSIipgf8WscjySFA/viewform?usp=header",
+      "Moderator signup": "https://docs.google.com/forms/d/e/1FAIpQLSePsabxzH_mPoNyobeva_umlJ1hYiPYCCgS0oMczI3WsgywxQ/viewform?usp=header"
+    }
   },
   {
     "name": "CLOPEN",
