@@ -4,30 +4,37 @@ import logo from "../assets/logo-cropped.png";
 import Hamburger from "./icons/Hamburger.astro";
 ---
 
-<header class="flex flex-wrap items-center gap-x-6 gap-y-3 py-6">
+<header
+  class="flex flex-wrap items-center gap-x-8 gap-y-3 py-6"
+  data-pagefind-ignore
+>
   <a href="/">
     <Image src={logo} alt="UK Quizbowl" class="h-8 w-auto" />
   </a>
   <div
     id="site-search"
-    class="order-last w-full min-w-0 sm:order-none sm:flex-1"
+    class="order-last w-full min-w-0 sm:order-none sm:mx-auto sm:max-w-xl sm:flex-1"
   >
   </div>
-  <button class="mobile-menu-trigger flex items-center gap-2 text-lg">
+  <button
+    class="mobile-menu-trigger hover:border-ukqb-red hover:text-ukqb-red flex h-11 shrink-0 items-center gap-2 rounded-full border border-gray-300 bg-white/70 px-4 text-sm font-semibold text-gray-700 transition-colors duration-150"
+  >
     Browse
-    <Hamburger class="h-6 w-6" />
+    <Hamburger class="h-5 w-5" />
   </button>
 </header>
 
 <div
   id="mobile-menu-overlay"
   class="mobile-menu-trigger pointer-events-none fixed inset-0 z-20 bg-black opacity-0 transition-opacity duration-300"
+  data-pagefind-ignore
 >
 </div>
 
 <div
   id="mobile-menu"
   class="bg-ukqb-red-bg fixed inset-y-0 right-0 z-40 w-64 translate-x-full overflow-y-auto shadow-lg duration-300"
+  data-pagefind-ignore
 >
   <div class="border-dark flex items-center justify-between border-b px-4 py-2">
     <div class="text-lg font-bold">Menu</div>
@@ -185,7 +192,7 @@ import Hamburger from "./icons/Hamburger.astro";
       new (window as any).PagefindUI({
         element: "#site-search",
         showImages: false,
-        showSubResults: true,
+        showSubResults: false,
         // The reset stylesheet uses `all: unset`, which fights the site styles
         resetStyles: false,
         translations: { placeholder: "Search the site" },
