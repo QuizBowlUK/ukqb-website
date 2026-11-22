@@ -1,9 +1,9 @@
-import { isEmail } from "./utils/email.ts";
+import { isEmail } from "../../src/utils/email.ts";
 
-// Cloudflare Worker: serves the static site from dist/ and handles the one
-// dynamic route we need. Runs only for requests that match no static asset.
+// Cloudflare Pages Function: indexes the homepage signup form into MailerLite.
+// The API key stays here, server side; only POST is routed to this handler and
+// Pages answers anything else with 405.
 interface Env {
-  ASSETS: { fetch: (request: Request) => Promise<Response> };
   MAILERLITE_API_KEY?: string;
   MAILERLITE_GROUP_ID?: string;
 }
@@ -29,7 +29,13 @@ const page = (title: string, message: string, status = 200) =>
     { status, headers: { "content-type": "text/html; charset=utf-8" } },
   );
 
-async function subscribe(request: Request, env: Env) {
+export const onRequestPost = async ({
+  request,
+  env,
+}: {
+  request: Request;
+  env: Env;
+}) => {
   if (!env.MAILERLITE_API_KEY) {
     console.error("MAILERLITE_API_KEY is not set");
     return page(
@@ -86,14 +92,4 @@ async function subscribe(request: Request, env: Env) {
     "Thanks for signing up",
     "We have added you to the mailing list. If you get a confirmation email, click the link inside it to finish signing up.",
   );
-}
-
-export default {
-  async fetch(request: Request, env: Env) {
-    const { pathname } = new URL(request.url);
-    if (pathname === "/api/subscribe" && request.method === "POST") {
-      return subscribe(request, env);
-    }
-    return env.ASSETS.fetch(request);
-  },
 };

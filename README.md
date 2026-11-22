@@ -76,16 +76,23 @@ The schema of the bio object is specified in `src/content.config.ts`.
 
 ## Mailing list signup
 
-The homepage form posts to `/api/subscribe`, handled by `src/worker.ts`. The Worker serves the static site from `dist/` and proxies the form to the MailerLite API (`POST https://connect.mailerlite.com/api/subscribers`), so the API key never reaches the browser.
+The homepage form posts to `/api/subscribe`, a Cloudflare Pages Function in `functions/api/subscribe.ts`. It proxies the form to the MailerLite API (`POST https://connect.mailerlite.com/api/subscribers`), so the API key never reaches the browser.
 
-Set these on the Cloudflare project (or in a git-ignored `.dev.vars` for local testing):
+Set these secrets on the Pages project (or in a git-ignored `.dev.vars` for local testing):
 
-- `MAILERLITE_API_KEY` (secret) — a MailerLite API token that can create subscribers.
+- `MAILERLITE_API_KEY` — a MailerLite API token that can create subscribers.
 - `MAILERLITE_GROUP_ID` (optional) — the group new subscribers are added to.
 
 ```sh
-npx wrangler secret put MAILERLITE_API_KEY
-npx wrangler secret put MAILERLITE_GROUP_ID
+npx wrangler pages secret put MAILERLITE_API_KEY --project-name ukqb-website
+npx wrangler pages secret put MAILERLITE_GROUP_ID --project-name ukqb-website
 ```
 
 Without a key the rest of the site still works; the form just shows an "unavailable" message.
+
+`npm run dev` does not serve Pages Functions, so test the form with:
+
+```sh
+npm run build
+npx wrangler pages dev dist
+```
