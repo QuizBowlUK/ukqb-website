@@ -47,10 +47,6 @@
     box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.05);
   }
 
-  .navbar-dropdown {
-    @apply relative pl-0;
-  }
-
   .navbar-dropdown-items {
     @apply bg-ukqb-red-bg absolute left-1/2 mt-2 grid w-max -translate-x-1/2 transform grid-cols-2 gap-2 rounded-lg border-1 border-gray-300 p-3 shadow-sm;
   }
@@ -62,4 +58,22 @@
   .dropdown-item:hover {
     @apply bg-ukqb-red-hover;
   }
+}
+
+/* Pagefind styles its own markup at runtime, so these rules cannot be scoped.
+   They sit outside a layer because layered rules lose to Pagefind's unlayered CSS. */
+#site-search .pagefind-ui {
+  --pagefind-ui-primary: var(--color-ukqb-red);
+  --pagefind-ui-text: #111;
+  --pagefind-ui-background: #fff;
+  --pagefind-ui-border: #d1d5db;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 0.5rem;
+  --pagefind-ui-font: var(--font-sans);
+  @apply relative m-0;
+}
+
+/* Float the results over the page instead of pushing the content down */
+#site-search .pagefind-ui__drawer {
+  @apply bg-ukqb-red-bg absolute inset-x-0 top-full z-30 mt-2 max-h-[70vh] overflow-y-auto rounded-lg border border-gray-300 p-2 shadow-lg;
 }
