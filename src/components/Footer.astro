@@ -1,6 +1,49 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/logo-cropped.png";
+
+const sections = [
+  {
+    title: "Resources",
+    links: [
+      ["/resources/intro-to-qb", "Introduction to quizbowl"],
+      ["/resources/discord", "Discord"],
+      ["/resources/societies", "University quiz societies"],
+      ["/resources/study-resources", "Study resources"],
+      ["/resources/forums", "Quizbowl forums"],
+      ["/resources/statistics", "Statistics"],
+      ["/resources/hosting", "Tournament hosting guide"],
+      ["/resources/glossary", "Quizbowl glossary"],
+      ["/resources/faq", "FAQ"],
+    ],
+  },
+  {
+    title: "Safeguarding",
+    links: [
+      ["https://forms.gle/Cu653HRzndZiU4mM8", "Safeguarding reporting form"],
+      ["/safeguarding/cheating", "Cheating reporting form"],
+      ["/safeguarding/conduct", "Code of conduct"],
+      ["/safeguarding/guide", "Safeguarding guide"],
+      ["/safeguarding/sanctions-policy", "Sanctions policy"],
+    ],
+  },
+  {
+    title: "About us",
+    links: [
+      ["/about/statement-of-purpose", "Statement of purpose"],
+      ["/about/committee", "Committee"],
+    ],
+  },
+];
+
+// A section longer than five links spills into another column.
+const ROWS = 5;
+const columns = sections.flatMap(({ title, links }) =>
+  Array.from({ length: Math.ceil(links.length / ROWS) }, (_, i) => ({
+    title: i === 0 ? title : "",
+    links: links.slice(i * ROWS, i * ROWS + ROWS),
+  })),
+);
 ---
 
 <footer class="bg-ukqb-red mt-16 text-white">
@@ -17,53 +60,27 @@ import logo from "../assets/logo-cropped.png";
       </div>
       <nav
         aria-label="Footer navigation"
-        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16"
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8"
       >
-        <div>
-          <h2 class="mt-0 mb-3 text-base font-bold">Resources</h2>
-          <ul class="m-0 flex list-none flex-col gap-2 p-0">
-            <li>
-              <a href="/resources/intro-to-qb">Introduction to quizbowl</a>
-            </li>
-            <li><a href="/resources/discord">Discord</a></li>
-            <li>
-              <a href="/resources/societies">University quiz societies</a>
-            </li>
-            <li><a href="/resources/study-resources">Study resources</a></li>
-            <li><a href="/resources/forums">Quizbowl forums</a></li>
-            <li><a href="/resources/statistics">Statistics</a></li>
-            <li><a href="/resources/hosting">Tournament hosting guide</a></li>
-            <li><a href="/resources/glossary">Quizbowl glossary</a></li>
-            <li><a href="/resources/faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mt-0 mb-3 text-base font-bold">Safeguarding</h2>
-          <ul class="m-0 flex list-none flex-col gap-2 p-0">
-            <li>
-              <a href="https://forms.gle/Cu653HRzndZiU4mM8">
-                Safeguarding reporting form
-              </a>
-            </li>
-            <li>
-              <a href="/safeguarding/cheating">Cheating reporting form</a>
-            </li>
-            <li><a href="/safeguarding/conduct">Code of conduct</a></li>
-            <li><a href="/safeguarding/guide">Safeguarding guide</a></li>
-            <li>
-              <a href="/safeguarding/sanctions-policy">Sanctions policy</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mt-0 mb-3 text-base font-bold">About us</h2>
-          <ul class="m-0 flex list-none flex-col gap-2 p-0">
-            <li>
-              <a href="/about/statement-of-purpose">Statement of purpose</a>
-            </li>
-            <li><a href="/about/committee">Committee</a></li>
-          </ul>
-        </div>
+        {
+          columns.map((column) => (
+            <div>
+              <h2
+                class="mt-0 mb-3 text-base font-bold"
+                aria-hidden={column.title ? undefined : true}
+              >
+                {column.title || "\u00a0"}
+              </h2>
+              <ul class="m-0 flex list-none flex-col gap-2 p-0">
+                {column.links.map(([href, label]) => (
+                  <li>
+                    <a href={href}>{label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
       </nav>
     </div>
     <p
