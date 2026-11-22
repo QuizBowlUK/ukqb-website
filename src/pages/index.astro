@@ -1,6 +1,5 @@
 ---
 import Intro from "../components/Intro.astro";
-import MailingList from "../components/MailingList.astro";
 import Tournaments from "../components/tournaments/Tournaments.astro";
 import Layout from "../layouts/Layout.astro";
 import Instagram from "../components/icons/Instagram.astro";
@@ -16,7 +15,6 @@ const posts = await getCollection("blog");
   sourceFiles={[
     "src/pages/index.astro",
     "src/components/Intro.astro",
-    "src/components/MailingList.astro",
     "src/components/tournaments",
     "src/components/blog",
     "src/data/tournaments.json",
@@ -37,6 +35,5 @@ const posts = await getCollection("blog");
   </div>
   <Tournaments class="mt-20 md:mt-40" />
   <Intro class="mt-20 md:mt-40" />
-  <MailingList />
   <BlogPreview class="mt-20 mb-40 md:mt-40" />
 </Layout>
