@@ -82,7 +82,7 @@
 }
 
 #site-search .pagefind-ui__search-input:focus {
-  @apply border-ukqb-red;
+  @apply border-gray-500;
 }
 
 #site-search .pagefind-ui__search-input::placeholder {
@@ -152,8 +152,10 @@
   inset: 0;
 }
 
-#site-search .pagefind-ui__result:focus-within {
-  @apply outline-ukqb-red rounded-lg outline-2 outline-offset-2;
+/* Inset, so the scrolling results panel does not clip the ring at the sides */
+#site-search .pagefind-ui__result:has(:focus-visible) {
+  outline: 2px solid var(--color-ukqb-red);
+  outline-offset: -2px;
 }
 
 #site-search .pagefind-ui__result-excerpt {
