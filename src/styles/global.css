@@ -186,8 +186,9 @@
     display: none;
   }
 
+  /* Room for the close button, which sits inside the field's right edge */
   #site-search .pagefind-ui__search-input {
-    padding-right: 1rem;
+    padding-right: 3.25rem;
   }
 
   /* The dialog keeps its layout size when the iOS keyboard opens */
@@ -196,14 +197,20 @@
     flex-direction: column;
   }
 
+  /* Stack, so the results take the full dialog width and the close button
+     floats over the field instead of holding a column of its own */
   #search-bar {
+    position: relative;
+    display: flex;
     flex: 1;
-    align-items: stretch;
+    flex-direction: column;
     min-height: 0;
   }
 
   #search-close {
-    align-self: flex-start;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
   }
 
   #site-search {
