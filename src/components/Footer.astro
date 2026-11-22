@@ -57,45 +57,6 @@ const columns = sections.flatMap(({ title, links }) =>
 
 <footer class="bg-ukqb-red mt-16 text-white">
   <div class="container mx-auto box-border px-5 py-10 md:px-10">
-    <div
-      class="mb-8 flex flex-col gap-3 border-b border-white/30 pb-8 lg:flex-row lg:items-center lg:justify-between"
-    >
-      <h2 id="mailing-list-heading" class="m-0 text-base font-bold">
-        Open mailing list
-      </h2>
-      <form
-        method="post"
-        action="/api/subscribe"
-        aria-labelledby="mailing-list-heading"
-        class="flex w-full max-w-lg flex-col gap-2 sm:flex-row"
-      >
-        <label class="sr-only" for="mailing-list-email">Email address</label>
-        <input
-          class="min-w-0 flex-1 rounded-xl border-none bg-white px-4 py-3 text-base text-black placeholder:text-black/60"
-          id="mailing-list-email"
-          type="email"
-          name="email"
-          placeholder="you@example.com"
-          autocomplete="email"
-          enterkeyhint="send"
-          required
-        />
-        <input
-          class="hidden"
-          type="text"
-          name="company"
-          tabindex="-1"
-          autocomplete="off"
-          aria-hidden="true"
-        />
-        <button
-          class="text-ukqb-red hover:bg-ukqb-red-hover border-ukqb-red shrink-0 self-start rounded-xl border-2 bg-white px-4 py-3 text-base font-bold transition duration-100 ease-in sm:self-auto"
-          type="submit"
-        >
-          Sign up
-        </button>
-      </form>
-    </div>
     <div class="flex flex-col gap-8 lg:flex-row lg:justify-between lg:gap-16">
       <div>
         <a href="/" class="inline-block">
@@ -131,11 +92,50 @@ const columns = sections.flatMap(({ title, links }) =>
         }
       </nav>
     </div>
-    <p
-      class="mt-8 mb-0 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-t border-white/30 pt-5 text-sm"
+    <div
+      class="mt-8 flex flex-col-reverse gap-4 border-t border-white/30 pt-5 text-sm lg:flex-row lg:items-center lg:justify-between"
     >
-      &copy; {new Date().getFullYear()} UK Quizbowl
-    </p>
+      <p class="m-0">&copy; {new Date().getFullYear()} UK Quizbowl</p>
+      <div
+        class="flex flex-col gap-2 lg:flex-1 lg:flex-row lg:items-center lg:justify-end lg:gap-4"
+      >
+        <h2 id="mailing-list-heading" class="m-0 text-base font-bold">
+          Open mailing list
+        </h2>
+        <form
+          method="post"
+          action="/api/subscribe"
+          aria-labelledby="mailing-list-heading"
+          class="flex w-full flex-col gap-2 sm:flex-row lg:w-lg lg:shrink-0"
+        >
+          <label class="sr-only" for="mailing-list-email">Email address</label>
+          <input
+            class="min-w-0 flex-1 rounded-xl border-none bg-white px-4 py-3 text-base text-black placeholder:text-black/60"
+            id="mailing-list-email"
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            enterkeyhint="send"
+            required
+          />
+          <input
+            class="hidden"
+            type="text"
+            name="company"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <button
+            class="text-ukqb-red hover:bg-ukqb-red-hover border-ukqb-red shrink-0 self-start rounded-xl border-2 bg-white px-4 py-3 text-base font-bold transition duration-100 ease-in sm:self-auto"
+            type="submit"
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 </footer>
 
