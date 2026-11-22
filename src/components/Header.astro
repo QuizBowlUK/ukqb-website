@@ -4,6 +4,12 @@ import logo from "../assets/logo-cropped.png";
 import Hamburger from "./icons/Hamburger.astro";
 ---
 
+{
+  /* Loaded here rather than from the script, so the markup is never unstyled */
+  import.meta.env.PROD && (
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  )
+}
 <header
   class="flex flex-wrap items-center gap-x-8 gap-y-3 py-6"
   data-pagefind-ignore
@@ -183,11 +189,6 @@ import Hamburger from "./icons/Hamburger.astro";
         script.onerror = () => reject(new Error("No search index"));
         document.head.append(script);
       });
-
-      const styles = document.createElement("link");
-      styles.rel = "stylesheet";
-      styles.href = "/pagefind/pagefind-ui.css";
-      document.head.append(styles);
 
       new (window as any).PagefindUI({
         element: "#site-search",
