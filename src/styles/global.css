@@ -204,6 +204,8 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    /* Stretch, not centre: the row's items-center would shrink-wrap the field */
+    align-items: stretch;
     min-height: 0;
   }
 
