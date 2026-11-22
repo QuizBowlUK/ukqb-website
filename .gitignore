@@ -9,3 +9,4 @@ _asset_bundler_cache
 .jekyll-metadata
 .astro
 dist
+.dev.vars

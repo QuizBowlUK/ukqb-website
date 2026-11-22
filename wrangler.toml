@@ -1,5 +1,8 @@
 name = "ukqb-website"
 compatibility_date = "2025-07-26"
+main = "src/worker.ts"
 
+# Static files are served directly; src/worker.ts only handles /api/subscribe.
 [assets]
 directory = "./dist"
+binding = "ASSETS"

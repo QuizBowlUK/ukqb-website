@@ -1,10 +1,12 @@
 # UK Quizbowl website
 
 ## How to add a new blog post
+
 All blog posts are stored as Markdown files under `src/data/blog`. To add a new blog post:
 
 1. Create a new Markdown file with the contents of the blog post in its body.
 2. Fill in the contents of the frontmatter. Each blog post must have a title, a date, a description, and a teaser image. It is good practice to add alt text for the teaser image for accessibility reasons. You may also specify a different image for the feature image in the body of the blog post. The frontmatter for a blog post may look like:
+
 ```md
 ---
 title: "MRNA IV: A New Hope"
@@ -17,19 +19,25 @@ image:
   feature: 2025-mrna-iv/imperial-soton.webp
 ---
 ```
+
 The schema of the frontmatter is specified in `src/content.config.ts`.
 
 ### Adding images
+
 Put all images under `src/assets`.
 
 Image paths in the frontmatter are relative to `src/assets/blog`. Image paths in the body of the blog post are relative to the Markdown file. To add an image in the body of the blog post, use standard Markdown syntax, e.g.
+
 ```md
 ![This is some alt text](../../assets/blog/2025-mrna-iv/warwick-manchester.webp)
 ```
+
 Images in the body of the blog post are centred by default.
 
 ## How to update tournaments
+
 All tournament details are specified in `src/data/tournaments.json`. The tournaments are sorted by date before rendering so there's no need to manually sort the tournament objects, although it may be helpful to sort them in the JSON file anyway. A tournament object may look like:
+
 ```json
 {
   "name": "X, formerly known as TitA",
@@ -48,10 +56,13 @@ All tournament details are specified in `src/data/tournaments.json`. The tournam
   }
 }
 ```
+
 The schema of the tournament object is specified in `src/content.config.ts`. Tournaments with `dots: 0` must set `popCulture: true`; otherwise the build fails validation.
 
 ## How to update committee bios
+
 The committee bios are specified in `src/data/committee.json`. Image paths are relative to `src/assets`. To force a paragraph break in the bio, add `\n\n` between paragraphs. A bio object may look like:
+
 ```json
 {
   "position": "Tournament Supervisor",
@@ -60,4 +71,21 @@ The committee bios are specified in `src/data/committee.json`. Image paths are r
   "image": "committee-25/biohazard.png"
 }
 ```
+
 The schema of the bio object is specified in `src/content.config.ts`.
+
+## Mailing list signup
+
+The homepage form posts to `/api/subscribe`, handled by `src/worker.ts`. The Worker serves the static site from `dist/` and proxies the form to the MailerLite API (`POST https://connect.mailerlite.com/api/subscribers`), so the API key never reaches the browser.
+
+Set these on the Cloudflare project (or in a git-ignored `.dev.vars` for local testing):
+
+- `MAILERLITE_API_KEY` (secret) — a MailerLite API token that can create subscribers.
+- `MAILERLITE_GROUP_ID` (optional) — the group new subscribers are added to.
+
+```sh
+npx wrangler secret put MAILERLITE_API_KEY
+npx wrangler secret put MAILERLITE_GROUP_ID
+```
+
+Without a key the rest of the site still works; the form just shows an "unavailable" message.
