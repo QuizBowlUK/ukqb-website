@@ -64,6 +64,12 @@
   }
 }
 
+/* The site base styles clear the outline on focused buttons, so set it here */
+#search-trigger:focus-visible {
+  outline: 2px solid var(--color-ukqb-red);
+  outline-offset: 2px;
+}
+
 /* Pagefind styles its own markup at runtime, so these rules cannot be scoped.
    They sit outside a layer because layered rules lose to Pagefind's unlayered CSS. */
 #site-search .pagefind-ui {
@@ -81,8 +87,10 @@
   padding: 0 4.5rem 0 2.75rem;
 }
 
+/* A soft glow marks focus; changing the border colour reads as a harsh line */
 #site-search .pagefind-ui__search-input:focus {
-  @apply border-gray-500;
+  @apply border-gray-300;
+  box-shadow: 0 0 0 4px rgb(170 0 0 / 0.08);
 }
 
 #site-search .pagefind-ui__search-input::placeholder {
