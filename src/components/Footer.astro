@@ -5,7 +5,7 @@ import logo from "../assets/logo-cropped.png";
 
 <footer class="bg-ukqb-red mt-16 text-white">
   <div class="container mx-auto box-border px-5 py-10 md:px-10">
-    <div class="flex flex-col gap-8 lg:flex-row lg:justify-between">
+    <div class="flex flex-col gap-8 lg:flex-row lg:justify-between lg:gap-16">
       <div>
         <a href="/" class="inline-block">
           <Image
@@ -15,22 +15,63 @@ import logo from "../assets/logo-cropped.png";
           />
         </a>
       </div>
-      <nav aria-label="Footer navigation">
-        <ul
-          class="m-0 flex list-none flex-col gap-2 p-0 sm:flex-row sm:flex-wrap sm:gap-6"
-        >
-          <li><a href="/blog">Blog</a></li>
-          <li>
-            <a href="/resources/intro-to-qb">Introduction to quizbowl</a>
-          </li>
-          <li><a href="/safeguarding/guide">Safeguarding guide</a></li>
-          <li><a href="/about/committee">Committee</a></li>
-          <li><a href="/contact">Contact us</a></li>
-        </ul>
+      <nav
+        aria-label="Footer navigation"
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16"
+      >
+        <div>
+          <h2 class="mt-0 mb-3 text-base font-bold">Resources</h2>
+          <ul class="m-0 flex list-none flex-col gap-2 p-0">
+            <li>
+              <a href="/resources/intro-to-qb">Introduction to quizbowl</a>
+            </li>
+            <li><a href="/resources/discord">Discord</a></li>
+            <li>
+              <a href="/resources/societies">University quiz societies</a>
+            </li>
+            <li><a href="/resources/study-resources">Study resources</a></li>
+            <li><a href="/resources/forums">Quizbowl forums</a></li>
+            <li><a href="/resources/statistics">Statistics</a></li>
+            <li><a href="/resources/hosting">Tournament hosting guide</a></li>
+            <li><a href="/resources/glossary">Quizbowl glossary</a></li>
+            <li><a href="/resources/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mt-0 mb-3 text-base font-bold">Safeguarding</h2>
+          <ul class="m-0 flex list-none flex-col gap-2 p-0">
+            <li>
+              <a href="https://forms.gle/Cu653HRzndZiU4mM8">
+                Safeguarding reporting form
+              </a>
+            </li>
+            <li>
+              <a href="/safeguarding/cheating">Cheating reporting form</a>
+            </li>
+            <li><a href="/safeguarding/conduct">Code of conduct</a></li>
+            <li><a href="/safeguarding/guide">Safeguarding guide</a></li>
+            <li>
+              <a href="/safeguarding/sanctions-policy">Sanctions policy</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mt-0 mb-3 text-base font-bold">About us</h2>
+          <ul class="m-0 flex list-none flex-col gap-2 p-0">
+            <li>
+              <a href="/about/statement-of-purpose">Statement of purpose</a>
+            </li>
+            <li><a href="/about/committee">Committee</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
-    <p class="mt-8 mb-0 border-t border-white/30 pt-5 text-sm">
-      &copy; {new Date().getFullYear()} UK Quizbowl
+    <p
+      class="mt-8 mb-0 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-t border-white/30 pt-5 text-sm"
+    >
+      <span>&copy; {new Date().getFullYear()} UK Quizbowl</span>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact us</a>
     </p>
   </div>
 </footer>
