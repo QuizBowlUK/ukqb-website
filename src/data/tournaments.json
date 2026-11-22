@@ -110,49 +110,66 @@
     "id": "clopen",
     "dots": 3,
     "eligibility": "open",
-    "date": "9 Jan 2027"
+    "date": "9 Jan 2027",
+    "location": "University of Birmingham"
   },
   {
     "name": "ARCADIA",
     "id": "arcadia",
     "dots": 2,
     "eligibility": "closed",
-    "date": "16 Jan 2027"
+    "date": "16 Jan 2027",
+    "location": {
+      "Northern": "University of Manchester",
+      "Southern": "University of Warwick"
+    }
   },
   {
     "name": "ACF Regionals",
     "id": "acf-regionals",
     "dots": 3,
     "eligibility": "closed",
-    "date": "30 Jan 2027"
+    "date": "30 Jan 2027",
+    "location": "Imperial College London"
   },
   {
     "name": "Winter Novice",
     "id": "winter-novice",
     "dots": 1,
     "eligibility": "closed",
-    "date": "6 Feb 2027"
+    "date": "6 Feb 2027",
+    "location": {
+      "Northern": "University of Manchester",
+      "Southern": "University College London"
+    }
   },
   {
     "name": "COOT",
     "id": "coot",
     "dots": 3,
     "eligibility": "open",
-    "date": "13 Feb 2027"
+    "date": "13 Feb 2027",
+    "location": "University of Oxford"
   },
   {
     "name": "Planetfall",
     "id": "planetfall",
     "dots": 1.5,
     "eligibility": "closed",
-    "date": "20 Feb 2027"
+    "date": "20 Feb 2027",
+    "location": {
+      "Edinburgh": "University of Edinburgh",
+      "Cambridge": "University of Cambridge",
+      "Cardiff": "Cardiff University"
+    }
   },
   {
     "name": "BSQC",
     "id": "bsqc",
     "dots": 3,
     "eligibility": "closed",
-    "date": "6 Mar 2027"
+    "date": "6 Mar 2027",
+    "location": "University of Birmingham"
   },
   {
     "name": "WaShBowl IV",
@@ -160,13 +177,15 @@
     "dots": 0,
     "eligibility": "closed",
     "date": "13 Mar 2027",
-    "popCulture": true
+    "popCulture": true,
+    "location": "University of Warwick"
   },
   {
     "name": "SOBA",
     "id": "soba",
     "dots": 2.5,
     "eligibility": "open",
-    "date": "20 Mar 2027"
+    "date": "20 Mar 2027",
+    "location": "Imperial College London"
   }
 ]
