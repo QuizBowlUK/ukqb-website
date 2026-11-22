@@ -96,34 +96,20 @@
     );
   }
 
-  const viewport = window.visualViewport;
   let savedScrollY = 0;
 
-  // The on-screen keyboard shrinks the visual viewport without resizing the
-  // layout viewport, so the dialog follows what the user can actually see.
-  // The overlay keeps covering the whole page, so nothing unshaded shows.
-  function fitToVisibleViewport() {
-    if (!viewport || !isOpen()) return;
-    document.documentElement.style.setProperty(
-      "--search-vv-height",
-      `${viewport.height}px`,
-    );
-    document.documentElement.style.setProperty(
-      "--search-vv-offset",
-      `${viewport.offsetTop}px`,
-    );
-  }
-
-  // Fixed body keeps the page behind the dialog from scrolling, and restores
-  // the scroll position on close
+  // Locks the page behind the dialog. iOS scrolls the document element, so
+  // both elements are locked, and the body is pinned to keep its position.
   function lockPageScroll() {
     savedScrollY = window.scrollY;
+    document.documentElement.style.overflow = "hidden";
     document.body.style.position = "fixed";
     document.body.style.top = `-${savedScrollY}px`;
     document.body.style.width = "100%";
   }
 
   function unlockPageScroll() {
+    document.documentElement.style.overflow = "";
     document.body.style.position = "";
     document.body.style.top = "";
     document.body.style.width = "";
@@ -133,8 +119,6 @@
   function openSearch() {
     if (!overlay || !trigger) return;
     overlay.classList.remove("hidden");
-    fitToVisibleViewport();
-    requestAnimationFrame(fitToVisibleViewport);
     trigger.setAttribute("aria-expanded", "true");
     lockPageScroll();
     searchInput()?.focus();
@@ -152,9 +136,6 @@
     trigger.focus();
   }
 
-  viewport?.addEventListener("resize", fitToVisibleViewport);
-  viewport?.addEventListener("scroll", fitToVisibleViewport);
-
   function isOpen() {
     return !!overlay && !overlay.classList.contains("hidden");
   }
@@ -167,6 +148,17 @@
   overlay?.addEventListener("click", (event) => {
     if (event.target === overlay) closeSearch();
   });
+
+  // iOS still pans the page on touch, so block panning outside the results
+  overlay?.addEventListener(
+    "touchmove",
+    (event) => {
+      const target = event.target as Element;
+      if (target.closest(".pagefind-ui__drawer")) return;
+      event.preventDefault();
+    },
+    { passive: false },
+  );
 
   document.addEventListener(
     "keydown",

@@ -185,14 +185,10 @@
     padding-right: 1rem;
   }
 
-  #search-overlay {
-    padding-top: calc(var(--search-vv-offset, 0px) + 0.75rem);
-  }
-
+  /* The dialog keeps its layout size when the iOS keyboard opens */
   #search-dialog {
     display: flex;
     flex-direction: column;
-    height: calc(var(--search-vv-height, 100dvh) - 1.5rem);
   }
 
   #search-bar {
