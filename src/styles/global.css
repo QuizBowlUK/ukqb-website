@@ -136,6 +136,11 @@
   @apply hover:bg-ukqb-red-hover relative m-0 block cursor-pointer rounded-lg border-0 px-3 py-2.5 transition-colors duration-200;
 }
 
+/* Touch devices have no hover, so show the same tint while the card is pressed */
+#site-search .pagefind-ui__result:active {
+  @apply bg-ukqb-red-hover;
+}
+
 #site-search .pagefind-ui__result-inner {
   @apply m-0 flex flex-col items-start gap-1;
 }

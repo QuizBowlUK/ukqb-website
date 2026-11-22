@@ -96,24 +96,16 @@
     );
   }
 
-  let savedScrollY = 0;
-
-  // Locks the page behind the dialog. iOS scrolls the document element, so
-  // both elements are locked, and the body is pinned to keep its position.
+  // Locks the page behind the dialog. Overflow only: pinning the body with
+  // position: fixed makes iOS jump the page, so the scroll position is untouched.
   function lockPageScroll() {
-    savedScrollY = window.scrollY;
     document.documentElement.style.overflow = "hidden";
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${savedScrollY}px`;
-    document.body.style.width = "100%";
+    document.body.style.overflow = "hidden";
   }
 
   function unlockPageScroll() {
     document.documentElement.style.overflow = "";
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.width = "";
-    window.scrollTo(0, savedScrollY);
+    document.body.style.overflow = "";
   }
 
   function openSearch() {
@@ -121,7 +113,7 @@
     overlay.classList.remove("hidden");
     trigger.setAttribute("aria-expanded", "true");
     lockPageScroll();
-    searchInput()?.focus();
+    searchInput()?.focus({ preventScroll: true });
   }
 
   function closeSearch() {
@@ -133,7 +125,7 @@
     (
       document.querySelector(".pagefind-ui__search-clear") as HTMLElement | null
     )?.click();
-    trigger.focus();
+    trigger.focus({ preventScroll: true });
   }
 
   function isOpen() {
@@ -147,6 +139,14 @@
 
   overlay?.addEventListener("click", (event) => {
     if (event.target === overlay) closeSearch();
+  });
+
+  // Safari does not always hit the full-card link, so open it from the card
+  overlay?.addEventListener("click", (event) => {
+    const target = event.target as Element;
+    const card = target.closest(".pagefind-ui__result");
+    if (!card || target.closest("a")) return;
+    (card.querySelector("a") as HTMLAnchorElement | null)?.click();
   });
 
   // iOS still pans the page on touch, so block panning outside the results
