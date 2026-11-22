@@ -66,19 +66,15 @@ const columns = sections.flatMap(({ title, links }) =>
             class="block h-8 w-auto brightness-0 invert"
           />
         </a>
-        <h2 class="mt-6 mb-2 text-base font-bold">Open mailing list</h2>
-        <p class="m-0 max-w-xs text-sm">
-          Occasional emails about tournaments, opportunities and other UK
-          quizbowl news. No spam.
-        </p>
+        <h2 class="mt-6 mb-3 text-base font-bold">Open mailing list</h2>
         <form
           method="post"
           action="/api/subscribe"
-          class="mt-3 flex max-w-xs flex-col gap-2 sm:flex-row"
+          class="flex max-w-sm flex-col gap-3 sm:flex-row"
         >
           <label class="sr-only" for="mailing-list-email">Email address</label>
           <input
-            class="min-w-0 flex-1 rounded-lg border-none bg-white px-3 py-2 text-base text-black"
+            class="min-w-0 flex-1 rounded-xl border-none bg-white px-4 py-3.5 text-lg text-black"
             id="mailing-list-email"
             type="email"
             name="email"
@@ -95,7 +91,7 @@ const columns = sections.flatMap(({ title, links }) =>
             aria-hidden="true"
           />
           <button
-            class="text-ukqb-red bg-white px-4 py-2 text-base font-bold hover:bg-[#ffe4e4]"
+            class="text-ukqb-red hover:bg-ukqb-red-hover rounded-xl bg-white px-6 py-3.5 text-xl transition duration-100 ease-in"
             type="submit"
           >
             Sign up
