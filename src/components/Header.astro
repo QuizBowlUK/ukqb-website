@@ -17,7 +17,7 @@ import Hamburger from "./icons/Hamburger.astro";
   >
   </div>
   <button
-    class="mobile-menu-trigger hover:border-ukqb-red hover:text-ukqb-red flex h-11 shrink-0 items-center gap-2 rounded-full border border-gray-300 bg-white/70 px-4 text-sm font-semibold text-gray-700 transition-colors duration-150"
+    class="mobile-menu-trigger bg-ukqb-red-hover text-ukqb-red flex h-12 shrink-0 items-center gap-2 rounded-lg px-4 transition-colors duration-150 hover:bg-[#f8dddd]"
   >
     Browse
     <Hamburger class="h-5 w-5" />
@@ -193,6 +193,8 @@ import Hamburger from "./icons/Hamburger.astro";
         element: "#site-search",
         showImages: false,
         showSubResults: false,
+        // Show every match: the index is small, so there is no "Load more" step
+        pageSize: 1000,
         // The reset stylesheet uses `all: unset`, which fights the site styles
         resetStyles: false,
         translations: { placeholder: "Search the site" },
