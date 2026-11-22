@@ -173,3 +173,32 @@
 #site-search mark {
   @apply bg-ukqb-red/10 rounded-sm px-0.5 font-semibold text-gray-900;
 }
+
+/* Full-screen dialog on phones, with the field pinned and the results scrolling */
+@media (max-width: 639px) {
+  #search-dialog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #site-search {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  #site-search .pagefind-ui,
+  #site-search .pagefind-ui__form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  #site-search .pagefind-ui__drawer {
+    flex: 1;
+    max-height: none;
+    min-height: 0;
+  }
+}
