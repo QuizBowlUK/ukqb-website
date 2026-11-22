@@ -185,9 +185,14 @@
     padding-right: 1rem;
   }
 
+  #search-overlay {
+    padding-top: calc(var(--search-vv-offset, 0px) + 0.75rem);
+  }
+
   #search-dialog {
     display: flex;
     flex-direction: column;
+    height: calc(var(--search-vv-height, 100dvh) - 1.5rem);
   }
 
   #search-bar {
@@ -220,5 +225,6 @@
     flex: 1;
     max-height: none;
     min-height: 0;
+    overscroll-behavior: contain;
   }
 }

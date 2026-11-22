@@ -46,7 +46,7 @@
 
 <div
   id="search-overlay"
-  class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/40 p-3 sm:p-6"
+  class="fixed inset-0 z-50 box-border hidden overflow-hidden bg-black/40 p-3 sm:overflow-y-auto sm:p-6"
   data-pagefind-ignore
 >
   <div
@@ -54,7 +54,7 @@
     role="dialog"
     aria-modal="true"
     aria-label="Search the site"
-    class="bg-ukqb-red-bg mx-auto box-border h-[92dvh] w-full max-w-2xl rounded-xl border border-gray-300 p-3 sm:mt-[8vh] sm:h-auto"
+    class="bg-ukqb-red-bg mx-auto box-border h-full w-full max-w-2xl rounded-xl border border-gray-300 p-3 sm:mt-[8vh] sm:h-auto"
   >
     <div id="search-bar" class="flex items-center gap-1">
       <div id="site-search" class="min-w-0 flex-1"></div>
@@ -96,11 +96,47 @@
     );
   }
 
+  const viewport = window.visualViewport;
+  let savedScrollY = 0;
+
+  // The on-screen keyboard shrinks the visual viewport without resizing the
+  // layout viewport, so the dialog follows what the user can actually see.
+  // The overlay keeps covering the whole page, so nothing unshaded shows.
+  function fitToVisibleViewport() {
+    if (!viewport || !isOpen()) return;
+    document.documentElement.style.setProperty(
+      "--search-vv-height",
+      `${viewport.height}px`,
+    );
+    document.documentElement.style.setProperty(
+      "--search-vv-offset",
+      `${viewport.offsetTop}px`,
+    );
+  }
+
+  // Fixed body keeps the page behind the dialog from scrolling, and restores
+  // the scroll position on close
+  function lockPageScroll() {
+    savedScrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.style.width = "100%";
+  }
+
+  function unlockPageScroll() {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.width = "";
+    window.scrollTo(0, savedScrollY);
+  }
+
   function openSearch() {
     if (!overlay || !trigger) return;
     overlay.classList.remove("hidden");
+    fitToVisibleViewport();
+    requestAnimationFrame(fitToVisibleViewport);
     trigger.setAttribute("aria-expanded", "true");
-    document.body.classList.add("overflow-hidden");
+    lockPageScroll();
     searchInput()?.focus();
   }
 
@@ -108,13 +144,16 @@
     if (!overlay || !trigger) return;
     overlay.classList.add("hidden");
     trigger.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("overflow-hidden");
+    unlockPageScroll();
     // Start fresh the next time it opens
     (
       document.querySelector(".pagefind-ui__search-clear") as HTMLElement | null
     )?.click();
     trigger.focus();
   }
+
+  viewport?.addEventListener("resize", fitToVisibleViewport);
+  viewport?.addEventListener("scroll", fitToVisibleViewport);
 
   function isOpen() {
     return !!overlay && !overlay.classList.contains("hidden");
