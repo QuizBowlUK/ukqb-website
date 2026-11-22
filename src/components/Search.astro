@@ -56,12 +56,13 @@
     aria-label="Search the site"
     class="bg-ukqb-red-bg mx-auto box-border h-[92dvh] w-full max-w-2xl rounded-xl border border-gray-300 p-3 sm:mt-[8vh] sm:h-auto"
   >
-    <div class="mb-2 flex justify-end sm:hidden">
+    <div id="search-bar" class="flex items-center gap-1">
+      <div id="site-search" class="min-w-0 flex-1"></div>
       <button
         id="search-close"
         type="button"
         aria-label="Close search"
-        class="bg-ukqb-red-hover text-ukqb-red flex h-10 w-10 items-center justify-center rounded-lg"
+        class="text-ukqb-red hover:bg-ukqb-red-hover flex h-10 w-10 shrink-0 items-center justify-center rounded-lg sm:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +82,6 @@
         </svg>
       </button>
     </div>
-    <div id="site-search"></div>
   </div>
 </div>
 
