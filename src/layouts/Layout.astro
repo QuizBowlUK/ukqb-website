@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 import { getLastUpdated } from "../utils/lastUpdated.ts";
 
@@ -41,7 +42,7 @@ const lastUpdated = getLastUpdated(sourceFiles, import.meta.env.DEV);
         <slot />
         {
           lastUpdated && (
-            <footer class="mx-auto mt-12 mb-8 text-center text-sm text-gray-600">
+            <p class="mx-auto mt-12 mb-8 text-center text-sm text-gray-600">
               Last updated:{" "}
               <time datetime={lastUpdated.toISOString()}>
                 {lastUpdated.toLocaleString("en-GB", {
@@ -55,10 +56,11 @@ const lastUpdated = getLastUpdated(sourceFiles, import.meta.env.DEV);
                   timeZoneName: "short",
                 })}
               </time>
-            </footer>
+            </p>
           )
         }
       </div>
     </div>
+    <Footer />
   </body>
 </html>

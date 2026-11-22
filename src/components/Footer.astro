@@ -1,0 +1,114 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo-cropped.png";
+
+const sections = [
+  {
+    title: "Resources",
+    links: [
+      ["/resources/intro-to-qb", "Introduction to quizbowl"],
+      ["/resources/discord", "Discord"],
+      ["/resources/societies", "University quiz societies"],
+      ["/resources/study-resources", "Study resources"],
+      ["/resources/forums", "Quizbowl forums"],
+      ["/resources/statistics", "Statistics"],
+      ["/resources/hosting", "Tournament hosting guide"],
+      ["/resources/glossary", "Quizbowl glossary"],
+      ["/resources/faq", "FAQ"],
+    ],
+  },
+  {
+    title: "Safeguarding",
+    links: [
+      ["https://forms.gle/Cu653HRzndZiU4mM8", "Safeguarding reporting form"],
+      ["/safeguarding/cheating", "Cheating reporting form"],
+      ["/safeguarding/conduct", "Code of conduct"],
+      ["/safeguarding/guide", "Safeguarding guide"],
+      ["/safeguarding/sanctions-policy", "Sanctions policy"],
+    ],
+  },
+  {
+    title: "About us",
+    links: [
+      ["/about/statement-of-purpose", "Statement of purpose"],
+      ["/about/committee", "Committee"],
+    ],
+  },
+  {
+    title: "Contact us",
+    links: [
+      ["mailto:contact@quizbowl.co.uk", "contact@quizbowl.co.uk"],
+      ["https://www.facebook.com/quizbowluk/", "Facebook"],
+      ["https://bsky.app/profile/ukquizbowl.bsky.social", "Bluesky"],
+      ["https://instagram.com/quizbowluk", "Instagram"],
+    ],
+  },
+];
+
+// A section longer than five links spills into another column.
+const ROWS = 5;
+const columns = sections.flatMap(({ title, links }) =>
+  Array.from({ length: Math.ceil(links.length / ROWS) }, (_, i) => ({
+    title: i === 0 ? title : "",
+    links: links.slice(i * ROWS, i * ROWS + ROWS),
+  })),
+);
+---
+
+<footer class="bg-ukqb-red mt-16 text-white">
+  <div class="container mx-auto box-border px-5 py-10 md:px-10">
+    <div class="flex flex-col gap-8 lg:flex-row lg:justify-between lg:gap-16">
+      <div>
+        <a href="/" class="inline-block">
+          <Image
+            src={logo}
+            alt="UK Quizbowl home"
+            class="block h-8 w-auto brightness-0 invert"
+          />
+        </a>
+      </div>
+      <nav
+        aria-label="Footer navigation"
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8"
+      >
+        {
+          columns.map((column) => (
+            <div>
+              <h2
+                class="mt-0 mb-3 text-base font-bold"
+                aria-hidden={column.title ? undefined : true}
+              >
+                {column.title || "\u00a0"}
+              </h2>
+              <ul class="m-0 flex list-none flex-col gap-2 p-0">
+                {column.links.map(([href, label]) => (
+                  <li>
+                    <a href={href}>{label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </nav>
+    </div>
+    <p
+      class="mt-8 mb-0 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-t border-white/30 pt-5 text-sm"
+    >
+      &copy; {new Date().getFullYear()} UK Quizbowl
+    </p>
+  </div>
+</footer>
+
+<style>
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #ffeded;
+  }
+  a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+  }
+</style>
