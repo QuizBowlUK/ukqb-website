@@ -205,6 +205,24 @@
       });
 
       if (trigger) trigger.hidden = false;
+
+      // Fade the bottom of the results while more of them are below the fold
+      const dialog = document.getElementById("search-dialog");
+      const updateFade = () => {
+        const results = container?.querySelector(".pagefind-ui__drawer");
+        if (!dialog || !results) return;
+        const more =
+          results.scrollHeight - results.scrollTop - results.clientHeight > 4;
+        dialog.classList.toggle("has-more-results", more);
+      };
+
+      container.addEventListener("scroll", updateFade, true);
+      new MutationObserver(() => requestAnimationFrame(updateFade)).observe(
+        container,
+        { childList: true, subtree: true },
+      );
+      window.addEventListener("resize", updateFade);
+      updateFade();
     } catch {
       // No index available, e.g. in dev: leave the trigger hidden
     }

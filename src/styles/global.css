@@ -113,6 +113,35 @@
   padding: 0 0.75rem;
 }
 
+/* Fade over the last rows while the results still scroll, desktop only */
+@media (min-width: 640px) {
+  #search-dialog {
+    position: relative;
+  }
+
+  #search-dialog::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    height: 2.5rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+    background: linear-gradient(
+      to top,
+      var(--color-ukqb-red-bg),
+      rgb(255 250 250 / 0)
+    );
+    opacity: 0;
+    transition: opacity 150ms;
+    pointer-events: none;
+  }
+
+  #search-dialog.has-more-results::after {
+    opacity: 1;
+  }
+}
+
 /* Results flow inside the dialog, in the same style as the navbar dropdowns */
 #site-search .pagefind-ui__drawer {
   @apply static mt-3 max-h-[60vh] w-auto overflow-y-auto border-0 bg-transparent p-0;
