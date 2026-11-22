@@ -34,6 +34,15 @@ const sections = [
       ["/about/committee", "Committee"],
     ],
   },
+  {
+    title: "Contact us",
+    links: [
+      ["mailto:contact@quizbowl.co.uk", "contact@quizbowl.co.uk"],
+      ["https://www.facebook.com/quizbowluk/", "Facebook"],
+      ["https://bsky.app/profile/ukquizbowl.bsky.social", "Bluesky"],
+      ["https://instagram.com/quizbowluk", "Instagram"],
+    ],
+  },
 ];
 
 // A section longer than five links spills into another column.
@@ -60,7 +69,7 @@ const columns = sections.flatMap(({ title, links }) =>
       </div>
       <nav
         aria-label="Footer navigation"
-        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8"
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8"
       >
         {
           columns.map((column) => (
@@ -86,9 +95,7 @@ const columns = sections.flatMap(({ title, links }) =>
     <p
       class="mt-8 mb-0 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-t border-white/30 pt-5 text-sm"
     >
-      <span>&copy; {new Date().getFullYear()} UK Quizbowl</span>
-      <a href="/blog">Blog</a>
-      <a href="/contact">Contact us</a>
+      &copy; {new Date().getFullYear()} UK Quizbowl
     </p>
   </div>
 </footer>
