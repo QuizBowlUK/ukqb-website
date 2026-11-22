@@ -174,7 +174,7 @@
   @apply bg-ukqb-red/10 rounded-sm px-0.5 font-semibold text-gray-900;
 }
 
-/* Full-screen dialog on phones, with the field pinned and the results scrolling */
+/* Tall dialog on phones: field pinned, results scroll in the remaining height */
 @media (max-width: 639px) {
   #search-dialog {
     display: flex;
