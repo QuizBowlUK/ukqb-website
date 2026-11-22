@@ -71,19 +71,14 @@
   --pagefind-ui-text: #1f2937;
   --pagefind-ui-background: #fff;
   --pagefind-ui-font: var(--font-sans);
-  --pagefind-ui-scale: 0.8;
+  --pagefind-ui-scale: 0.9;
   @apply relative m-0;
 }
 
-/* Reserve the field height, so the header does not move when the UI loads */
-#site-search {
-  min-height: 2.5rem;
-}
-
 #site-search .pagefind-ui__search-input {
-  @apply w-full rounded-lg border border-gray-300 bg-white text-sm font-normal text-gray-900 outline-none;
-  height: 2.5rem;
-  padding: 0 3.5rem 0 2.25rem;
+  @apply w-full rounded-lg border border-gray-300 bg-white text-base font-normal text-gray-900 outline-none;
+  height: 3rem;
+  padding: 0 4.5rem 0 2.75rem;
 }
 
 #site-search .pagefind-ui__search-input:focus {
@@ -97,27 +92,27 @@
 
 #site-search .pagefind-ui__form:before {
   @apply bg-ukqb-red opacity-60;
-  top: 13px;
-  left: 11px;
+  top: 17px;
+  left: 16px;
 }
 
+/* Anchored to the field, not the centre of the whole form with its results */
 #site-search .pagefind-ui__search-clear {
-  @apply text-ukqb-red hover:bg-ukqb-red-hover rounded text-xs font-semibold transition-colors duration-150;
-  top: 50%;
-  right: 0.25rem;
-  height: 1.75rem;
-  padding: 0 0.5rem;
-  transform: translateY(-50%);
+  @apply text-ukqb-red hover:bg-ukqb-red-hover rounded text-sm font-semibold transition-colors duration-150;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 2rem;
+  padding: 0 0.75rem;
 }
 
-/* Results: the same surface as the navbar dropdowns, no shadows */
+/* Results flow inside the dialog, in the same style as the navbar dropdowns */
 #site-search .pagefind-ui__drawer {
-  @apply bg-ukqb-red-bg absolute top-full right-0 left-0 z-30 mt-2 max-h-[70vh] w-auto overflow-y-auto rounded-lg border border-gray-300 p-3 lg:left-auto lg:w-[30rem];
+  @apply static mt-3 max-h-[60vh] w-auto overflow-y-auto border-0 bg-transparent p-0;
   scrollbar-width: thin;
 }
 
 #site-search .pagefind-ui__results-area {
-  @apply m-0 min-w-0 flex-1;
+  @apply m-0 min-w-0;
 }
 
 #site-search .pagefind-ui__message {
@@ -129,7 +124,6 @@
   @apply m-0 flex list-none flex-col gap-1 p-0;
 }
 
-/* One card per page, in the same style as the dropdown items */
 #site-search .pagefind-ui__result {
   @apply hover:bg-ukqb-red-hover relative m-0 block cursor-pointer rounded-lg border-0 px-3 py-2.5 transition-colors duration-200;
 }

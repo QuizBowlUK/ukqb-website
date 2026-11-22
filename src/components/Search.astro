@@ -1,0 +1,150 @@
+---
+// Site-wide search: a floating trigger that opens a modal, so the page layout
+// does not change. The index is built by `npm run build` (postbuild script).
+---
+
+{
+  /* Loaded here rather than from the script, so the markup is never unstyled */
+  import.meta.env.PROD && (
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  )
+}
+
+<button
+  id="search-trigger"
+  type="button"
+  hidden
+  aria-label="Search the site"
+  aria-expanded="false"
+  aria-controls="search-overlay"
+  class="bg-ukqb-red-hover text-ukqb-red fixed right-4 bottom-4 z-40 flex h-12 w-12 items-center justify-center rounded-full transition-colors duration-150 hover:bg-[#f8dddd] sm:right-6 sm:bottom-6"
+  data-pagefind-ignore
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-5 w-5"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    stroke-width="2"
+    aria-hidden="true"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
+    >
+    </path>
+  </svg>
+  <span class="sr-only">Search the site</span>
+</button>
+
+<div
+  id="search-overlay"
+  class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/40 p-4 sm:p-6"
+  data-pagefind-ignore
+>
+  <div
+    id="search-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Search the site"
+    class="bg-ukqb-red-bg mx-auto mt-4 w-full max-w-2xl rounded-xl border border-gray-300 p-3 sm:mt-[8vh]"
+  >
+    <div id="site-search"></div>
+  </div>
+</div>
+
+<script>
+  const trigger = document.getElementById("search-trigger");
+  const overlay = document.getElementById("search-overlay");
+  const container = document.getElementById("site-search");
+
+  function searchInput() {
+    return container?.querySelector<HTMLInputElement>(
+      ".pagefind-ui__search-input",
+    );
+  }
+
+  function openSearch() {
+    if (!overlay || !trigger) return;
+    overlay.classList.remove("hidden");
+    trigger.setAttribute("aria-expanded", "true");
+    document.body.classList.add("overflow-hidden");
+    searchInput()?.focus();
+  }
+
+  function closeSearch() {
+    if (!overlay || !trigger) return;
+    overlay.classList.add("hidden");
+    trigger.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("overflow-hidden");
+    // Start fresh the next time it opens
+    (
+      document.querySelector(".pagefind-ui__search-clear") as HTMLElement | null
+    )?.click();
+    trigger.focus();
+  }
+
+  function isOpen() {
+    return !!overlay && !overlay.classList.contains("hidden");
+  }
+
+  trigger?.addEventListener("click", openSearch);
+
+  overlay?.addEventListener("click", (event) => {
+    if (event.target === overlay) closeSearch();
+  });
+
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key === "Escape" && isOpen()) closeSearch();
+
+      // "/" or Cmd/Ctrl+K opens the search, unless the user is typing
+      const typing = (event.target as HTMLElement)?.closest(
+        "input, textarea, select, [contenteditable]",
+      );
+      if (typing) return;
+      const isShortcut =
+        event.key === "/" ||
+        (event.key.toLowerCase() === "k" && (event.metaKey || event.ctrlKey));
+      if (!isShortcut || !trigger || trigger.hidden) return;
+      event.preventDefault();
+      openSearch();
+    },
+    true,
+  );
+
+  async function initSearch() {
+    if (!container || !import.meta.env.PROD) return;
+
+    try {
+      // pagefind-ui.js is a plain script, not a module: it defines window.PagefindUI
+      await new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "/pagefind/pagefind-ui.js";
+        script.onload = resolve;
+        script.onerror = () => reject(new Error("No search index"));
+        document.head.append(script);
+      });
+
+      new (window as any).PagefindUI({
+        element: "#site-search",
+        showImages: false,
+        showSubResults: false,
+        // Show every match: the index is small, so there is no "Load more" step
+        pageSize: 1000,
+        // The reset stylesheet uses `all: unset`, which fights the site styles
+        resetStyles: false,
+        translations: { placeholder: "Search the site" },
+      });
+
+      if (trigger) trigger.hidden = false;
+    } catch {
+      // No index available, e.g. in dev: leave the trigger hidden
+    }
+  }
+
+  initSearch();
+</script>
