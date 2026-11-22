@@ -7,7 +7,7 @@ import Hamburger from "./icons/Hamburger.astro";
 ---
 
 <Astronav>
-  <MenuItems class="flex justify-between gap-x-8 py-6">
+  <MenuItems class="flex justify-between gap-x-8 py-6" data-pagefind-ignore>
     <div class="flex flex-1 items-center">
       <a href="/">
         <!-- Padding to force logo to align vertically with the rest of the header -->
@@ -132,12 +132,14 @@ import Hamburger from "./icons/Hamburger.astro";
 
 <div
   id="mobile-menu-overlay"
+  data-pagefind-ignore
   class="mobile-menu-trigger pointer-events-none fixed inset-0 z-20 bg-black opacity-0 transition-opacity duration-300"
 >
 </div>
 
 <div
   id="mobile-menu"
+  data-pagefind-ignore
   class="bg-ukqb-red-bg fixed inset-y-0 right-0 z-40 w-64 translate-x-full overflow-y-auto shadow-lg duration-300"
 >
   <div class="border-dark flex items-center justify-between border-b px-4 py-2">

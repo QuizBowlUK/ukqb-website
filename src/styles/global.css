@@ -43,12 +43,12 @@
 }
 
 @layer components {
-  .card-shadow {
-    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.05);
-  }
-
   .navbar-dropdown {
     @apply relative pl-0;
+  }
+
+  .card-shadow {
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.05);
   }
 
   .navbar-dropdown-items {
@@ -61,5 +61,213 @@
 
   .dropdown-item:hover {
     @apply bg-ukqb-red-hover;
+  }
+}
+
+/* The site base styles clear the outline on focused buttons, so set it here */
+#search-trigger:focus-visible {
+  outline: 2px solid var(--color-ukqb-red);
+  outline-offset: 2px;
+}
+
+/* Pagefind styles its own markup at runtime, so these rules cannot be scoped.
+   They sit outside a layer because layered rules lose to Pagefind's unlayered CSS. */
+#site-search .pagefind-ui {
+  --pagefind-ui-primary: var(--color-ukqb-red);
+  --pagefind-ui-text: #1f2937;
+  --pagefind-ui-background: #fff;
+  --pagefind-ui-font: var(--font-sans);
+  --pagefind-ui-scale: 0.9;
+  @apply relative m-0;
+}
+
+#site-search .pagefind-ui__search-input {
+  @apply w-full rounded-lg border border-gray-300 bg-white text-base font-normal text-gray-900 outline-none;
+  height: 3rem;
+  padding: 0 4.5rem 0 2.75rem;
+}
+
+/* A soft glow marks focus; changing the border colour reads as a harsh line */
+#site-search .pagefind-ui__search-input:focus {
+  @apply border-gray-300;
+  box-shadow: 0 0 0 4px rgb(170 0 0 / 0.08);
+}
+
+#site-search .pagefind-ui__search-input::placeholder {
+  @apply text-gray-500;
+  opacity: 1;
+}
+
+#site-search .pagefind-ui__form:before {
+  @apply bg-ukqb-red opacity-60;
+  top: 17px;
+  left: 16px;
+}
+
+/* Anchored to the field, not the centre of the whole form with its results */
+#site-search .pagefind-ui__search-clear {
+  @apply text-ukqb-red hover:bg-ukqb-red-hover rounded text-sm font-semibold transition-colors duration-150;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 2rem;
+  padding: 0 0.75rem;
+}
+
+/* Fade over the last rows while the results still scroll, desktop only */
+@media (min-width: 640px) {
+  #search-dialog {
+    position: relative;
+  }
+
+  #search-dialog::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    height: 2.5rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+    background: linear-gradient(
+      to top,
+      var(--color-ukqb-red-bg),
+      rgb(255 250 250 / 0)
+    );
+    opacity: 0;
+    transition: opacity 150ms;
+    pointer-events: none;
+  }
+
+  #search-dialog.has-more-results::after {
+    opacity: 1;
+  }
+}
+
+/* Results flow inside the dialog, in the same style as the navbar dropdowns */
+#site-search .pagefind-ui__drawer {
+  @apply static mt-3 max-h-[60vh] w-auto overflow-y-auto border-0 bg-transparent p-0;
+  scrollbar-width: thin;
+}
+
+#site-search .pagefind-ui__results-area {
+  @apply m-0 min-w-0;
+}
+
+#site-search .pagefind-ui__message {
+  @apply m-0 block px-2 pt-1 pb-2 text-xs font-semibold tracking-[0.12em] text-gray-500 uppercase;
+  height: auto;
+}
+
+#site-search .pagefind-ui__results {
+  @apply m-0 flex list-none flex-col gap-1 p-0;
+}
+
+#site-search .pagefind-ui__result {
+  @apply hover:bg-ukqb-red-hover relative m-0 block cursor-pointer rounded-lg border-0 px-3 py-2.5 transition-colors duration-200;
+}
+
+/* Touch devices have no hover, so show the same tint while the card is pressed */
+#site-search .pagefind-ui__result:active {
+  @apply bg-ukqb-red-hover;
+}
+
+#site-search .pagefind-ui__result-inner {
+  @apply m-0 flex flex-col items-start gap-1;
+}
+
+#site-search .pagefind-ui__result-title {
+  @apply text-base leading-snug font-semibold;
+}
+
+/* Let the link cover the whole card, so a click anywhere opens the page */
+#site-search .pagefind-ui__result-link {
+  @apply text-gray-900 no-underline;
+  position: static;
+}
+
+#site-search .pagefind-ui__result-link:hover {
+  @apply text-ukqb-red no-underline;
+}
+
+#site-search .pagefind-ui__result-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Inset, so the scrolling results panel does not clip the ring at the sides */
+#site-search .pagefind-ui__result:has(:focus-visible) {
+  outline: 2px solid var(--color-ukqb-red);
+  outline-offset: -2px;
+}
+
+#site-search .pagefind-ui__result-excerpt {
+  @apply m-0 min-w-0 text-sm leading-relaxed text-gray-600;
+}
+
+#site-search mark {
+  @apply bg-ukqb-red/10 rounded-sm px-0.5 font-semibold text-gray-900;
+}
+
+/* Tall dialog on phones: field pinned, results scroll in the remaining height */
+@media (max-width: 639px) {
+  /* The close button replaces the field's Clear button on phones */
+  #site-search .pagefind-ui__search-clear {
+    display: none;
+  }
+
+  #site-search .pagefind-ui__search-input {
+    padding-right: 1rem;
+  }
+
+  /* The dialog keeps its layout size when the iOS keyboard opens */
+  #search-dialog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Field and close button share a row; the results panel is taken out of that
+     row and spans the full dialog width below it */
+  #search-bar {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.25rem;
+    min-height: 0;
+  }
+
+  #search-close {
+    align-self: flex-start;
+    margin-top: 0.25rem;
+  }
+
+  #site-search {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  #site-search .pagefind-ui,
+  #site-search .pagefind-ui__form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* Static, so the results panel measures itself against #search-bar */
+    position: static;
+    min-height: 0;
+  }
+
+  #site-search .pagefind-ui__drawer {
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    max-height: none;
+    overscroll-behavior: contain;
   }
 }
