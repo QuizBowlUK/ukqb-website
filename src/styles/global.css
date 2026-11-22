@@ -186,9 +186,8 @@
     display: none;
   }
 
-  /* Room for the close button, which sits inside the field's right edge */
   #site-search .pagefind-ui__search-input {
-    padding-right: 3.25rem;
+    padding-right: 1rem;
   }
 
   /* The dialog keeps its layout size when the iOS keyboard opens */
@@ -197,22 +196,21 @@
     flex-direction: column;
   }
 
-  /* Stack, so the results take the full dialog width and the close button
-     floats over the field instead of holding a column of its own */
+  /* Field and close button share a row; the results panel is taken out of that
+     row and spans the full dialog width below it */
   #search-bar {
     position: relative;
     display: flex;
     flex: 1;
-    flex-direction: column;
-    /* Stretch, not centre: the row's items-center would shrink-wrap the field */
-    align-items: stretch;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.25rem;
     min-height: 0;
   }
 
   #search-close {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    align-self: flex-start;
+    margin-top: 0.25rem;
   }
 
   #site-search {
@@ -228,13 +226,19 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    /* Static, so the results panel measures itself against #search-bar */
+    position: static;
     min-height: 0;
   }
 
   #site-search .pagefind-ui__drawer {
-    flex: 1;
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
     max-height: none;
-    min-height: 0;
     overscroll-behavior: contain;
   }
 }
